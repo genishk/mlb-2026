@@ -1,0 +1,122 @@
+[
+  {
+    "id": "e37dbfc6be8f0a6dc766f4f58233d65b",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-08-07T16:06:00Z",
+    "home_team": "Washington Nationals",
+    "away_team": "Oakland Athletics",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-07T14:28:29Z",
+            "outcomes": [
+              {
+                "name": "Oakland Athletics",
+                "price": -152
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 128
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9fa6710ade688398a606dacb1da8128b",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-08-07T20:11:00Z",
+    "home_team": "Seattle Mariners",
+    "away_team": "Chicago White Sox",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-07T14:28:29Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": 235
+              },
+              {
+                "name": "Seattle Mariners",
+                "price": -290
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6b3315915bd690bb2963c70853c92583",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-08-07T22:41:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Cincinnati Reds",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-07T14:28:29Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": 146
+              },
+              {
+                "name": "Pittsburgh Pirates",
+                "price": -174
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "78a76b053c4e67063fc6fab9d0154467",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-08-07T23:16:00Z",
+    "home_team": "Atlanta Braves",
+    "away_team": "Miami Marlins",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-08-07T14:28:29Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": 102
+              },
+              {
+                "name": "Miami Marlins",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

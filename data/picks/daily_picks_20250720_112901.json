@@ -1,0 +1,106 @@
+{
+  "date": "2025-07-20",
+  "timestamp": "2025-07-20 11:29:01",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "kelly_criterion": [
+        "Very High Confidence (Kelly > 25%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Baltimore Orioles @ Tampa Bay Rays",
+      "predicted_team": "home",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": -126.0,
+      "ensemble_prob": 0.6940608023780234,
+      "win_prob": 0.6940608023780234,
+      "predicted_roi": 24.490270902724824,
+      "confidence": 0.19406080237802337,
+      "odds_probability_divergence": 13.653867848421807,
+      "kelly_criterion": 30.857741337433282,
+      "game_date": "2025-07-20",
+      "start_time": "2025-07-20 12:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Chicago White Sox @ Pittsburgh Pirates",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.40419057141166237,
+      "win_prob": 0.5958094285883376,
+      "predicted_roi": 29.886455432257605,
+      "confidence": 0.09580942858833763,
+      "odds_probability_divergence": 13.709383225806238,
+      "kelly_criterion": 25.32750460360813,
+      "game_date": "2025-07-20",
+      "start_time": "2025-07-20 13:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "New York Yankees @ Atlanta Braves",
+      "predicted_team": "away",
+      "selection_team_name": "New York Yankees",
+      "selection_odds": 110.0,
+      "ensemble_prob": 0.3879554751698355,
+      "win_prob": 0.6120445248301645,
+      "predicted_roi": 28.52935021433455,
+      "confidence": 0.11204452483016453,
+      "odds_probability_divergence": 13.585404863968831,
+      "kelly_criterion": 25.935772922122304,
+      "game_date": "2025-07-20",
+      "start_time": "2025-07-20 13:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Minnesota Twins @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 198.0,
+      "ensemble_prob": 0.5696461541532263,
+      "win_prob": 0.5696461541532263,
+      "predicted_roi": 69.75455393766143,
+      "confidence": 0.06964615415322628,
+      "odds_probability_divergence": 23.407568435456856,
+      "kelly_criterion": 35.229572695788605,
+      "game_date": "2025-07-20",
+      "start_time": "2025-07-20 15:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Detroit Tigers @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": 168.0,
+      "ensemble_prob": 0.5643469235000595,
+      "win_prob": 0.5643469235000595,
+      "predicted_roi": 51.244975498015954,
+      "confidence": 0.06434692350005955,
+      "odds_probability_divergence": 19.121259514185056,
+      "kelly_criterion": 30.502961605961875,
+      "game_date": "2025-07-20",
+      "start_time": "2025-07-20 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

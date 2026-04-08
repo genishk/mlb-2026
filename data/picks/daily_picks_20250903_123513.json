@@ -1,0 +1,89 @@
+{
+  "date": "2025-09-03",
+  "timestamp": "2025-09-03 12:35:13",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +150)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Miami Marlins @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.5818170930458377,
+      "win_prob": 0.5818170930458377,
+      "predicted_roi": 26.836126283992627,
+      "confidence": 0.08181709304583773,
+      "odds_probability_divergence": 12.310149671556248,
+      "kelly_criterion": 22.742479901688657,
+      "game_date": "2025-09-03",
+      "start_time": "2025-09-03 13:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Toronto Blue Jays @ Cincinnati Reds",
+      "predicted_team": "home",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 138.0,
+      "ensemble_prob": 0.5636759091138226,
+      "win_prob": 0.5636759091138226,
+      "predicted_roi": 34.15486636908978,
+      "confidence": 0.06367590911382259,
+      "odds_probability_divergence": 14.350784188693183,
+      "kelly_criterion": 24.749903166007087,
+      "game_date": "2025-09-03",
+      "start_time": "2025-09-03 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Philadelphia Phillies @ Milwaukee Brewers",
+      "predicted_team": "home",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.5388008359587851,
+      "win_prob": 0.5388008359587851,
+      "predicted_roi": 0.3284315233599884,
+      "confidence": 0.03880083595878514,
+      "odds_probability_divergence": 0.176379892174805,
+      "kelly_criterion": 0.38098056709759476,
+      "game_date": "2025-09-03",
+      "start_time": "2025-09-03 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "New York Yankees @ Houston Astros",
+      "predicted_team": "home",
+      "selection_team_name": "Houston Astros",
+      "selection_odds": 108.0,
+      "ensemble_prob": 0.6370245729010262,
+      "win_prob": 0.6370245729010262,
+      "predicted_roi": 32.50111116341345,
+      "confidence": 0.1370245729010262,
+      "odds_probability_divergence": 15.625534213179543,
+      "kelly_criterion": 30.093621447605045,
+      "game_date": "2025-09-03",
+      "start_time": "2025-09-03 20:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

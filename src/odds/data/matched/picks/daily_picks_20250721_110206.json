@@ -1,0 +1,73 @@
+{
+  "date": "2025-07-21",
+  "timestamp": "2025-07-21 11:02:06",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 0.5,
+      "model7": 0.5
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +300)",
+        "Heavy Underdog (> +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Cincinnati Reds @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 113.0,
+      "ensemble_prob": 0.740092473506579,
+      "win_prob": 0.740092473506579,
+      "predicted_roi": 57.639696856901324,
+      "confidence": 0.24009247350657903,
+      "odds_probability_divergence": 27.060890543146165,
+      "kelly_criterion": 51.00858128929322,
+      "game_date": "2025-07-21",
+      "start_time": "2025-07-21 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "New York Yankees @ Toronto Blue Jays",
+      "predicted_team": "home",
+      "selection_team_name": "Toronto Blue Jays",
+      "selection_odds": -102.0,
+      "ensemble_prob": 0.8268198355098666,
+      "win_prob": 0.8268198355098666,
+      "predicted_roi": 63.74275173822848,
+      "confidence": 0.3268198355098666,
+      "odds_probability_divergence": 32.186934046036164,
+      "kelly_criterion": 65.01760677299306,
+      "game_date": "2025-07-21",
+      "start_time": "2025-07-21 19:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Minnesota Twins @ Los Angeles Dodgers",
+      "predicted_team": "away",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": 146.0,
+      "ensemble_prob": 0.337531340702999,
+      "win_prob": 0.662468659297001,
+      "predicted_roi": 62.96729018706226,
+      "confidence": 0.162468659297001,
+      "odds_probability_divergence": 25.596459425635064,
+      "kelly_criterion": 43.128280950042644,
+      "game_date": "2025-07-21",
+      "start_time": "2025-07-21 22:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

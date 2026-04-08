@@ -1,0 +1,452 @@
+[
+  {
+    "id": "0b0a5985601fe63998e636e1497746bb",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T17:35:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Oakland Athletics",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Oakland Athletics",
+                "price": 100
+              },
+              {
+                "name": "Pittsburgh Pirates",
+                "price": -118
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "551761f7cca9fa9d71eea9089e324005",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T17:36:00Z",
+    "home_team": "Baltimore Orioles",
+    "away_team": "New York Yankees",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Baltimore Orioles",
+                "price": 116
+              },
+              {
+                "name": "New York Yankees",
+                "price": -136
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b84fa7bbfb53439b7018b80524b3fa0d",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T17:40:00Z",
+    "home_team": "New York Mets",
+    "away_team": "Washington Nationals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "New York Mets",
+                "price": -275
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 225
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a7bd70364b94949fc1e0a5eb6adbb44b",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T17:41:00Z",
+    "home_team": "Detroit Tigers",
+    "away_team": "Atlanta Braves",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": 102
+              },
+              {
+                "name": "Detroit Tigers",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "08b0c4366d2b90d50af2480e55f0e084",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T17:41:00Z",
+    "home_team": "Cincinnati Reds",
+    "away_team": "Chicago Cubs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Chicago Cubs",
+                "price": 102
+              },
+              {
+                "name": "Cincinnati Reds",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a1d0839447eeec5bfc6c3d32b973c2e3",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T18:11:00Z",
+    "home_team": "Chicago White Sox",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": 152
+              },
+              {
+                "name": "San Diego Padres",
+                "price": -180
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9541c6a09887d3b285b7f3b8be0115a3",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T18:11:00Z",
+    "home_team": "Minnesota Twins",
+    "away_team": "Cleveland Guardians",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": -138
+              },
+              {
+                "name": "Minnesota Twins",
+                "price": 118
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f3209e7ab15c2c02771495df872edb54",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T18:11:00Z",
+    "home_team": "Kansas City Royals",
+    "away_team": "Toronto Blue Jays",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Kansas City Royals",
+                "price": 102
+              },
+              {
+                "name": "Toronto Blue Jays",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "44561d9db7b3ce174230d26a1fb982bc",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T18:16:00Z",
+    "home_team": "St. Louis Cardinals",
+    "away_team": "Milwaukee Brewers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": -136
+              },
+              {
+                "name": "St. Louis Cardinals",
+                "price": 116
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f1f41a4f4fc0d328b38a03933b8be38d",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T18:35:00Z",
+    "home_team": "Texas Rangers",
+    "away_team": "Miami Marlins",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Miami Marlins",
+                "price": 108
+              },
+              {
+                "name": "Texas Rangers",
+                "price": -126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "307721248d6b26dc25943d6a014991e2",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T19:11:00Z",
+    "home_team": "Colorado Rockies",
+    "away_team": "Los Angeles Angels",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Colorado Rockies",
+                "price": -116
+              },
+              {
+                "name": "Los Angeles Angels",
+                "price": -102
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9d1adc4d81cef3c41ad81d7c234571b2",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T20:10:00Z",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "San Francisco Giants",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -230
+              },
+              {
+                "name": "San Francisco Giants",
+                "price": 190
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ffa3cce1e2c6bdef40be35ae3507505e",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T20:11:00Z",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Arizona Diamondbacks",
+                "price": 108
+              },
+              {
+                "name": "Philadelphia Phillies",
+                "price": -126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bd71890309374d53f4d2f1d4e3a0e37e",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T23:10:00Z",
+    "home_team": "Houston Astros",
+    "away_team": "Seattle Mariners",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Houston Astros",
+                "price": 118
+              },
+              {
+                "name": "Seattle Mariners",
+                "price": -138
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1128c76cb9591614a8d2491d6adedfbb",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-21T23:36:00Z",
+    "home_team": "Tampa Bay Rays",
+    "away_team": "Boston Red Sox",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-21T15:32:29Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": -124
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": 106
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

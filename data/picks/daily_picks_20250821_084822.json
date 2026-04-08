@@ -1,0 +1,127 @@
+{
+  "date": "2025-08-21",
+  "timestamp": "2025-08-21 08:48:22",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Oakland Athletics @ Minnesota Twins",
+      "predicted_team": "home",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": -104.0,
+      "ensemble_prob": 0.6606805324554443,
+      "win_prob": 0.6606805324554443,
+      "predicted_roi": 29.59502752010639,
+      "confidence": 0.16068053245544434,
+      "odds_probability_divergence": 15.087661088681692,
+      "kelly_criterion": 30.778828620910637,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 13:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Texas Rangers @ Kansas City Royals",
+      "predicted_team": "away",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": -102.0,
+      "ensemble_prob": 0.3931652307510376,
+      "win_prob": 0.6068347692489624,
+      "predicted_roi": 20.177081753225885,
+      "confidence": 0.1068347692489624,
+      "odds_probability_divergence": 10.188427419945745,
+      "kelly_criterion": 20.580623388290416,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Milwaukee Brewers @ Chicago Cubs",
+      "predicted_team": "away",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.4742378890514374,
+      "win_prob": 0.5257621109485626,
+      "predicted_roi": 13.56461596488952,
+      "confidence": 0.025762110948562622,
+      "odds_probability_divergence": 6.2799147985599655,
+      "kelly_criterion": 11.69363445249098,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 14:20:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "New York Mets @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.503071129322052,
+      "win_prob": 0.503071129322052,
+      "predicted_roi": 9.669506192207336,
+      "confidence": 0.003071129322052002,
+      "odds_probability_divergence": 4.435553299177675,
+      "kelly_criterion": 8.194496773057054,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 16:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "San Francisco Giants @ San Diego Padres",
+      "predicted_team": "away",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": 150.0,
+      "ensemble_prob": 0.25377601385116577,
+      "win_prob": 0.7462239861488342,
+      "predicted_roi": 86.55599653720856,
+      "confidence": 0.24622398614883423,
+      "odds_probability_divergence": 34.62239861488342,
+      "kelly_criterion": 57.703997691472374,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Houston Astros @ Baltimore Orioles",
+      "predicted_team": "home",
+      "selection_team_name": "Baltimore Orioles",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.7392115592956543,
+      "win_prob": 0.7392115592956543,
+      "predicted_roi": 39.922188009534565,
+      "confidence": 0.2392115592956543,
+      "odds_probability_divergence": 21.090967250320148,
+      "kelly_criterion": 44.712850570678704,
+      "game_date": "2025-08-21",
+      "start_time": "2025-08-21 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

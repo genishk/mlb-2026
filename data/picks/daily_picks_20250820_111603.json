@@ -1,0 +1,109 @@
+{
+  "date": "2025-08-20",
+  "timestamp": "2025-08-20 11:16:03",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Houston Astros @ Detroit Tigers",
+      "predicted_team": "home",
+      "selection_team_name": "Detroit Tigers",
+      "selection_odds": 108.0,
+      "ensemble_prob": 0.6562110185623169,
+      "win_prob": 0.6562110185623169,
+      "predicted_roi": 36.491891860961914,
+      "confidence": 0.1562110185623169,
+      "odds_probability_divergence": 17.544178779308613,
+      "kelly_criterion": 33.78878876014992,
+      "game_date": "2025-08-20",
+      "start_time": "2025-08-20 13:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "New York Mets @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 144.0,
+      "ensemble_prob": 0.5161474943161011,
+      "win_prob": 0.5161474943161011,
+      "predicted_roi": 25.939988613128662,
+      "confidence": 0.016147494316101074,
+      "odds_probability_divergence": 10.631142874233056,
+      "kelly_criterion": 18.01388098133934,
+      "game_date": "2025-08-20",
+      "start_time": "2025-08-20 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Oakland Athletics @ Minnesota Twins",
+      "predicted_team": "home",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": -122.0,
+      "ensemble_prob": 0.6675776243209839,
+      "win_prob": 0.6675776243209839,
+      "predicted_roi": 21.477239835457723,
+      "confidence": 0.1675776243209839,
+      "odds_probability_divergence": 11.802807477143428,
+      "kelly_criterion": 26.20223259925843,
+      "game_date": "2025-08-20",
+      "start_time": "2025-08-20 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Milwaukee Brewers @ Chicago Cubs",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago Cubs",
+      "selection_odds": -102.0,
+      "ensemble_prob": 0.5470916032791138,
+      "win_prob": 0.5470916032791138,
+      "predicted_roi": 8.345592021942132,
+      "confidence": 0.04709160327911377,
+      "odds_probability_divergence": 4.2141108229608815,
+      "kelly_criterion": 8.512503862380981,
+      "game_date": "2025-08-20",
+      "start_time": "2025-08-20 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Los Angeles Dodgers @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 250.0,
+      "ensemble_prob": 0.5510262846946716,
+      "win_prob": 0.5510262846946716,
+      "predicted_roi": 92.85919964313507,
+      "confidence": 0.05102628469467163,
+      "odds_probability_divergence": 26.531199898038594,
+      "kelly_criterion": 37.14367985725403,
+      "game_date": "2025-08-20",
+      "start_time": "2025-08-20 20:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

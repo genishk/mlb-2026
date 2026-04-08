@@ -1,0 +1,127 @@
+{
+  "date": "2025-07-22",
+  "timestamp": "2025-07-22 12:55:48",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 0.5,
+      "model7": 0.5
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +300)",
+        "Heavy Underdog (> +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Detroit Tigers @ Pittsburgh Pirates",
+      "predicted_team": "home",
+      "selection_team_name": "Pittsburgh Pirates",
+      "selection_odds": 110.0,
+      "ensemble_prob": 0.6944864080289805,
+      "win_prob": 0.6944864080289805,
+      "predicted_roi": 45.84214568608593,
+      "confidence": 0.19448640802898054,
+      "odds_probability_divergence": 21.829593183850438,
+      "kelly_criterion": 41.674677896441736,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "San Diego Padres @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.7044817717905253,
+      "win_prob": 0.7044817717905253,
+      "predicted_roi": 33.34833537463515,
+      "confidence": 0.2044817717905253,
+      "odds_probability_divergence": 17.617988499807247,
+      "kelly_criterion": 37.35013561959135,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "San Francisco Giants @ Atlanta Braves",
+      "predicted_team": "home",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": -108.0,
+      "ensemble_prob": 0.7114490119270196,
+      "win_prob": 0.7114490119270196,
+      "predicted_roi": 37.019809704463036,
+      "confidence": 0.2114490119270196,
+      "odds_probability_divergence": 19.22182426962503,
+      "kelly_criterion": 39.98139448082008,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Kansas City Royals @ Chicago Cubs",
+      "predicted_team": "away",
+      "selection_team_name": "Kansas City Royals",
+      "selection_odds": 205.0,
+      "ensemble_prob": 0.43235602942204376,
+      "win_prob": 0.5676439705779562,
+      "predicted_roi": 73.13141102627665,
+      "confidence": 0.06764397057795624,
+      "odds_probability_divergence": 23.977511811893987,
+      "kelly_criterion": 35.673859037208125,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Houston Astros @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.5665686267796411,
+      "win_prob": 0.5665686267796411,
+      "predicted_roi": 13.313725355928227,
+      "confidence": 0.06656862677964115,
+      "odds_probability_divergence": 6.656862677964115,
+      "kelly_criterion": 13.31372535592823,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Milwaukee Brewers @ Seattle Mariners",
+      "predicted_team": "away",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": 108.0,
+      "ensemble_prob": 0.38763806190582784,
+      "win_prob": 0.6123619380941722,
+      "predicted_roi": 27.371283123587816,
+      "confidence": 0.11236193809417216,
+      "odds_probability_divergence": 13.159270732494138,
+      "kelly_criterion": 25.343780669988707,
+      "game_date": "2025-07-22",
+      "start_time": "2025-07-22 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

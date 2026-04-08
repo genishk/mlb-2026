@@ -1,0 +1,52 @@
+{
+  "date": "2025-08-07",
+  "timestamp": "2025-08-07 12:22:16",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Oakland Athletics @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 128.0,
+      "ensemble_prob": 0.7655279820421605,
+      "win_prob": 0.7655279820421605,
+      "predicted_roi": 74.54037990561261,
+      "confidence": 0.26552798204216055,
+      "odds_probability_divergence": 32.69314908140904,
+      "kelly_criterion": 58.23467180125985,
+      "game_date": "2025-08-07",
+      "start_time": "2025-08-07 12:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Cincinnati Reds @ Pittsburgh Pirates",
+      "predicted_team": "away",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 146.0,
+      "ensemble_prob": 0.1847016652937524,
+      "win_prob": 0.8152983347062476,
+      "predicted_roi": 100.5633903377369,
+      "confidence": 0.3152983347062476,
+      "odds_probability_divergence": 40.87942696655972,
+      "kelly_criterion": 68.87903447790198,
+      "game_date": "2025-08-07",
+      "start_time": "2025-08-07 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

@@ -1,0 +1,761 @@
+[
+  {
+    "id": "29fe747229e417a970662db96f7b507a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T17:11:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "Chicago Cubs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T19:49:32Z",
+            "outcomes": [
+              {
+                "name": "Chicago Cubs",
+                "price": -7000
+              },
+              {
+                "name": "Cleveland Guardians",
+                "price": 1500
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a90501690931f0257555636a2bba3fbf",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T17:36:00Z",
+    "home_team": "Boston Red Sox",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:17Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": 280
+              },
+              {
+                "name": "San Diego Padres",
+                "price": -390
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2b9ccede64dae0b4bcf9d3be43f46109",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T17:40:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Baltimore Orioles",
+    "bookmakers": []
+  },
+  {
+    "id": "318f813f9377b7ebede8b485f5ebef63",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T18:11:00Z",
+    "home_team": "Chicago White Sox",
+    "away_team": "Toronto Blue Jays",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": -1200
+              },
+              {
+                "name": "Toronto Blue Jays",
+                "price": 630
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6e92e4380327a4202b28a449cec82e36",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T18:11:00Z",
+    "home_team": "Kansas City Royals",
+    "away_team": "Milwaukee Brewers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Kansas City Royals",
+                "price": 1000
+              },
+              {
+                "name": "Milwaukee Brewers",
+                "price": -3000
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e7c8fd226080f70fcf82e59c4705ede9",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T18:11:00Z",
+    "home_team": "Minnesota Twins",
+    "away_team": "Tampa Bay Rays",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Minnesota Twins",
+                "price": -146
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": 114
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4c267806bb7b5fed26df010d063685b8",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T18:36:00Z",
+    "home_team": "Texas Rangers",
+    "away_team": "Cincinnati Reds",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": -250
+              },
+              {
+                "name": "Texas Rangers",
+                "price": 190
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "91cb43db006ffd2bfb2bb937ec974414",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T19:11:00Z",
+    "home_team": "Colorado Rockies",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Colorado Rockies",
+                "price": -184
+              },
+              {
+                "name": "Philadelphia Phillies",
+                "price": 142
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11db8321335040098def7d046fc1e7fd",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T19:45:00Z",
+    "home_team": "Washington Nationals",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -170
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 132
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ac0a6ca9e9cf87ea71536972e31230cc",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:06:00Z",
+    "home_team": "Athletics",
+    "away_team": "Houston Astros",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Athletics",
+                "price": 108
+              },
+              {
+                "name": "Houston Astros",
+                "price": -126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f546541ad061224570d6c2508ff82661",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:06:00Z",
+    "home_team": "San Francisco Giants",
+    "away_team": "New York Mets",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "New York Mets",
+                "price": 102
+              },
+              {
+                "name": "San Francisco Giants",
+                "price": -120
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f9328a738af71bb6fd039c0c537f6b09",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:08:00Z",
+    "home_team": "Los Angeles Angels",
+    "away_team": "Seattle Mariners",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Angels",
+                "price": 138
+              },
+              {
+                "name": "Seattle Mariners",
+                "price": -164
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6713ad4fbeae608d336734ee11015eb2",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:11:00Z",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Atlanta Braves",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Arizona Diamondbacks",
+                "price": -112
+              },
+              {
+                "name": "Atlanta Braves",
+                "price": -104
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6cfb88cfd2f02bcfc42f9513be8da728",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:30:00Z",
+    "home_team": "New York Yankees",
+    "away_team": "Miami Marlins",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Miami Marlins",
+                "price": 240
+              },
+              {
+                "name": "New York Yankees",
+                "price": -295
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b58a8d0376af31bc90316319ce719acf",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T20:41:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "Chicago Cubs",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Chicago Cubs",
+                "price": -126
+              },
+              {
+                "name": "Cleveland Guardians",
+                "price": 108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1c62c9b04fe7901aa7c4acfe7d37c949",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-05T23:21:00Z",
+    "home_team": "Detroit Tigers",
+    "away_team": "St. Louis Cardinals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Detroit Tigers",
+                "price": -136
+              },
+              {
+                "name": "St. Louis Cardinals",
+                "price": 116
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e7bc40f9611b8baa6328e83959820910",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T22:11:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "Kansas City Royals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": -116
+              },
+              {
+                "name": "Kansas City Royals",
+                "price": -102
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b5ee5b660c88cd4cb3262b4b7e9f236f",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T22:41:00Z",
+    "home_team": "Miami Marlins",
+    "away_team": "Cincinnati Reds",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": 100
+              },
+              {
+                "name": "Miami Marlins",
+                "price": -118
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8638889acbe04188b2fcf40386691db5",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T22:41:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Pittsburgh Pirates",
+                "price": -118
+              },
+              {
+                "name": "San Diego Padres",
+                "price": 100
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6852a6697b356bb6e8a0216138056714",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T22:46:00Z",
+    "home_team": "Boston Red Sox",
+    "away_team": "Milwaukee Brewers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": -108
+              },
+              {
+                "name": "Milwaukee Brewers",
+                "price": -108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "990a59a7449ed13a05090cf52c0e8d90",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T22:46:00Z",
+    "home_team": "Washington Nationals",
+    "away_team": "St. Louis Cardinals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "St. Louis Cardinals",
+                "price": -108
+              },
+              {
+                "name": "Washington Nationals",
+                "price": -108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5c34cdfbbae06991923848f910bcad7e",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T23:08:00Z",
+    "home_team": "Toronto Blue Jays",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -134
+              },
+              {
+                "name": "Toronto Blue Jays",
+                "price": 114
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9587d8ccb994fa95ccf0d6ea51bb3393",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-06T23:41:00Z",
+    "home_team": "Minnesota Twins",
+    "away_team": "Detroit Tigers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Detroit Tigers",
+                "price": 108
+              },
+              {
+                "name": "Minnesota Twins",
+                "price": -126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "71afed60c85a1e206512b59088d8479f",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-07T00:06:00Z",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Seattle Mariners",
+                "price": -104
+              },
+              {
+                "name": "Texas Rangers",
+                "price": -112
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0bbb2fe84dad148ca7acd671cfd4278a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-07T01:39:00Z",
+    "home_team": "Los Angeles Angels",
+    "away_team": "Atlanta Braves",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": -158
+              },
+              {
+                "name": "Los Angeles Angels",
+                "price": 134
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "e82a29b726b7958743405c67fec4b61a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2026-04-07T01:46:00Z",
+    "home_team": "San Francisco Giants",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2026-04-05T20:01:41Z",
+            "outcomes": [
+              {
+                "name": "Philadelphia Phillies",
+                "price": -112
+              },
+              {
+                "name": "San Francisco Giants",
+                "price": -104
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

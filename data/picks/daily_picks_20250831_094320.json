@@ -1,0 +1,71 @@
+{
+  "date": "2025-08-31",
+  "timestamp": "2025-08-31 09:43:20",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "San Diego Padres @ Minnesota Twins",
+      "predicted_team": "away",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": 104.0,
+      "ensemble_prob": 0.389904260635376,
+      "win_prob": 0.610095739364624,
+      "predicted_roi": 24.4595308303833,
+      "confidence": 0.11009573936462402,
+      "odds_probability_divergence": 11.98996609332515,
+      "kelly_criterion": 23.518779644599327,
+      "game_date": "2025-08-31",
+      "start_time": "2025-08-31 13:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Milwaukee Brewers @ Toronto Blue Jays",
+      "predicted_team": "home",
+      "selection_team_name": "Toronto Blue Jays",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.6070746183395386,
+      "win_prob": 0.6070746183395386,
+      "predicted_roi": 13.041480656327863,
+      "confidence": 0.10707461833953857,
+      "odds_probability_divergence": 7.003758130250148,
+      "kelly_criterion": 15.128117561340323,
+      "game_date": "2025-08-31",
+      "start_time": "2025-08-31 13:37:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Miami Marlins @ New York Mets",
+      "predicted_team": "home",
+      "selection_team_name": "New York Mets",
+      "selection_odds": -172.0,
+      "ensemble_prob": 0.7270882725715637,
+      "win_prob": 0.7270882725715637,
+      "predicted_roi": 14.981401243875197,
+      "confidence": 0.22708827257156372,
+      "odds_probability_divergence": 9.473533139509316,
+      "kelly_criterion": 25.768010139465364,
+      "game_date": "2025-08-31",
+      "start_time": "2025-08-31 13:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "9be4ecca07522cac2c5a97c3c789ff31",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-30T17:08:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "Detroit Tigers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-30T15:19:46Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": 140
+              },
+              {
+                "name": "Detroit Tigers",
+                "price": -166
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fb3e1bfdca2c88e5288624dfd95aa76a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-30T19:08:00Z",
+    "home_team": "Chicago Cubs",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-30T15:19:46Z",
+            "outcomes": [
+              {
+                "name": "Chicago Cubs",
+                "price": -126
+              },
+              {
+                "name": "San Diego Padres",
+                "price": 108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7a45cd9f14ad94c5e8092da129eb641f",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-30T22:09:00Z",
+    "home_team": "New York Yankees",
+    "away_team": "Boston Red Sox",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-30T15:19:46Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": 116
+              },
+              {
+                "name": "New York Yankees",
+                "price": -136
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c39a10188098658e3f02a8bdec57655a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-10-01T01:08:00Z",
+    "home_team": "Los Angeles Dodgers",
+    "away_team": "Cincinnati Reds",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-30T15:19:46Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": 168
+              },
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

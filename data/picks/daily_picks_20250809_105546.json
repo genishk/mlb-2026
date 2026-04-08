@@ -1,0 +1,88 @@
+{
+  "date": "2025-08-09",
+  "timestamp": "2025-08-09 10:55:46",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Miami Marlins @ Atlanta Braves",
+      "predicted_team": "home",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.967063557230378,
+      "win_prob": 0.967063557230378,
+      "predicted_roi": 80.07390376013934,
+      "confidence": 0.46706355723037796,
+      "odds_probability_divergence": 43.002652019334086,
+      "kelly_criterion": 92.88572836176165,
+      "game_date": "2025-08-09",
+      "start_time": "2025-08-09 13:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Cleveland Guardians @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.9791200615011612,
+      "win_prob": 0.9791200615011612,
+      "predicted_roi": 111.4899332842508,
+      "confidence": 0.47912006150116115,
+      "odds_probability_divergence": 51.61570985381982,
+      "kelly_criterion": 96.11201145194033,
+      "game_date": "2025-08-09",
+      "start_time": "2025-08-09 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Philadelphia Phillies @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": -134.0,
+      "ensemble_prob": 0.9701353462132252,
+      "win_prob": 0.9701353462132252,
+      "predicted_roi": 69.41169478648858,
+      "confidence": 0.47013534621322517,
+      "odds_probability_divergence": 39.74857735636525,
+      "kelly_criterion": 93.01167101389468,
+      "game_date": "2025-08-09",
+      "start_time": "2025-08-09 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Tampa Bay Rays @ Seattle Mariners",
+      "predicted_team": "away",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": 110.0,
+      "ensemble_prob": 0.1765797691654866,
+      "win_prob": 0.8234202308345134,
+      "predicted_roi": 72.91824847524782,
+      "confidence": 0.32342023083451343,
+      "odds_probability_divergence": 34.722975464403724,
+      "kelly_criterion": 66.28931679567984,
+      "game_date": "2025-08-09",
+      "start_time": "2025-08-09 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

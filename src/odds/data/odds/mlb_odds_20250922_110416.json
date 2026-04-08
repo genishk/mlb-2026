@@ -1,0 +1,122 @@
+[
+  {
+    "id": "35d3392c0e3cea0c865f57921119d056",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-22T23:16:00Z",
+    "home_team": "Atlanta Braves",
+    "away_team": "Washington Nationals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-22T15:02:58Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": -270
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 220
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a511104efdc87346c91d6c6c32f0c1b7",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-23T01:41:00Z",
+    "home_team": "San Diego Padres",
+    "away_team": "Milwaukee Brewers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-22T15:02:58Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": 104
+              },
+              {
+                "name": "San Diego Padres",
+                "price": -122
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1f59bc9c3d3f62a71143ab6526d8fd3c",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-23T01:45:00Z",
+    "home_team": "San Francisco Giants",
+    "away_team": "St. Louis Cardinals",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-22T15:02:58Z",
+            "outcomes": [
+              {
+                "name": "San Francisco Giants",
+                "price": -148
+              },
+              {
+                "name": "St. Louis Cardinals",
+                "price": 126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6760c09f991d4e8aeb07fe87ce1d2833",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-23T22:41:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "Detroit Tigers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-22T15:04:14Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": 138
+              },
+              {
+                "name": "Detroit Tigers",
+                "price": -164
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

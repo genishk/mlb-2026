@@ -1,0 +1,106 @@
+{
+  "date": "2025-08-05",
+  "timestamp": "2025-08-05 10:25:28",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Oakland Athletics @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": -134.0,
+      "ensemble_prob": 0.9933473908735226,
+      "win_prob": 0.9933473908735226,
+      "predicted_roi": 73.46514139134649,
+      "confidence": 0.49334739087352264,
+      "odds_probability_divergence": 42.069781822395,
+      "kelly_criterion": 98.44328946440429,
+      "game_date": "2025-08-05",
+      "start_time": "2025-08-05 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Cleveland Guardians @ New York Mets",
+      "predicted_team": "away",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": 136.0,
+      "ensemble_prob": 0.13091154976703,
+      "win_prob": 0.86908845023297,
+      "predicted_roi": 105.10487425498093,
+      "confidence": 0.36908845023297,
+      "odds_probability_divergence": 44.5359636673648,
+      "kelly_criterion": 77.28299577572126,
+      "game_date": "2025-08-05",
+      "start_time": "2025-08-05 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Milwaukee Brewers @ Atlanta Braves",
+      "predicted_team": "away",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": -142.0,
+      "ensemble_prob": 0.013760562717228045,
+      "win_prob": 0.986239437282772,
+      "predicted_roi": 68.07742522706396,
+      "confidence": 0.48623943728277197,
+      "odds_probability_divergence": 39.94625777786397,
+      "kelly_criterion": 96.66994382243081,
+      "game_date": "2025-08-05",
+      "start_time": "2025-08-05 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "New York Yankees @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": -126.0,
+      "ensemble_prob": 0.9456565365357588,
+      "win_prob": 0.9456565365357588,
+      "predicted_roi": 69.61775972784245,
+      "confidence": 0.44565653653575876,
+      "odds_probability_divergence": 38.81344126419535,
+      "kelly_criterion": 87.71837725708149,
+      "game_date": "2025-08-05",
+      "start_time": "2025-08-05 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "San Diego Padres @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": 114.0,
+      "ensemble_prob": 0.9662610035060885,
+      "win_prob": 0.9662610035060885,
+      "predicted_roi": 106.77985475030292,
+      "confidence": 0.46626100350608846,
+      "odds_probability_divergence": 49.897128387992026,
+      "kelly_criterion": 93.6665392546517,
+      "game_date": "2025-08-05",
+      "start_time": "2025-08-05 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

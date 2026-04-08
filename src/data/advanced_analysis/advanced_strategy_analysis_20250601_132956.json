@@ -1,0 +1,671 @@
+{
+  "model_metrics": {
+    "model3": {
+      "model_name": "model3",
+      "overall_roi": -1.110364811652064,
+      "win_rate": 58.139534883720934,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites",
+          "underdogs"
+        ],
+        "weak_odds_ranges": [
+          "slight_favorites",
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 10.951657262276976,
+          "favorites": 7.89953395422746,
+          "slight_favorites": -12.159387213039254,
+          "slight_underdogs": -43.90909090909091,
+          "underdogs": 11.727272727272727
+        },
+        "consistency_score": 0.07541051921373167
+      },
+      "situational_performance": {
+        "favorites_roi": 3.2543184486192756,
+        "underdogs_roi": -14.75,
+        "close_games_roi": -5.029604206018653,
+        "blowout_predictions_roi": -2.4729948113484563,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -1.110364811652064
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model4": {
+      "model_name": "model4",
+      "overall_roi": -0.1661105685823297,
+      "win_rate": 53.48837209302325,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_favorites",
+          "slight_underdogs",
+          "underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.6,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 16.56676425037896,
+          "favorites": 12.506994037930053,
+          "slight_favorites": -12.458457045357168,
+          "slight_underdogs": -31.444444444444446,
+          "underdogs": -8.263157894736842
+        },
+        "consistency_score": 0.031351923947733236
+      },
+      "situational_performance": {
+        "favorites_roi": 4.754553040452978,
+        "underdogs_roi": -10.46875,
+        "close_games_roi": -62.89819874519327,
+        "blowout_predictions_roi": 9.808732478941465,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -0.1661105685823297
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model6": {
+      "model_name": "model6",
+      "overall_roi": -3.084793230909819,
+      "win_rate": 57.36434108527132,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs",
+          "underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.6,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 2.9421187173820713,
+          "favorites": 11.088671676896094,
+          "slight_favorites": -4.650229703881744,
+          "slight_underdogs": -43.90909090909091,
+          "underdogs": -10.090909090909092
+        },
+        "consistency_score": 0.04594971031474771
+      },
+      "situational_performance": {
+        "favorites_roi": 3.84807293519904,
+        "underdogs_roi": -24.75,
+        "close_games_roi": -32.5154564010421,
+        "blowout_predictions_roi": -7.841852694069315,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -3.084793230909819
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model9": {
+      "model_name": "model9",
+      "overall_roi": 0.5915862053674462,
+      "win_rate": 58.91472868217055,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites",
+          "underdogs"
+        ],
+        "weak_odds_ranges": [
+          "slight_favorites",
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.6,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 10.951657262276976,
+          "favorites": 11.088671676896094,
+          "slight_favorites": -12.159387213039254,
+          "slight_underdogs": -43.90909090909091,
+          "underdogs": 22.9
+        },
+        "consistency_score": 0.06816929293316384
+      },
+      "situational_performance": {
+        "favorites_roi": 4.112724135939174,
+        "underdogs_roi": -11.043478260869565,
+        "close_games_roi": -13.33847750616823,
+        "blowout_predictions_roi": -5.313294938785513,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          0.5915862053674462
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model5": {
+      "model_name": "model5",
+      "overall_roi": -2.2517467355278677,
+      "win_rate": 58.139534883720934,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs",
+          "underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 2.2285845861190023,
+          "favorites": 15.001814056600072,
+          "slight_favorites": -4.523042076694115,
+          "slight_underdogs": -41.14285714285714,
+          "underdogs": -17.583333333333336
+        },
+        "consistency_score": 0.035650724754629735
+      },
+      "situational_performance": {
+        "favorites_roi": 4.884117833542092,
+        "underdogs_roi": -27.227272727272727,
+        "close_games_roi": 15.113648698050309,
+        "blowout_predictions_roi": -8.060125071576412,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -2.2517467355278677
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model7": {
+      "model_name": "model7",
+      "overall_roi": 12.656401182899806,
+      "win_rate": 61.240310077519375,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites",
+          "underdogs"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 20.494253333749395,
+          "favorites": 35.65447278856485,
+          "slight_favorites": 1.6930296528920328,
+          "slight_underdogs": -16.900000000000006,
+          "underdogs": 8.937499999999998
+        },
+        "consistency_score": 0.027673645883188203
+      },
+      "situational_performance": {
+        "favorites_roi": 17.01425676966785,
+        "underdogs_roi": 2.633333333333335,
+        "close_games_roi": 55.930375728663215,
+        "blowout_predictions_roi": -2.6865546844197583,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          12.656401182899806
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model2": {
+      "model_name": "model2",
+      "overall_roi": 3.417695891406912,
+      "win_rate": 62.01550387596899,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites",
+          "underdogs"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 9.30381132864118,
+          "favorites": 12.05071559507827,
+          "slight_favorites": -4.650229703881744,
+          "slight_underdogs": -48.5,
+          "underdogs": 23.75
+        },
+        "consistency_score": 0.0430901624727364
+      },
+      "situational_performance": {
+        "favorites_roi": 6.62162831171956,
+        "underdogs_roi": -10.999999999999998,
+        "close_games_roi": 14.485838233671972,
+        "blowout_predictions_roi": 5.449992900171652,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          3.417695891406912
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model_svm": {
+      "model_name": "model_svm",
+      "overall_roi": -4.225404520783931,
+      "win_rate": 60.0,
+      "total_bets": 15,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites"
+        ],
+        "weak_odds_ranges": [],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 25.11148082526423
+        },
+        "consistency_score": 0.04898397277424874
+      },
+      "situational_performance": {
+        "favorites_roi": 12.419902926203727,
+        "underdogs_roi": -50.0,
+        "close_games_roi": -12.4210076336249,
+        "blowout_predictions_roi": 0.0,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -4.225404520783931
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model_rf": {
+      "model_name": "model_rf",
+      "overall_roi": 8.467738102742702,
+      "win_rate": 66.66666666666666,
+      "total_bets": 15,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites"
+        ],
+        "weak_odds_ranges": [],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 25.11148082526423
+        },
+        "consistency_score": 0.09178535980535156
+      },
+      "situational_performance": {
+        "favorites_roi": 18.918005961761715,
+        "underdogs_roi": -33.33333333333333,
+        "close_games_roi": -9.150468901740805,
+        "blowout_predictions_roi": 15.392215808882478,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          8.467738102742702
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "ensemble": {
+      "model_name": "ensemble",
+      "overall_roi": 8.064997025448728,
+      "win_rate": 59.68992248062015,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 11.85139058594964,
+          "favorites": 17.839008956692094,
+          "slight_favorites": 2.5404057476232715,
+          "slight_underdogs": -31.444444444444446,
+          "underdogs": 2.4166666666666656
+        },
+        "consistency_score": 0.04615818907834726
+      },
+      "situational_performance": {
+        "favorites_roi": 11.299129406925655,
+        "underdogs_roi": -2.041666666666666,
+        "close_games_roi": 33.13494725524927,
+        "blowout_predictions_roi": -10.734732629698511,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          8.064997025448728
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model_nn": {
+      "model_name": "model_nn",
+      "overall_roi": -1.0508013461807555,
+      "win_rate": 60.0,
+      "total_bets": 15,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites"
+        ],
+        "weak_odds_ranges": [],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.8,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 21.800443656983745
+        },
+        "consistency_score": 0.29273047463997315
+      },
+      "situational_performance": {
+        "favorites_roi": 28.423797980728864,
+        "underdogs_roi": -60.0,
+        "close_games_roi": 68.4931506849315,
+        "blowout_predictions_roi": 1.2111407017197808,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -1.0508013461807555
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model8": {
+      "model_name": "model8",
+      "overall_roi": -12.391444627007074,
+      "win_rate": 52.71317829457365,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_favorites",
+          "slight_underdogs",
+          "underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.8,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": -4.246228071167508,
+          "favorites": 9.265779023910286,
+          "slight_favorites": -12.032199585851627,
+          "slight_underdogs": -48.5,
+          "underdogs": -34.66666666666667
+        },
+        "consistency_score": 0.043180164161139685
+      },
+      "situational_performance": {
+        "favorites_roi": -1.6493474732458342,
+        "underdogs_roi": -41.03703703703704,
+        "close_games_roi": -34.547415510277176,
+        "blowout_predictions_roi": -0.5780615213770204,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          -12.391444627007074
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    },
+    "model1": {
+      "model_name": "model1",
+      "overall_roi": 11.132285777668985,
+      "win_rate": 60.46511627906976,
+      "total_bets": 129,
+      "strengths": {
+        "strong_odds_ranges": [
+          "heavy_favorites",
+          "favorites",
+          "slight_favorites"
+        ],
+        "weak_odds_ranges": [
+          "slight_underdogs"
+        ],
+        "strong_situations": [],
+        "weak_situations": [],
+        "optimal_confidence_threshold": 0.55,
+        "best_team_types": [],
+        "roi_by_odds_range": {
+          "heavy_favorites": 15.017241818578968,
+          "favorites": 18.2404340156514,
+          "slight_favorites": 9.820625527843053,
+          "slight_underdogs": -22.875,
+          "underdogs": -0.7333333333333343
+        },
+        "consistency_score": 0.030753782396569153
+      },
+      "situational_performance": {
+        "favorites_roi": 14.946524547797669,
+        "underdogs_roi": 0.4230769230769209,
+        "close_games_roi": 14.800806230271279,
+        "blowout_predictions_roi": -3.0803932543771118,
+        "high_total_games_roi": 0.0,
+        "low_total_games_roi": 0.0
+      },
+      "temporal_stability": {
+        "weekly_rois": [
+          11.132285777668985
+        ],
+        "stability_score": 1.0,
+        "trend_direction": "stable",
+        "recent_vs_past_performance": 0
+      },
+      "calibration_score": 0.0,
+      "edge_detection_ability": 0.0
+    }
+  },
+  "optimal_combinations": [
+    {
+      "situation": "favorites_betting",
+      "recommended_models": [
+        "model_nn",
+        "model_rf",
+        "model7"
+      ],
+      "weights": {
+        "model_nn": 0.008860565446422558,
+        "model_rf": 0.4033529749270136,
+        "model7": 0.5877864596265638
+      },
+      "expected_roi": 21.45202023738614,
+      "confidence_level": 85.0,
+      "reasoning": "선호팀 베팅에서 일관되게 좋은 성과를 보인 모델들의 조합"
+    },
+    {
+      "situation": "close_games",
+      "recommended_models": [
+        "model_nn",
+        "model7",
+        "ensemble"
+      ],
+      "weights": {
+        "model_nn": 0.009028965894059805,
+        "model7": 0.5989576996015692,
+        "ensemble": 0.392013334504371
+      },
+      "expected_roi": 52.519491222948,
+      "confidence_level": 70.0,
+      "reasoning": "예측하기 어려운 박빙 게임에서 우수한 성과를 보인 모델들"
+    },
+    {
+      "situation": "conservative_strategy",
+      "recommended_models": [
+        "model9",
+        "model7",
+        "model2"
+      ],
+      "weights": {
+        "model9": 0.06580838191037708,
+        "model7": 0.7163375026305786,
+        "model2": 0.21785411545904435
+      },
+      "expected_roi": 5.555227759891388,
+      "confidence_level": 90.0,
+      "reasoning": "시간적으로 안정된 성과를 보이는 보수적 전략 모델들"
+    }
+  ],
+  "validation_results": {
+    "favorites_betting": {
+      "expected_roi": 21.45202023738614,
+      "validation_roi": -10.682655555696492,
+      "overfitting_risk": 32.134675793082636,
+      "model_validation_rois": {
+        "model_nn": -10.069425618124072,
+        "model_rf": -10.721616539406345,
+        "model7": -10.665163719126426
+      },
+      "reliable": false
+    },
+    "close_games": {
+      "expected_roi": 52.519491222948,
+      "validation_roi": -11.23526226927744,
+      "overfitting_risk": 63.75475349222544,
+      "model_validation_rois": {
+        "model_nn": -10.069425618124072,
+        "model7": -10.665163719126426,
+        "ensemble": -12.133168499816712
+      },
+      "reliable": false
+    },
+    "conservative_strategy": {
+      "expected_roi": 5.555227759891388,
+      "validation_roi": -8.166520344268672,
+      "overfitting_risk": 13.72174810416006,
+      "model_validation_rois": {
+        "model9": -9.349555054438563,
+        "model7": -10.665163719126426,
+        "model2": 0.40676527484675584
+      },
+      "reliable": false
+    }
+  },
+  "analysis_summary": {
+    "total_models_analyzed": 13,
+    "profitable_models": 6,
+    "combinations_found": 3,
+    "split_date": "2025-05-27",
+    "train_samples": 129,
+    "validation_samples": 81
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "date": "2025-08-03",
+  "timestamp": "2025-08-03 11:02:27",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "New York Yankees @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.836040945551219,
+      "win_prob": 0.836040945551219,
+      "predicted_roi": 67.20818911024381,
+      "confidence": 0.336040945551219,
+      "odds_probability_divergence": 33.6040945551219,
+      "kelly_criterion": 67.2081891102438,
+      "game_date": "2025-08-03",
+      "start_time": "2025-08-03 13:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Chicago White Sox @ Los Angeles Angels",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 114.0,
+      "ensemble_prob": 0.043377848707039694,
+      "win_prob": 0.9566221512929604,
+      "predicted_roi": 104.7171403766935,
+      "confidence": 0.4566221512929603,
+      "odds_probability_divergence": 48.93324316667921,
+      "kelly_criterion": 91.85714068131013,
+      "game_date": "2025-08-03",
+      "start_time": "2025-08-03 16:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Texas Rangers @ Seattle Mariners",
+      "predicted_team": "home",
+      "selection_team_name": "Seattle Mariners",
+      "selection_odds": 124.0,
+      "ensemble_prob": 0.8287868312042868,
+      "win_prob": 0.8287868312042868,
+      "predicted_roi": 85.64825018976023,
+      "confidence": 0.32878683120428676,
+      "odds_probability_divergence": 38.23582597757153,
+      "kelly_criterion": 69.07116950787116,
+      "game_date": "2025-08-03",
+      "start_time": "2025-08-03 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

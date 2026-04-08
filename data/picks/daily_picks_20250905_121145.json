@@ -1,0 +1,34 @@
+{
+  "date": "2025-09-05",
+  "timestamp": "2025-09-05 12:11:45",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "San Francisco Giants @ St. Louis Cardinals",
+      "predicted_team": "home",
+      "selection_team_name": "St. Louis Cardinals",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.582638019445217,
+      "win_prob": 0.582638019445217,
+      "predicted_roi": 8.491217413936944,
+      "confidence": 0.08263801944521698,
+      "odds_probability_divergence": 4.5600982408179895,
+      "kelly_criterion": 9.849812200166859,
+      "game_date": "2025-09-05",
+      "start_time": "2025-09-05 20:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

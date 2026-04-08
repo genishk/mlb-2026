@@ -1,0 +1,4201 @@
+{
+  "singles": [
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Texas Rangers vs Pittsburgh Pirates",
+      "date": "2025-06-20",
+      "probability": 0.7222916526904078,
+      "odds": 144.0,
+      "amount": 25.0,
+      "potential_profit": 36.0,
+      "expected_profit": 19.059790814114876,
+      "roi": 76.2391632564595
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Detroit Tigers vs Tampa Bay Rays",
+      "date": "2025-06-20",
+      "probability": 0.8418838037855777,
+      "odds": -118.0,
+      "amount": 25.0,
+      "potential_profit": 21.1864406779661,
+      "expected_profit": 13.883616361283039,
+      "roi": 55.534465445132156
+    },
+    {
+      "team": "Baltimore Orioles",
+      "match": "Baltimore Orioles vs New York Yankees",
+      "date": "2025-06-20",
+      "probability": 0.5185264978017788,
+      "odds": 254.0,
+      "amount": 25.0,
+      "potential_profit": 63.5,
+      "expected_profit": 20.88959505545743,
+      "roi": 83.55838022182972
+    },
+    {
+      "team": "Atlanta Braves",
+      "match": "Atlanta Braves vs Miami Marlins",
+      "date": "2025-06-20",
+      "probability": 0.6637176888511098,
+      "odds": -149.0,
+      "amount": 20.33213065490793,
+      "potential_profit": 13.645725271750289,
+      "expected_profit": 2.219573352849647,
+      "roi": 10.916580217400229
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "match": "Cincinnati Reds vs St. Louis Cardinals",
+      "date": "2025-06-20",
+      "probability": 0.6769792242949825,
+      "odds": -151.0,
+      "amount": 23.65223162255076,
+      "potential_profit": 15.663729551358122,
+      "expected_profit": 2.963857275373723,
+      "roi": 12.530983641086497
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "match": "New York Mets vs Philadelphia Phillies",
+      "date": "2025-06-20",
+      "probability": 0.7600041833964276,
+      "odds": -199.0,
+      "amount": 25.0,
+      "potential_profit": 12.562814070351758,
+      "expected_profit": 3.547895833609528,
+      "roi": 14.191583334438112
+    },
+    {
+      "team": "Minnesota Twins",
+      "match": "Milwaukee Brewers vs Minnesota Twins",
+      "date": "2025-06-20",
+      "probability": 0.7413393971018407,
+      "odds": -158.0,
+      "amount": 25.0,
+      "potential_profit": 15.822784810126583,
+      "expected_profit": 5.263538679157423,
+      "roi": 21.054154716629693
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "match": "Arizona Diamondbacks vs Colorado Rockies",
+      "date": "2025-06-20",
+      "probability": 0.7045753308247957,
+      "odds": -187.0,
+      "amount": 19.016399933395462,
+      "potential_profit": 10.169197825345165,
+      "expected_profit": 1.5470522627886325,
+      "roi": 8.135358260276131
+    },
+    {
+      "team": "Houston Astros",
+      "match": "Houston Astros vs Los Angeles Angels",
+      "date": "2025-06-20",
+      "probability": 0.7495055426666927,
+      "odds": -164.0,
+      "amount": 25.0,
+      "potential_profit": 15.243902439024392,
+      "expected_profit": 5.163027936586414,
+      "roi": 20.652111746345657
+    },
+    {
+      "team": "Oakland Athletics",
+      "match": "Cleveland Guardians vs Oakland Athletics",
+      "date": "2025-06-20",
+      "probability": 0.7149360014919134,
+      "odds": 101.0,
+      "amount": 25.0,
+      "potential_profit": 25.249999999999993,
+      "expected_profit": 10.925534074968644,
+      "roi": 43.702136299874574
+    },
+    {
+      "team": "Washington Nationals",
+      "match": "Washington Nationals vs Los Angeles Dodgers",
+      "date": "2025-06-20",
+      "probability": 0.622230508289267,
+      "odds": 167.0,
+      "amount": 25.0,
+      "potential_profit": 41.75,
+      "expected_profit": 16.53388642830857,
+      "roi": 66.13554571323428
+    },
+    {
+      "team": "Boston Red Sox",
+      "match": "Boston Red Sox vs San Francisco Giants",
+      "date": "2025-06-20",
+      "probability": 0.6236120628661515,
+      "odds": 104.0,
+      "amount": 25.0,
+      "potential_profit": 26.0,
+      "expected_profit": 6.804215206173724,
+      "roi": 27.216860824694898
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Detroit Tigers vs Tampa Bay Rays",
+      "date": "2025-06-21",
+      "probability": 0.8381092838859674,
+      "odds": -126.0,
+      "amount": 25.0,
+      "potential_profit": 19.84126984126984,
+      "expected_profit": 12.58188455520409,
+      "roi": 50.32753822081636
+    },
+    {
+      "team": "Baltimore Orioles",
+      "match": "Baltimore Orioles vs New York Yankees",
+      "date": "2025-06-21",
+      "probability": 0.5181414591157345,
+      "odds": 140.0,
+      "amount": 21.744598381943103,
+      "potential_profit": 30.442437734720343,
+      "expected_profit": 5.295668658470429,
+      "roi": 24.353950187776277
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "match": "Cincinnati Reds vs St. Louis Cardinals",
+      "date": "2025-06-21",
+      "probability": 0.670261833269742,
+      "odds": -187.0,
+      "amount": 6.706432685519928,
+      "potential_profit": 3.5863276393154693,
+      "expected_profit": 0.19241171921031028,
+      "roi": 2.869062111452375
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Texas Rangers vs Pittsburgh Pirates",
+      "date": "2025-06-21",
+      "probability": 0.7071216424758194,
+      "odds": -112.0,
+      "amount": 25.0,
+      "potential_profit": 22.32142857142857,
+      "expected_profit": 8.46200629573074,
+      "roi": 33.84802518292296
+    },
+    {
+      "team": "Atlanta Braves",
+      "match": "Atlanta Braves vs Miami Marlins",
+      "date": "2025-06-21",
+      "probability": 0.6636686340181449,
+      "odds": -157.0,
+      "amount": 16.953548678329035,
+      "potential_profit": 10.798438648617218,
+      "expected_profit": 1.4645748422342526,
+      "roi": 8.638750918893773
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "match": "New York Mets vs Philadelphia Phillies",
+      "date": "2025-06-21",
+      "probability": 0.7441060177474426,
+      "odds": -121.0,
+      "amount": 25.0,
+      "potential_profit": 20.661157024793386,
+      "expected_profit": 8.97674171945967,
+      "roi": 35.90696687783868
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "match": "Arizona Diamondbacks vs Colorado Rockies",
+      "date": "2025-06-21",
+      "probability": 0.702617698523381,
+      "odds": -200.0,
+      "amount": 13.48163694626786,
+      "potential_profit": 6.74081847313393,
+      "expected_profit": 0.7270181390038984,
+      "roi": 5.392654778507144
+    },
+    {
+      "team": "Houston Astros",
+      "match": "Houston Astros vs Los Angeles Angels",
+      "date": "2025-06-21",
+      "probability": 0.7482219707969435,
+      "odds": -123.0,
+      "amount": 25.0,
+      "potential_profit": 20.32520325203252,
+      "expected_profit": 8.913312904007805,
+      "roi": 35.65325161603122
+    },
+    {
+      "team": "Oakland Athletics",
+      "match": "Cleveland Guardians vs Oakland Athletics",
+      "date": "2025-06-21",
+      "probability": 0.714543876254237,
+      "odds": -105.0,
+      "amount": 25.0,
+      "potential_profit": 23.809523809523807,
+      "expected_profit": 9.876546340980614,
+      "roi": 39.506185363922455
+    },
+    {
+      "team": "Washington Nationals",
+      "match": "Washington Nationals vs Los Angeles Dodgers",
+      "date": "2025-06-21",
+      "probability": 0.6441636319010826,
+      "odds": 223.0,
+      "amount": 25.0,
+      "potential_profit": 55.75,
+      "expected_profit": 27.01621327601242,
+      "roi": 108.06485310404967
+    }
+  ],
+  "parlays": [
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Baltimore Orioles",
+        "St. Louis Cardinals"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2925954708726307,
+      "odds": 10.037326203208556,
+      "boosted_odds": 11.844791443850267,
+      "amount": 25.0,
+      "potential_profit": 271.1197860962567,
+      "expected_profit": 61.64330824753691,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Houston Astros",
+        "Tampa Bay Rays",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.44136164082064244,
+      "odds": 4.331010452961673,
+      "boosted_odds": 4.9972125435540065,
+      "amount": 25.0,
+      "potential_profit": 99.93031358885017,
+      "expected_profit": 30.139448193812314,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "St. Louis Cardinals",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.24815426024186676,
+      "odds": 7.191443850267379,
+      "boosted_odds": 8.429732620320854,
+      "amount": 18.370009363562094,
+      "potential_profit": 136.48425780405682,
+      "expected_profit": 20.05773675071477,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3579217838086559,
+      "odds": 8.490342698363694,
+      "boosted_odds": 9.988411238036432,
+      "amount": 25.0,
+      "potential_profit": 224.7102809509108,
+      "expected_profit": 64.37674919331063,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Arizona Diamondbacks",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.37971883325673955,
+      "odds": 6.635609756097561,
+      "boosted_odds": 7.762731707317073,
+      "amount": 25.0,
+      "potential_profit": 169.06829268292682,
+      "expected_profit": 48.69138566968842,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Boston Red Sox",
+        "St. Louis Cardinals",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2936825095901192,
+      "odds": 4.696363636363636,
+      "boosted_odds": 5.435636363636363,
+      "amount": 16.805686929753872,
+      "potential_profit": 74.54391606150462,
+      "expected_profit": 10.022093726779984,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Washington Nationals",
+        "Baltimore Orioles"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2390103595798022,
+      "odds": 10.463696202531645,
+      "boosted_odds": 12.356435443037974,
+      "amount": 21.500101067833228,
+      "potential_profit": 244.16450979563984,
+      "expected_profit": 41.9964931022737,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Boston Red Sox",
+        "Oakland Athletics",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2870381424348803,
+      "odds": 12.86462857142857,
+      "boosted_odds": 15.237554285714284,
+      "amount": 25.0,
+      "potential_profit": 355.9388571428571,
+      "expected_profit": 84.34398193555194,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Philadelphia Phillies",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3981249896885957,
+      "odds": 7.411461545013202,
+      "boosted_odds": 8.693753854015842,
+      "amount": 25.0,
+      "potential_profit": 192.34384635039606,
+      "expected_profit": 61.530016587131165,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3573088219196315,
+      "odds": 9.562355665328806,
+      "boosted_odds": 11.274826798394566,
+      "amount": 25.0,
+      "potential_profit": 256.87066995986413,
+      "expected_profit": 75.71487701705631,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Arizona Diamondbacks",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3012361076431935,
+      "odds": 8.284301403294691,
+      "boosted_odds": 9.74116168395363,
+      "amount": 25.0,
+      "potential_profit": 218.52904209884073,
+      "expected_profit": 48.35974073993018,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Pittsburgh Pirates",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.33301032952013093,
+      "odds": 4.357620320855615,
+      "boosted_odds": 5.029144385026737,
+      "amount": 20.933632689164366,
+      "potential_profit": 84.34462860775876,
+      "expected_profit": 14.125115796630455,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Philadelphia Phillies",
+        "Tampa Bay Rays",
+        "Pittsburgh Pirates"
+      ],
+      "picks": [
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.4504128414505839,
+      "odds": 5.101217538941874,
+      "boosted_odds": 5.921461046730249,
+      "amount": 25.0,
+      "potential_profit": 123.03652616825622,
+      "expected_profit": 41.677552389918006,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Oakland Athletics",
+        "Boston Red Sox"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.23118126142779538,
+      "odds": 14.515415999999998,
+      "boosted_odds": 17.218499199999997,
+      "amount": 22.972180780986548,
+      "potential_profit": 372.57429561868565,
+      "expected_profit": 68.47075258640936,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "St. Louis Cardinals",
+        "Pittsburgh Pirates"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.317726078680185,
+      "odds": 5.258086073666766,
+      "boosted_odds": 6.109703288400119,
+      "amount": 23.02511551550141,
+      "potential_profit": 117.65150846535013,
+      "expected_profit": 21.67151658390143,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Atlanta Braves",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.4157557497956307,
+      "odds": 5.523506387716883,
+      "boosted_odds": 6.428207665260259,
+      "amount": 25.0,
+      "potential_profit": 135.70519163150647,
+      "expected_profit": 41.81410744280749,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Houston Astros",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.418772636472799,
+      "odds": 4.8681957854880284,
+      "boosted_odds": 5.641834942585634,
+      "amount": 25.0,
+      "potential_profit": 116.04587356464084,
+      "expected_profit": 34.06615233627372,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Baltimore Orioles",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.28071033299556114,
+      "odds": 13.904429268292683,
+      "boosted_odds": 16.485315121951217,
+      "amount": 25.0,
+      "potential_profit": 387.1328780487804,
+      "expected_profit": 90.68995743549213,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Washington Nationals",
+        "Boston Red Sox",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2772647824568415,
+      "odds": 10.63422857142857,
+      "boosted_odds": 12.561074285714284,
+      "amount": 25.0,
+      "potential_profit": 289.0268571428571,
+      "expected_profit": 62.06858823131991,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Oakland Athletics",
+        "Tampa Bay Rays",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.39766659548193806,
+      "odds": 5.901568092205033,
+      "boosted_odds": 6.88188171064604,
+      "amount": 25.0,
+      "potential_profit": 147.04704276615098,
+      "expected_profit": 43.417361759550666,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Baltimore Orioles",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2786880631765712,
+      "odds": 15.776112396694213,
+      "boosted_odds": 18.731334876033056,
+      "amount": 25.0,
+      "potential_profit": 443.2833719008264,
+      "expected_profit": 105.50498593283531,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Oakland Athletics",
+        "Baltimore Orioles"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.27462027097149283,
+      "odds": 7.8771645569620246,
+      "boosted_odds": 9.252597468354429,
+      "amount": 23.340391159550098,
+      "potential_profit": 192.61885299370522,
+      "expected_profit": 35.96639498861566,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Tampa Bay Rays",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.41392233421342256,
+      "odds": 5.474669117744162,
+      "boosted_odds": 6.369602941292995,
+      "amount": 25.0,
+      "potential_profit": 134.24007353232489,
+      "expected_profit": 40.913022936816965,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Oakland Athletics",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.34271337639722105,
+      "odds": 8.028221656050953,
+      "boosted_odds": 9.433865987261143,
+      "amount": 25.0,
+      "potential_profit": 210.84664968152856,
+      "expected_profit": 55.82780162432923,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Philadelphia Phillies",
+        "Pittsburgh Pirates"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3638190649838959,
+      "odds": 4.727512919374545,
+      "boosted_odds": 5.473015503249454,
+      "amount": 25.0,
+      "potential_profit": 111.82538758123634,
+      "expected_profit": 24.779684575864568,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "St. Louis Cardinals",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.33619340504318124,
+      "odds": 5.036276951062323,
+      "boosted_odds": 5.843532341274788,
+      "amount": 24.89291304699068,
+      "potential_profit": 120.56962941164049,
+      "expected_profit": 24.010634408414855,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Houston Astros",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.3619384308206295,
+      "odds": 5.883843161988858,
+      "boosted_odds": 6.860611794386629,
+      "amount": 25.0,
+      "potential_profit": 146.51529485966572,
+      "expected_profit": 37.07797668324499,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Arizona Diamondbacks",
+        "Baltimore Orioles",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.2716505532042504,
+      "odds": 6.727573253193087,
+      "boosted_odds": 7.8730879038317045,
+      "amount": 20.709917806135223,
+      "potential_profit": 142.34108556269683,
+      "expected_profit": 23.5829774595161,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Philadelphia Phillies",
+        "Arizona Diamondbacks",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.33319211636824,
+      "odds": 6.157007228656652,
+      "boosted_odds": 7.188408674387982,
+      "amount": 25.0,
+      "potential_profit": 154.71021685969956,
+      "expected_profit": 34.878027488478644,
+      "adjusted_amount": 23.881032702050945
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Atlanta Braves",
+        "Arizona Diamondbacks",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.1726424630293841,
+      "odds": 11.505368516833483,
+      "boosted_odds": 14.656979071883528,
+      "amount": 14.007645463582728,
+      "potential_profit": 191.30212094251357,
+      "expected_profit": 21.437538292753235,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "St. Louis Cardinals",
+        "Philadelphia Phillies",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2531109815139903,
+      "odds": 10.25954921111946,
+      "boosted_odds": 13.037413974455298,
+      "amount": 23.882960372128704,
+      "potential_profit": 287.48908093482413,
+      "expected_profit": 54.92872261908886,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Washington Nationals",
+        "Tampa Bay Rays",
+        "St. Louis Cardinals"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2591275106784056,
+      "odds": 12.001956948487104,
+      "boosted_odds": 15.302544033033236,
+      "amount": 25.0,
+      "potential_profit": 357.5636008258309,
+      "expected_profit": 74.1327535581648,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Arizona Diamondbacks",
+        "Boston Red Sox",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.20443287596498003,
+      "odds": 24.675320727272727,
+      "boosted_odds": 31.777916945454546,
+      "amount": 22.323030190268014,
+      "potential_profit": 687.0563691669433,
+      "expected_profit": 122.69744057063681,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Minnesota Twins",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2375590191389477,
+      "odds": 14.188559274446707,
+      "boosted_odds": 18.14512705678072,
+      "amount": 24.136147947436218,
+      "potential_profit": 413.8173232200511,
+      "expected_profit": 79.9036490916095,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Washington Nationals",
+        "Arizona Diamondbacks",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.24250345103997809,
+      "odds": 11.856728928681692,
+      "boosted_odds": 15.1137476072862,
+      "amount": 23.604077625866026,
+      "potential_profit": 333.1419941142644,
+      "expected_profit": 62.90807591607119,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Philadelphia Phillies",
+        "Minnesota Twins",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.27202205302329024,
+      "odds": 12.75684656688816,
+      "boosted_odds": 16.28390053695461,
+      "amount": 25.0,
+      "potential_profit": 382.0975134238653,
+      "expected_profit": 85.7395013822363,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Tampa Bay Rays",
+        "St. Louis Cardinals",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.29004643016355,
+      "odds": 11.500093650415401,
+      "boosted_odds": 14.650121745540021,
+      "amount": 25.0,
+      "potential_profit": 341.2530436385005,
+      "expected_profit": 81.23038784388197,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Philadelphia Phillies",
+        "Houston Astros",
+        "Baltimore Orioles"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.19980875619934274,
+      "odds": 9.64908665439944,
+      "boosted_odds": 12.243812650719272,
+      "amount": 16.080188075544235,
+      "potential_profit": 180.80262210974948,
+      "expected_profit": 23.25872134461059,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Atlanta Braves",
+        "St. Louis Cardinals",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2320269846340667,
+      "odds": 13.623720858704829,
+      "boosted_odds": 17.410837116316277,
+      "amount": 23.153785624313812,
+      "potential_profit": 379.97300450671935,
+      "expected_profit": 70.38250791500005,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Oakland Athletics",
+        "Atlanta Braves",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2988829018029232,
+      "odds": 11.020562610754034,
+      "boosted_odds": 14.026731393980244,
+      "amount": 25.0,
+      "potential_profit": 325.6682848495061,
+      "expected_profit": 79.80875454607444,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Arizona Diamondbacks",
+        "Houston Astros",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.29505686888319427,
+      "odds": 7.471509039759701,
+      "boosted_odds": 9.412961751687611,
+      "amount": 25.0,
+      "potential_profit": 210.32404379219028,
+      "expected_profit": 44.433975534255346,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "St. Louis Cardinals",
+        "Pittsburgh Pirates",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.22477650468535573,
+      "odds": 9.478416076619785,
+      "boosted_odds": 12.021940899605722,
+      "amount": 19.305241590981815,
+      "potential_profit": 212.7812318684119,
+      "expected_profit": 32.86234469797129,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Baltimore Orioles",
+        "Pittsburgh Pirates",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.22056984628974377,
+      "odds": 24.16908163265306,
+      "boosted_odds": 31.11980612244898,
+      "amount": 24.336523072041615,
+      "potential_profit": 733.0113566243999,
+      "expected_profit": 142.71158234046587,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Baltimore Orioles",
+        "St. Louis Cardinals",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.18749499844111284,
+      "odds": 21.33987878787879,
+      "boosted_odds": 27.441842424242427,
+      "amount": 19.595874485821504,
+      "potential_profit": 518.1510253193248,
+      "expected_profit": 81.22897965485767,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Philadelphia Phillies",
+        "Oakland Athletics",
+        "Boston Red Sox",
+        "Baltimore Orioles"
+      ],
+      "picks": [
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.17556825840311727,
+      "odds": 14.786166030150753,
+      "boosted_odds": 18.92201583919598,
+      "amount": 16.195899691186835,
+      "potential_profit": 290.2631707954797,
+      "expected_profit": 37.60858558599537,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Oakland Athletics",
+        "Pittsburgh Pirates",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.1961384360524534,
+      "odds": 24.41838344947735,
+      "boosted_odds": 31.443898484320556,
+      "amount": 21.216718822854087,
+      "potential_profit": 645.9196340133429,
+      "expected_profit": 109.63436205617533,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Boston Red Sox",
+        "Philadelphia Phillies",
+        "Arizona Diamondbacks",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2329685577065486,
+      "odds": 10.911711924439196,
+      "boosted_odds": 13.885225501770956,
+      "amount": 21.68007224893553,
+      "potential_profit": 279.3526198222209,
+      "expected_profit": 48.451079845401345,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Arizona Diamondbacks",
+        "Washington Nationals",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.21651946396993832,
+      "odds": 12.507529434900336,
+      "boosted_odds": 15.959788265370438,
+      "amount": 20.518378642230342,
+      "potential_profit": 306.9506000364649,
+      "expected_profit": 50.385029088063916,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Washington Nationals",
+        "Pittsburgh Pirates",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.22286980249993607,
+      "odds": 15.230902058287377,
+      "boosted_odds": 19.50017267577359,
+      "amount": 22.607894609991767,
+      "potential_profit": 418.24995412053875,
+      "expected_profit": 75.64600706712827,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Boston Red Sox",
+        "Tampa Bay Rays",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.20166054208133757,
+      "odds": 23.658010861865407,
+      "boosted_odds": 30.45541412042503,
+      "amount": 21.819653000868854,
+      "potential_profit": 642.7069151045669,
+      "expected_profit": 112.1891349507242,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Philadelphia Phillies",
+        "Tampa Bay Rays",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.2191991580345546,
+      "odds": 15.616824827809044,
+      "boosted_odds": 20.001872276151758,
+      "amount": 22.26355324926809,
+      "potential_profit": 423.0491952558957,
+      "expected_profit": 75.34862628511716,
+      "adjusted_amount": 21.89671112333274
+    },
+    {
+      "teams": [
+        "Washington Nationals",
+        "Tampa Bay Rays",
+        "St. Louis Cardinals",
+        "Pittsburgh Pirates",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1766117011518735,
+      "odds": 27.162631749669558,
+      "boosted_odds": 37.62768444953738,
+      "amount": 19.266469631791033,
+      "potential_profit": 705.6861701298366,
+      "expected_profit": 108.76864933105134,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Philadelphia Phillies",
+        "St. Louis Cardinals",
+        "Arizona Diamondbacks",
+        "Houston Astros",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.19135460424864809,
+      "odds": 12.2437365078512,
+      "boosted_odds": 16.741231110991677,
+      "amount": 17.49792978660604,
+      "potential_profit": 275.43895673487094,
+      "expected_profit": 38.556892203542326,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Atlanta Braves",
+        "Philadelphia Phillies",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.16113434161477436,
+      "odds": 29.103111448981753,
+      "boosted_odds": 40.34435602857445,
+      "amount": 17.476652949095516,
+      "potential_profit": 687.6076558170497,
+      "expected_profit": 96.13664292684557,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Arizona Diamondbacks",
+        "Washington Nationals",
+        "Tampa Bay Rays",
+        "Houston Astros"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1985740247124023,
+      "odds": 32.51464551396315,
+      "boosted_odds": 45.12050371954841,
+      "amount": 22.55119318003991,
+      "potential_profit": 994.9700025802056,
+      "expected_profit": 179.5020858922482,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Minnesota Twins",
+        "Arizona Diamondbacks",
+        "St. Louis Cardinals",
+        "Houston Astros",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1871752242359128,
+      "odds": 13.614682347342484,
+      "boosted_odds": 18.660555286279475,
+      "amount": 17.64379417625578,
+      "potential_profit": 311.5992025095011,
+      "expected_profit": 43.982337556504646,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Baltimore Orioles",
+        "Arizona Diamondbacks",
+        "Houston Astros",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7482219707969435,
+          "odds": -123.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.11646018609789706,
+      "odds": 35.230422655099034,
+      "boosted_odds": 48.922591717138644,
+      "amount": 12.252921762601103,
+      "potential_profit": 587.1917669711754,
+      "expected_profit": 57.55851824273049,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Houston Astros",
+        "Boston Red Sox",
+        "Baltimore Orioles",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.11960681040175777,
+      "odds": 24.05589226030149,
+      "boosted_odds": 33.278249164422085,
+      "amount": 11.541461028176117,
+      "potential_profit": 372.5381547889358,
+      "expected_profit": 34.39707676004116,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Baltimore Orioles",
+        "St. Louis Cardinals",
+        "Minnesota Twins",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.13206722640654336,
+      "odds": 35.167681750356266,
+      "boosted_odds": 48.83475445049877,
+      "amount": 14.240353679878542,
+      "potential_profit": 681.1838215652466,
+      "expected_profit": 77.6023883208031,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Atlanta Braves",
+        "Tampa Bay Rays",
+        "St. Louis Cardinals",
+        "Oakland Athletics",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.17161436480068448,
+      "odds": 29.010709298158957,
+      "boosted_odds": 40.214993017422536,
+      "amount": 18.811269708523888,
+      "potential_profit": 737.6838102686163,
+      "expected_profit": 111.01415291659603,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "St. Louis Cardinals",
+        "Philadelphia Phillies",
+        "Minnesota Twins",
+        "Baltimore Orioles",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.13885957548755193,
+      "odds": 14.681823738526653,
+      "boosted_odds": 20.154553233937314,
+      "amount": 11.737762062618991,
+      "potential_profit": 224.8315882757253,
+      "expected_profit": 21.11215749872945,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "St. Louis Cardinals",
+        "Minnesota Twins",
+        "Arizona Diamondbacks",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.22151688008507683,
+      "odds": 14.056625456384449,
+      "boosted_odds": 19.279275638938227,
+      "amount": 22.366073569065975,
+      "potential_profit": 408.83562372972784,
+      "expected_profit": 73.15238110395254,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "St. Louis Cardinals",
+        "Baltimore Orioles",
+        "Pittsburgh Pirates",
+        "Arizona Diamondbacks"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.6769792242949825,
+          "odds": -151.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.702617698523381,
+          "odds": -200.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.14671991075358598,
+      "odds": 20.926259160078892,
+      "boosted_odds": 28.896762824110446,
+      "amount": 14.516605757483317,
+      "potential_profit": 404.96630782762827,
+      "expected_profit": 47.02988988637848,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Houston Astros",
+        "Boston Red Sox",
+        "Atlanta Braves",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1667201381976747,
+      "odds": 23.95633882525739,
+      "boosted_odds": 33.13887435536034,
+      "amount": 17.599082898054103,
+      "potential_profit": 565.6147140301318,
+      "expected_profit": 79.63440192460364,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Minnesota Twins",
+        "Houston Astros",
+        "Oakland Athletics",
+        "St. Louis Cardinals"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Minnesota Twins",
+          "match": "Milwaukee Brewers vs Minnesota Twins",
+          "probability": 0.7413393971018407,
+          "odds": -158.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "St. Louis Cardinals",
+          "match": "Cincinnati Reds vs St. Louis Cardinals",
+          "probability": 0.670261833269742,
+          "odds": -187.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.22415877319407473,
+      "odds": 14.98074914497015,
+      "boosted_odds": 20.57304880295821,
+      "amount": 23.065066516279575,
+      "potential_profit": 451.4536725666174,
+      "expected_profit": 83.30247189414185,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Arizona Diamondbacks",
+        "Houston Astros",
+        "Washington Nationals",
+        "Boston Red Sox",
+        "Philadelphia Phillies"
+      ],
+      "picks": [
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7441060177474426,
+          "odds": -121.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.15247649746531808,
+      "odds": 24.578122314049587,
+      "boosted_odds": 34.00937123966942,
+      "amount": 15.850157282730908,
+      "potential_profit": 523.2037259528145,
+      "expected_profit": 66.3428907781036,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Atlanta Braves",
+        "Oakland Athletics",
+        "Boston Red Sox",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.17913411976549148,
+      "odds": 29.989348003835083,
+      "boosted_odds": 41.58508720536911,
+      "amount": 19.86353989850428,
+      "potential_profit": 806.1634989881248,
+      "expected_profit": 128.10608661494743,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Atlanta Braves",
+        "Arizona Diamondbacks",
+        "Houston Astros",
+        "Oakland Athletics"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7222916526904078,
+          "odds": 144.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6637176888511098,
+          "odds": -149.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Arizona Diamondbacks",
+          "match": "Arizona Diamondbacks vs Colorado Rockies",
+          "probability": 0.7045753308247957,
+          "odds": -187.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Houston Astros",
+          "match": "Houston Astros vs Los Angeles Angels",
+          "probability": 0.7495055426666927,
+          "odds": -164.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.714543876254237,
+          "odds": -105.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.18089525359774766,
+      "odds": 19.66834583497828,
+      "boosted_odds": 27.13568416896959,
+      "amount": 18.694347372082987,
+      "potential_profit": 488.58955866176757,
+      "expected_profit": 73.0709034559664,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Baltimore Orioles",
+        "Philadelphia Phillies",
+        "Washington Nationals",
+        "Boston Red Sox"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Boston Red Sox",
+          "match": "Boston Red Sox vs San Francisco Giants",
+          "probability": 0.6236120628661515,
+          "odds": 104.0,
+          "date": "2025-06-20"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1287374494081603,
+      "odds": 53.522610693467335,
+      "boosted_odds": 74.53165497085426,
+      "amount": 14.611080024860746,
+      "potential_profit": 1074.3768951396012,
+      "expected_profit": 125.58245433396907,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Tampa Bay Rays",
+        "Philadelphia Phillies",
+        "Oakland Athletics",
+        "Baltimore Orioles",
+        "Pittsburgh Pirates"
+      ],
+      "picks": [
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8418838037855777,
+          "odds": -118.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5181414591157345,
+          "odds": 140.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.16760145244458052,
+      "odds": 25.346484699526684,
+      "boosted_odds": 35.085078579337356,
+      "amount": 17.897531458192322,
+      "potential_profit": 610.0387661286476,
+      "expected_profit": 87.3455040600344,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Tampa Bay Rays",
+        "Pittsburgh Pirates",
+        "Atlanta Braves",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Detroit Tigers vs Tampa Bay Rays",
+          "probability": 0.8381092838859674,
+          "odds": -126.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.13137515163582256,
+      "odds": 63.546990469691046,
+      "boosted_odds": 88.56578665756746,
+      "amount": 15.181933575087578,
+      "potential_profit": 1329.4179564854792,
+      "expected_profit": 161.46508087112971,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Philadelphia Phillies",
+        "Oakland Athletics",
+        "Washington Nationals",
+        "Atlanta Braves"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Philadelphia Phillies",
+          "match": "New York Mets vs Philadelphia Phillies",
+          "probability": 0.7600041833964276,
+          "odds": -199.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.622230508289267,
+          "odds": 167.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.1163474041889127,
+      "odds": 46.72638291694138,
+      "boosted_odds": 65.01693608371794,
+      "amount": 12.817998140898728,
+      "potential_profit": 820.5689677071292,
+      "expected_profit": 84.14441202039337,
+      "adjusted_amount": 16.743750756215437
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Oakland Athletics",
+        "Pittsburgh Pirates",
+        "Atlanta Braves",
+        "Washington Nationals"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Baltimore Orioles vs New York Yankees",
+          "probability": 0.5185264978017788,
+          "odds": 254.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Oakland Athletics",
+          "match": "Cleveland Guardians vs Oakland Athletics",
+          "probability": 0.7149360014919134,
+          "odds": 101.0,
+          "date": "2025-06-20"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Texas Rangers vs Pittsburgh Pirates",
+          "probability": 0.7071216424758194,
+          "odds": -112.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Atlanta Braves",
+          "match": "Atlanta Braves vs Miami Marlins",
+          "probability": 0.6636686340181449,
+          "odds": -157.0,
+          "date": "2025-06-21"
+        },
+        {
+          "team": "Washington Nationals",
+          "match": "Washington Nationals vs Los Angeles Dodgers",
+          "probability": 0.6441636319010826,
+          "odds": 223.0,
+          "date": "2025-06-21"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.11206751602895752,
+      "odds": 71.21199471838032,
+      "boosted_odds": 99.29679260573245,
+      "amount": 12.879292177912266,
+      "potential_profit": 1265.9931121208742,
+      "expected_profit": 130.44076148983345,
+      "adjusted_amount": 16.743750756215437
+    }
+  ],
+  "total_investment": 2039.527088612452,
+  "expected_profit": 5014.902303824021,
+  "max_loss": 2039.527088612452,
+  "pick_usage": {
+    "3_team": [
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Minnesota Twins",
+        "match": "Milwaukee Brewers vs Minnesota Twins",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Boston Red Sox",
+        "match": "Boston Red Sox vs San Francisco Giants",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-20",
+        "count": 3
+      }
+    ],
+    "4_team": [
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Minnesota Twins",
+        "match": "Milwaukee Brewers vs Minnesota Twins",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Boston Red Sox",
+        "match": "Boston Red Sox vs San Francisco Giants",
+        "date": "2025-06-20",
+        "count": 4
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-21",
+        "count": 4
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-21",
+        "count": 4
+      }
+    ],
+    "5_team": [
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Minnesota Twins",
+        "match": "Milwaukee Brewers vs Minnesota Twins",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Boston Red Sox",
+        "match": "Boston Red Sox vs San Francisco Giants",
+        "date": "2025-06-20",
+        "count": 5
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Detroit Tigers vs Tampa Bay Rays",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Baltimore Orioles vs New York Yankees",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "St. Louis Cardinals",
+        "match": "Cincinnati Reds vs St. Louis Cardinals",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Texas Rangers vs Pittsburgh Pirates",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Atlanta Braves",
+        "match": "Atlanta Braves vs Miami Marlins",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Philadelphia Phillies",
+        "match": "New York Mets vs Philadelphia Phillies",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Arizona Diamondbacks",
+        "match": "Arizona Diamondbacks vs Colorado Rockies",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Houston Astros",
+        "match": "Houston Astros vs Los Angeles Angels",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Oakland Athletics",
+        "match": "Cleveland Guardians vs Oakland Athletics",
+        "date": "2025-06-21",
+        "count": 5
+      },
+      {
+        "team": "Washington Nationals",
+        "match": "Washington Nationals vs Los Angeles Dodgers",
+        "date": "2025-06-21",
+        "count": 5
+      }
+    ]
+  },
+  "all_single_bets": [
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Texas Rangers vs Pittsburgh Pirates",
+      "date": "2025-06-20",
+      "probability": 0.7222916526904078,
+      "odds": 144.0,
+      "amount": 25.0,
+      "potential_profit": 36.0,
+      "expected_profit": 19.059790814114876,
+      "roi": 76.2391632564595
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Detroit Tigers vs Tampa Bay Rays",
+      "date": "2025-06-20",
+      "probability": 0.8418838037855777,
+      "odds": -118.0,
+      "amount": 25.0,
+      "potential_profit": 21.1864406779661,
+      "expected_profit": 13.883616361283039,
+      "roi": 55.534465445132156
+    },
+    {
+      "team": "Baltimore Orioles",
+      "match": "Baltimore Orioles vs New York Yankees",
+      "date": "2025-06-20",
+      "probability": 0.5185264978017788,
+      "odds": 254.0,
+      "amount": 25.0,
+      "potential_profit": 63.5,
+      "expected_profit": 20.88959505545743,
+      "roi": 83.55838022182972
+    },
+    {
+      "team": "Atlanta Braves",
+      "match": "Atlanta Braves vs Miami Marlins",
+      "date": "2025-06-20",
+      "probability": 0.6637176888511098,
+      "odds": -149.0,
+      "amount": 20.33213065490793,
+      "potential_profit": 13.645725271750289,
+      "expected_profit": 2.219573352849647,
+      "roi": 10.916580217400229
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "match": "Cincinnati Reds vs St. Louis Cardinals",
+      "date": "2025-06-20",
+      "probability": 0.6769792242949825,
+      "odds": -151.0,
+      "amount": 23.65223162255076,
+      "potential_profit": 15.663729551358122,
+      "expected_profit": 2.963857275373723,
+      "roi": 12.530983641086497
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "match": "New York Mets vs Philadelphia Phillies",
+      "date": "2025-06-20",
+      "probability": 0.7600041833964276,
+      "odds": -199.0,
+      "amount": 25.0,
+      "potential_profit": 12.562814070351758,
+      "expected_profit": 3.547895833609528,
+      "roi": 14.191583334438112
+    },
+    {
+      "team": "Minnesota Twins",
+      "match": "Milwaukee Brewers vs Minnesota Twins",
+      "date": "2025-06-20",
+      "probability": 0.7413393971018407,
+      "odds": -158.0,
+      "amount": 25.0,
+      "potential_profit": 15.822784810126583,
+      "expected_profit": 5.263538679157423,
+      "roi": 21.054154716629693
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "match": "Arizona Diamondbacks vs Colorado Rockies",
+      "date": "2025-06-20",
+      "probability": 0.7045753308247957,
+      "odds": -187.0,
+      "amount": 19.016399933395462,
+      "potential_profit": 10.169197825345165,
+      "expected_profit": 1.5470522627886325,
+      "roi": 8.135358260276131
+    },
+    {
+      "team": "Houston Astros",
+      "match": "Houston Astros vs Los Angeles Angels",
+      "date": "2025-06-20",
+      "probability": 0.7495055426666927,
+      "odds": -164.0,
+      "amount": 25.0,
+      "potential_profit": 15.243902439024392,
+      "expected_profit": 5.163027936586414,
+      "roi": 20.652111746345657
+    },
+    {
+      "team": "Oakland Athletics",
+      "match": "Cleveland Guardians vs Oakland Athletics",
+      "date": "2025-06-20",
+      "probability": 0.7149360014919134,
+      "odds": 101.0,
+      "amount": 25.0,
+      "potential_profit": 25.249999999999993,
+      "expected_profit": 10.925534074968644,
+      "roi": 43.702136299874574
+    },
+    {
+      "team": "Washington Nationals",
+      "match": "Washington Nationals vs Los Angeles Dodgers",
+      "date": "2025-06-20",
+      "probability": 0.622230508289267,
+      "odds": 167.0,
+      "amount": 25.0,
+      "potential_profit": 41.75,
+      "expected_profit": 16.53388642830857,
+      "roi": 66.13554571323428
+    },
+    {
+      "team": "Boston Red Sox",
+      "match": "Boston Red Sox vs San Francisco Giants",
+      "date": "2025-06-20",
+      "probability": 0.6236120628661515,
+      "odds": 104.0,
+      "amount": 25.0,
+      "potential_profit": 26.0,
+      "expected_profit": 6.804215206173724,
+      "roi": 27.216860824694898
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Detroit Tigers vs Tampa Bay Rays",
+      "date": "2025-06-21",
+      "probability": 0.8381092838859674,
+      "odds": -126.0,
+      "amount": 25.0,
+      "potential_profit": 19.84126984126984,
+      "expected_profit": 12.58188455520409,
+      "roi": 50.32753822081636
+    },
+    {
+      "team": "Baltimore Orioles",
+      "match": "Baltimore Orioles vs New York Yankees",
+      "date": "2025-06-21",
+      "probability": 0.5181414591157345,
+      "odds": 140.0,
+      "amount": 21.744598381943103,
+      "potential_profit": 30.442437734720343,
+      "expected_profit": 5.295668658470429,
+      "roi": 24.353950187776277
+    },
+    {
+      "team": "St. Louis Cardinals",
+      "match": "Cincinnati Reds vs St. Louis Cardinals",
+      "date": "2025-06-21",
+      "probability": 0.670261833269742,
+      "odds": -187.0,
+      "amount": 6.706432685519928,
+      "potential_profit": 3.5863276393154693,
+      "expected_profit": 0.19241171921031028,
+      "roi": 2.869062111452375
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Texas Rangers vs Pittsburgh Pirates",
+      "date": "2025-06-21",
+      "probability": 0.7071216424758194,
+      "odds": -112.0,
+      "amount": 25.0,
+      "potential_profit": 22.32142857142857,
+      "expected_profit": 8.46200629573074,
+      "roi": 33.84802518292296
+    },
+    {
+      "team": "Atlanta Braves",
+      "match": "Atlanta Braves vs Miami Marlins",
+      "date": "2025-06-21",
+      "probability": 0.6636686340181449,
+      "odds": -157.0,
+      "amount": 16.953548678329035,
+      "potential_profit": 10.798438648617218,
+      "expected_profit": 1.4645748422342526,
+      "roi": 8.638750918893773
+    },
+    {
+      "team": "Philadelphia Phillies",
+      "match": "New York Mets vs Philadelphia Phillies",
+      "date": "2025-06-21",
+      "probability": 0.7441060177474426,
+      "odds": -121.0,
+      "amount": 25.0,
+      "potential_profit": 20.661157024793386,
+      "expected_profit": 8.97674171945967,
+      "roi": 35.90696687783868
+    },
+    {
+      "team": "Arizona Diamondbacks",
+      "match": "Arizona Diamondbacks vs Colorado Rockies",
+      "date": "2025-06-21",
+      "probability": 0.702617698523381,
+      "odds": -200.0,
+      "amount": 13.48163694626786,
+      "potential_profit": 6.74081847313393,
+      "expected_profit": 0.7270181390038984,
+      "roi": 5.392654778507144
+    },
+    {
+      "team": "Houston Astros",
+      "match": "Houston Astros vs Los Angeles Angels",
+      "date": "2025-06-21",
+      "probability": 0.7482219707969435,
+      "odds": -123.0,
+      "amount": 25.0,
+      "potential_profit": 20.32520325203252,
+      "expected_profit": 8.913312904007805,
+      "roi": 35.65325161603122
+    },
+    {
+      "team": "Oakland Athletics",
+      "match": "Cleveland Guardians vs Oakland Athletics",
+      "date": "2025-06-21",
+      "probability": 0.714543876254237,
+      "odds": -105.0,
+      "amount": 25.0,
+      "potential_profit": 23.809523809523807,
+      "expected_profit": 9.876546340980614,
+      "roi": 39.506185363922455
+    },
+    {
+      "team": "Washington Nationals",
+      "match": "Washington Nationals vs Los Angeles Dodgers",
+      "date": "2025-06-21",
+      "probability": 0.6441636319010826,
+      "odds": 223.0,
+      "amount": 25.0,
+      "potential_profit": 55.75,
+      "expected_profit": 27.01621327601242,
+      "roi": 108.06485310404967
+    }
+  ]
+}

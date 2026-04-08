@@ -1,0 +1,88 @@
+{
+  "date": "2025-08-04",
+  "timestamp": "2025-08-04 11:08:36",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Minnesota Twins @ Detroit Tigers",
+      "predicted_team": "away",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": 138.0,
+      "ensemble_prob": 0.30805345146539176,
+      "win_prob": 0.6919465485346082,
+      "predicted_roi": 64.68327855123675,
+      "confidence": 0.19194654853460824,
+      "odds_probability_divergence": 27.177848130771746,
+      "kelly_criterion": 46.87194097915707,
+      "game_date": "2025-08-04",
+      "start_time": "2025-08-04 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Houston Astros @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.8856516311785553,
+      "win_prob": 0.8856516311785553,
+      "predicted_roi": 64.91444166773098,
+      "confidence": 0.3856516311785553,
+      "odds_probability_divergence": 34.86145941415182,
+      "kelly_criterion": 75.30075233456793,
+      "game_date": "2025-08-04",
+      "start_time": "2025-08-04 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Cleveland Guardians @ New York Mets",
+      "predicted_team": "away",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": 150.0,
+      "ensemble_prob": 0.3406396190331275,
+      "win_prob": 0.6593603809668724,
+      "predicted_roi": 64.8400952417181,
+      "confidence": 0.1593603809668725,
+      "odds_probability_divergence": 25.93603809668724,
+      "kelly_criterion": 43.22673016114542,
+      "game_date": "2025-08-04",
+      "start_time": "2025-08-04 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Tampa Bay Rays @ Los Angeles Angels",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Angels",
+      "selection_odds": -130.0,
+      "ensemble_prob": 0.913427039987426,
+      "win_prob": 0.913427039987426,
+      "predicted_roi": 61.606322459313844,
+      "confidence": 0.413427039987426,
+      "odds_probability_divergence": 34.820964868307826,
+      "kelly_criterion": 80.08821919710799,
+      "game_date": "2025-08-04",
+      "start_time": "2025-08-04 21:38:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

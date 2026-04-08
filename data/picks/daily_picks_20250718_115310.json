@@ -1,0 +1,89 @@
+{
+  "date": "2025-07-18",
+  "timestamp": "2025-07-18 11:53:10",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "odds_probability_divergence": [
+        "Model Slightly Optimistic (+5% ~ +10%)",
+        "Model Much More Optimistic (+10%+)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "San Diego Padres @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 122.0,
+      "ensemble_prob": 0.5071350421724875,
+      "win_prob": 0.5071350421724875,
+      "predicted_roi": 12.583979362292226,
+      "confidence": 0.007135042172487505,
+      "odds_probability_divergence": 5.668459172203705,
+      "kelly_criterion": 10.31473718220673,
+      "game_date": "2025-07-18",
+      "start_time": "2025-07-18 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "San Francisco Giants @ Toronto Blue Jays",
+      "predicted_team": "away",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": 123.0,
+      "ensemble_prob": 0.5,
+      "win_prob": 0.5,
+      "predicted_roi": 11.5,
+      "confidence": 0.0,
+      "odds_probability_divergence": 5.156950672645738,
+      "kelly_criterion": 9.34959349593496,
+      "game_date": "2025-07-18",
+      "start_time": "2025-07-18 19:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Cincinnati Reds @ New York Mets",
+      "predicted_team": "away",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 129.0,
+      "ensemble_prob": 0.4891051068692064,
+      "win_prob": 0.5108948931307936,
+      "predicted_roi": 16.99493052695174,
+      "confidence": 0.010894893130793615,
+      "odds_probability_divergence": 7.4213670423370015,
+      "kelly_criterion": 13.174364749574988,
+      "game_date": "2025-07-18",
+      "start_time": "2025-07-18 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Milwaukee Brewers @ Los Angeles Dodgers",
+      "predicted_team": "away",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": 158.0,
+      "ensemble_prob": 0.5,
+      "win_prob": 0.5,
+      "predicted_roi": 29.0,
+      "confidence": 0.0,
+      "odds_probability_divergence": 11.240310077519378,
+      "kelly_criterion": 18.354430379746837,
+      "game_date": "2025-07-18",
+      "start_time": "2025-07-18 22:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

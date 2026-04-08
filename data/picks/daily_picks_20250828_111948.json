@@ -1,0 +1,37 @@
+{
+  "date": "2025-08-28",
+  "timestamp": "2025-08-28 11:19:48",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Miami Marlins @ New York Mets",
+      "predicted_team": "home",
+      "selection_team_name": "New York Mets",
+      "selection_odds": -245.0,
+      "ensemble_prob": 0.8608792424201965,
+      "win_prob": 0.8608792424201965,
+      "predicted_roi": 21.22585250406849,
+      "confidence": 0.36087924242019653,
+      "odds_probability_divergence": 15.07343148839646,
+      "kelly_criterion": 52.00333863496782,
+      "game_date": "2025-08-28",
+      "start_time": "2025-08-28 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

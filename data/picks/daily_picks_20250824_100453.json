@@ -1,0 +1,127 @@
+{
+  "date": "2025-08-25",
+  "timestamp": "2025-08-25 10:04:53",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Colorado Rockies @ Pittsburgh Pirates",
+      "predicted_team": "away",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 260.0,
+      "ensemble_prob": 0.29610657691955566,
+      "win_prob": 0.7038934230804443,
+      "predicted_roi": 153.40163230895996,
+      "confidence": 0.20389342308044434,
+      "odds_probability_divergence": 42.611564530266655,
+      "kelly_criterion": 59.00062781113845,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 12:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "St. Louis Cardinals @ Tampa Bay Rays",
+      "predicted_team": "home",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": -130.0,
+      "ensemble_prob": 0.6374168992042542,
+      "win_prob": 0.6374168992042542,
+      "predicted_roi": 12.773759089983436,
+      "confidence": 0.13741689920425415,
+      "odds_probability_divergence": 7.219950789990637,
+      "kelly_criterion": 16.605886816978444,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 12:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Houston Astros @ Baltimore Orioles",
+      "predicted_team": "home",
+      "selection_team_name": "Baltimore Orioles",
+      "selection_odds": -134.0,
+      "ensemble_prob": 0.7193911671638489,
+      "win_prob": 0.7193911671638489,
+      "predicted_roi": 25.625024713687047,
+      "confidence": 0.21939116716384888,
+      "odds_probability_divergence": 14.674159451427627,
+      "kelly_criterion": 34.33753311634064,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 13:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Minnesota Twins @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.541698694229126,
+      "win_prob": 0.541698694229126,
+      "predicted_roi": 9.423136234283447,
+      "confidence": 0.04169869422912598,
+      "odds_probability_divergence": 4.664918927863093,
+      "kelly_criterion": 9.238368857140646,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Chicago Cubs @ Los Angeles Angels",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Angels",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.8396703004837036,
+      "win_prob": 0.8396703004837036,
+      "predicted_roi": 84.7274661064148,
+      "confidence": 0.3396703004837036,
+      "odds_probability_divergence": 38.51248459382491,
+      "kelly_criterion": 70.60622175534567,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 16:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Boston Red Sox @ New York Yankees",
+      "predicted_team": "home",
+      "selection_team_name": "New York Yankees",
+      "selection_odds": -168.0,
+      "ensemble_prob": 0.6552852392196655,
+      "win_prob": 0.6552852392196655,
+      "predicted_roi": 4.533597685041883,
+      "confidence": 0.15528523921966553,
+      "odds_probability_divergence": 2.841956757787445,
+      "kelly_criterion": 7.616444110870374,
+      "game_date": "2025-08-24",
+      "start_time": "2025-08-24 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

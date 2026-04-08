@@ -1,0 +1,106 @@
+{
+  "date": "2025-08-08",
+  "timestamp": "2025-08-08 10:16:31",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Miami Marlins @ Atlanta Braves",
+      "predicted_team": "home",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": 110.0,
+      "ensemble_prob": 0.9166453406769899,
+      "win_prob": 0.9166453406769899,
+      "predicted_roi": 92.4955215421679,
+      "confidence": 0.4166453406769899,
+      "odds_probability_divergence": 44.045486448651374,
+      "kelly_criterion": 84.08683776560717,
+      "game_date": "2025-08-08",
+      "start_time": "2025-08-08 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Cleveland Guardians @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 122.0,
+      "ensemble_prob": 0.9835490055805008,
+      "win_prob": 0.9835490055805008,
+      "predicted_roi": 118.34787923887119,
+      "confidence": 0.48354900558050085,
+      "odds_probability_divergence": 53.30985551300505,
+      "kelly_criterion": 97.00645839251736,
+      "game_date": "2025-08-08",
+      "start_time": "2025-08-08 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Philadelphia Phillies @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": 112.0,
+      "ensemble_prob": 0.8582720791524407,
+      "win_prob": 0.8582720791524407,
+      "predicted_roi": 81.95368078031746,
+      "confidence": 0.35827207915244075,
+      "odds_probability_divergence": 38.657396594489356,
+      "kelly_criterion": 73.17292926814056,
+      "game_date": "2025-08-08",
+      "start_time": "2025-08-08 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Chicago Cubs @ St. Louis Cardinals",
+      "predicted_team": "home",
+      "selection_team_name": "St. Louis Cardinals",
+      "selection_odds": 132.0,
+      "ensemble_prob": 0.9373453940063706,
+      "win_prob": 0.9373453940063706,
+      "predicted_roi": 117.46413140947799,
+      "confidence": 0.4373453940063706,
+      "odds_probability_divergence": 50.631091124775,
+      "kelly_criterion": 88.98797834051364,
+      "game_date": "2025-08-08",
+      "start_time": "2025-08-08 20:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Boston Red Sox @ San Diego Padres",
+      "predicted_team": "away",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": 142.0,
+      "ensemble_prob": 0.12555417308266234,
+      "win_prob": 0.8744458269173376,
+      "predicted_roi": 111.6158901139957,
+      "confidence": 0.37444582691733763,
+      "odds_probability_divergence": 46.122268642146985,
+      "kelly_criterion": 78.60273951689838,
+      "game_date": "2025-08-08",
+      "start_time": "2025-08-08 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

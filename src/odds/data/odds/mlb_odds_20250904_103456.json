@@ -1,0 +1,182 @@
+[
+  {
+    "id": "e40712e6bb7135ce7f0287c531593405",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T20:11:00Z",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:33:43Z",
+            "outcomes": [
+              {
+                "name": "Milwaukee Brewers",
+                "price": -124
+              },
+              {
+                "name": "Philadelphia Phillies",
+                "price": 106
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "db5cf61f406763dca3a5e071f4425fd3",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T22:40:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:33:43Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -124
+              },
+              {
+                "name": "Pittsburgh Pirates",
+                "price": 106
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "353fd597638be1647c0898e771e7f50a",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T23:35:00Z",
+    "home_team": "Tampa Bay Rays",
+    "away_team": "Cleveland Guardians",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:33:43Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": 136
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": -162
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "287855dcbff4fbd091192541db385828",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T23:41:00Z",
+    "home_team": "Minnesota Twins",
+    "away_team": "Chicago White Sox",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:34:52Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": 130
+              },
+              {
+                "name": "Minnesota Twins",
+                "price": -154
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6904d1106890e18964d8a9906fbc5a5d",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T23:41:00Z",
+    "home_team": "Houston Astros",
+    "away_team": "New York Yankees",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:34:52Z",
+            "outcomes": [
+              {
+                "name": "Houston Astros",
+                "price": 116
+              },
+              {
+                "name": "New York Yankees",
+                "price": -136
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3b1f2c2c1f4df445b9ae837cbc2a93fa",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-09-04T23:41:00Z",
+    "home_team": "Kansas City Royals",
+    "away_team": "Los Angeles Angels",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-09-04T14:34:52Z",
+            "outcomes": [
+              {
+                "name": "Kansas City Royals",
+                "price": -154
+              },
+              {
+                "name": "Los Angeles Angels",
+                "price": 130
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

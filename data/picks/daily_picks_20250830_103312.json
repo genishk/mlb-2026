@@ -1,0 +1,125 @@
+{
+  "date": "2025-08-30",
+  "timestamp": "2025-08-30 10:33:12",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Milwaukee Brewers @ Toronto Blue Jays",
+      "predicted_team": "home",
+      "selection_team_name": "Toronto Blue Jays",
+      "selection_odds": -142.0,
+      "ensemble_prob": 0.6811404228210449,
+      "win_prob": 0.6811404228210449,
+      "predicted_roi": 16.081677692037232,
+      "confidence": 0.18114042282104492,
+      "odds_probability_divergence": 9.436356331691265,
+      "kelly_criterion": 22.83598232269287,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 15:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Miami Marlins @ New York Mets",
+      "predicted_team": "home",
+      "selection_team_name": "New York Mets",
+      "selection_odds": -166.0,
+      "ensemble_prob": 0.8124632835388184,
+      "win_prob": 0.8124632835388184,
+      "predicted_roi": 30.189899651401014,
+      "confidence": 0.31246328353881836,
+      "odds_probability_divergence": 18.840313316287848,
+      "kelly_criterion": 50.1152334213257,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Los Angeles Angels @ Houston Astros",
+      "predicted_team": "home",
+      "selection_team_name": "Houston Astros",
+      "selection_odds": -166.0,
+      "ensemble_prob": 0.6971510648727417,
+      "win_prob": 0.6971510648727417,
+      "predicted_roi": 11.712158588041746,
+      "confidence": 0.1971510648727417,
+      "odds_probability_divergence": 7.309091449680183,
+      "kelly_criterion": 19.442183256149278,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "San Diego Padres @ Minnesota Twins",
+      "predicted_team": "away",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": -156.0,
+      "ensemble_prob": 0.37891489267349243,
+      "win_prob": 0.6210851073265076,
+      "predicted_roi": 1.9216586381961136,
+      "confidence": 0.12108510732650757,
+      "odds_probability_divergence": 1.1710107326507568,
+      "kelly_criterion": 2.997787475585933,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Baltimore Orioles @ San Francisco Giants",
+      "predicted_team": "home",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": 106.0,
+      "ensemble_prob": 0.6385691165924072,
+      "win_prob": 0.6385691165924072,
+      "predicted_roi": 31.54523801803589,
+      "confidence": 0.13856911659240723,
+      "odds_probability_divergence": 15.313222338852373,
+      "kelly_criterion": 29.759658507581022,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Arizona Diamondbacks @ Los Angeles Dodgers",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Dodgers",
+      "selection_odds": -220.0,
+      "ensemble_prob": 0.7716783285140991,
+      "win_prob": 0.7716783285140991,
+      "predicted_roi": 12.244120511141688,
+      "confidence": 0.2716783285140991,
+      "odds_probability_divergence": 8.417832851409912,
+      "kelly_criterion": 26.937065124511733,
+      "game_date": "2025-08-30",
+      "start_time": "2025-08-30 21:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

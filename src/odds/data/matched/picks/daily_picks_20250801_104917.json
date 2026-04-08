@@ -1,0 +1,142 @@
+{
+  "date": "2025-08-01",
+  "timestamp": "2025-08-01 10:49:17",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Baltimore Orioles @ Chicago Cubs",
+      "predicted_team": "away",
+      "selection_team_name": "Baltimore Orioles",
+      "selection_odds": 124.0,
+      "ensemble_prob": 0.14508419454453297,
+      "win_prob": 0.8549158054554671,
+      "predicted_roi": 91.50114042202463,
+      "confidence": 0.354915805455467,
+      "odds_probability_divergence": 40.848723402689565,
+      "kelly_criterion": 73.7912422758263,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 14:20:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Houston Astros @ Boston Red Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.7775725667105785,
+      "win_prob": 0.7775725667105785,
+      "predicted_roi": 67.95567440948494,
+      "confidence": 0.2775725667105785,
+      "odds_probability_divergence": 31.460960374761555,
+      "kelly_criterion": 58.58247793921119,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Minnesota Twins @ Cleveland Guardians",
+      "predicted_team": "away",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.11132641967379478,
+      "win_prob": 0.8886735803262052,
+      "predicted_roi": 79.51206322589347,
+      "confidence": 0.38867358032620525,
+      "odds_probability_divergence": 39.36240753757102,
+      "kelly_criterion": 77.95300316264064,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "New York Yankees @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": 144.0,
+      "ensemble_prob": 0.8964822827881661,
+      "win_prob": 0.8964822827881661,
+      "predicted_roi": 118.74167700031254,
+      "confidence": 0.3964822827881661,
+      "odds_probability_divergence": 48.66462172143956,
+      "kelly_criterion": 82.45949791688368,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Pittsburgh Pirates @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.9098163071387493,
+      "win_prob": 0.9098163071387493,
+      "predicted_roi": 100.15958757052485,
+      "confidence": 0.4098163071387493,
+      "odds_probability_divergence": 45.527085259329475,
+      "kelly_criterion": 83.4663229754374,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 20:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Chicago White Sox @ Los Angeles Angels",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.11692739104768629,
+      "win_prob": 0.8830726089523138,
+      "predicted_roi": 90.74368353369977,
+      "confidence": 0.3830726089523137,
+      "odds_probability_divergence": 42.01096459893508,
+      "kelly_criterion": 78.2273133911205,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 21:38:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 7,
+      "game_info": "Arizona Diamondbacks @ Oakland Athletics",
+      "predicted_team": "home",
+      "selection_team_name": "Oakland Athletics",
+      "selection_odds": -118.0,
+      "ensemble_prob": 0.90987002689962,
+      "win_prob": 0.90987002689962,
+      "predicted_roi": 68.09463208823487,
+      "confidence": 0.40987002689962004,
+      "odds_probability_divergence": 36.85856232298953,
+      "kelly_criterion": 80.35166586411718,
+      "game_date": "2025-08-01",
+      "start_time": "2025-08-01 22:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "date": "2025-08-23",
+  "timestamp": "2025-08-23 11:52:00",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Boston Red Sox @ New York Yankees",
+      "predicted_team": "home",
+      "selection_team_name": "New York Yankees",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.6683398485183716,
+      "win_prob": 0.6683398485183716,
+      "predicted_roi": 35.00464940071106,
+      "confidence": 0.16833984851837158,
+      "odds_probability_divergence": 17.329034356787652,
+      "kelly_criterion": 34.31828372618732,
+      "game_date": "2025-08-23",
+      "start_time": "2025-08-23 13:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Minnesota Twins @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": -106.0,
+      "ensemble_prob": 0.5703833699226379,
+      "win_prob": 0.5703833699226379,
+      "predicted_roi": 10.848088871757938,
+      "confidence": 0.07038336992263794,
+      "odds_probability_divergence": 5.582026312652144,
+      "kelly_criterion": 11.498974204063419,
+      "game_date": "2025-08-23",
+      "start_time": "2025-08-23 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Cincinnati Reds @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.5415955781936646,
+      "win_prob": 0.5415955781936646,
+      "predicted_roi": 9.40230679512024,
+      "confidence": 0.04159557819366455,
+      "odds_probability_divergence": 4.654607324316951,
+      "kelly_criterion": 9.217947838353178,
+      "game_date": "2025-08-23",
+      "start_time": "2025-08-23 20:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Los Angeles Dodgers @ San Diego Padres",
+      "predicted_team": "home",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": 114.0,
+      "ensemble_prob": 0.5872344970703125,
+      "win_prob": 0.5872344970703125,
+      "predicted_roi": 25.66818237304686,
+      "confidence": 0.0872344970703125,
+      "odds_probability_divergence": 11.994477744414429,
+      "kelly_criterion": 22.515949450041116,
+      "game_date": "2025-08-23",
+      "start_time": "2025-08-23 20:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Chicago Cubs @ Los Angeles Angels",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Angels",
+      "selection_odds": 122.0,
+      "ensemble_prob": 0.8183329105377197,
+      "win_prob": 0.8183329105377197,
+      "predicted_roi": 81.66990613937378,
+      "confidence": 0.3183329105377197,
+      "odds_probability_divergence": 36.78824600872693,
+      "kelly_criterion": 66.94254601588014,
+      "game_date": "2025-08-23",
+      "start_time": "2025-08-23 21:38:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

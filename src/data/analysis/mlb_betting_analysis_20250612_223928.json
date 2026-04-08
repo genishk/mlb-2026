@@ -1,0 +1,1813 @@
+{
+  "singles": [
+    {
+      "team": "Baltimore Orioles",
+      "match": "Detroit Tigers vs Baltimore Orioles",
+      "date": "2025-06-12",
+      "probability": 0.6155836572258226,
+      "odds": 176.0,
+      "amount": 25.0,
+      "potential_profit": 43.99999999999999,
+      "expected_profit": 17.47527234858176,
+      "roi": 69.90108939432704
+    },
+    {
+      "team": "Kansas City Royals",
+      "match": "New York Yankees vs Kansas City Royals",
+      "date": "2025-06-12",
+      "probability": 0.4738415392863359,
+      "odds": 114.0,
+      "amount": 5,
+      "potential_profit": 5.699999999999998,
+      "expected_profit": 0.07010447036379319,
+      "roi": 1.4020894072758638
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "match": "St. Louis Cardinals vs Milwaukee Brewers",
+      "date": "2025-06-12",
+      "probability": 0.5697777009596635,
+      "odds": 114.0,
+      "amount": 24.04871491816665,
+      "potential_profit": 27.415535006709973,
+      "expected_profit": 5.274467085643089,
+      "roi": 21.932428005367978
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Pittsburgh Pirates vs Chicago Cubs",
+      "date": "2025-06-12",
+      "probability": 0.48434210291059543,
+      "odds": 172.0,
+      "amount": 23.067624993954908,
+      "potential_profit": 39.67631498960244,
+      "expected_profit": 7.321906842577446,
+      "roi": 31.741051991681946
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Pittsburgh Pirates vs Chicago Cubs",
+      "date": "2025-06-13",
+      "probability": 0.5452967246426097,
+      "odds": -106.0,
+      "amount": 7.913906595472001,
+      "potential_profit": 7.465949618369812,
+      "expected_profit": 0.4726786234102283,
+      "roi": 5.972759694695851
+    },
+    {
+      "team": "Toronto Blue Jays",
+      "match": "Toronto Blue Jays vs Philadelphia Phillies",
+      "date": "2025-06-13",
+      "probability": 0.5334543160762224,
+      "odds": 116.0,
+      "amount": 16.4074701211897,
+      "potential_profit": 19.032665340580053,
+      "expected_profit": 2.4982231032173603,
+      "roi": 15.226132272464044
+    },
+    {
+      "team": "Miami Marlins",
+      "match": "Miami Marlins vs Washington Nationals",
+      "date": "2025-06-13",
+      "probability": 0.4936736952921167,
+      "odds": 108.0,
+      "amount": 5,
+      "potential_profit": 5.4,
+      "expected_profit": 0.13420643103801366,
+      "roi": 2.6841286207602733
+    },
+    {
+      "team": "Los Angeles Angels",
+      "match": "Los Angeles Angels vs Baltimore Orioles",
+      "date": "2025-06-13",
+      "probability": 0.49737681646406606,
+      "odds": 138.0,
+      "amount": 16.644639781202642,
+      "potential_profit": 22.969602898059645,
+      "expected_profit": 3.0585661292437685,
+      "roi": 18.375682318447716
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Tampa Bay Rays vs New York Mets",
+      "date": "2025-06-13",
+      "probability": 0.4435336880085321,
+      "odds": 140.0,
+      "amount": 5.757218858971159,
+      "potential_profit": 8.060106402559622,
+      "expected_profit": 0.3712303726890435,
+      "roi": 6.448085122047697
+    },
+    {
+      "team": "San Francisco Giants",
+      "match": "San Francisco Giants vs Los Angeles Dodgers",
+      "date": "2025-06-13",
+      "probability": 0.6137217217688395,
+      "odds": 144.0,
+      "amount": 25.0,
+      "potential_profit": 36.0,
+      "expected_profit": 12.437025027899212,
+      "roi": 49.74810011159685
+    }
+  ],
+  "parlays": [
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Los Angeles Angels",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.10453104218294354,
+      "odds": 12.223679999999996,
+      "boosted_odds": 14.468415999999996,
+      "amount": 5,
+      "potential_profit": 67.34207999999998,
+      "expected_profit": 2.561993016081874,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.15857602026559287,
+      "odds": 10.147637735849054,
+      "boosted_odds": 11.977165283018865,
+      "amount": 10.2404762688997,
+      "potential_profit": 112.41140058054434,
+      "expected_profit": 9.209170239990737,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Toronto Blue Jays",
+        "Miami Marlins",
+        "Los Angeles Angels"
+      ],
+      "picks": [
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1309853601593907,
+      "odds": 10.692864000000002,
+      "boosted_odds": 12.631436800000001,
+      "amount": 7.034097655271849,
+      "potential_profit": 81.81666232232271,
+      "expected_profit": 4.60405114082895,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Milwaukee Brewers",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1197471512993573,
+      "odds": 10.991039999999996,
+      "boosted_odds": 12.989247999999995,
+      "amount": 5.790870344003996,
+      "potential_profit": 69.42818069010919,
+      "expected_profit": 3.216396740772034,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Los Angeles Angels",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.12569488311138594,
+      "odds": 12.223679999999996,
+      "boosted_odds": 14.468415999999996,
+      "amount": 7.597458546043071,
+      "potential_profit": 102.3257322408632,
+      "expected_profit": 6.219324071147688,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.11460211461214274,
+      "odds": 9.981283018867922,
+      "boosted_odds": 11.777539622641505,
+      "amount": 5,
+      "potential_profit": 53.88769811320753,
+      "expected_profit": 1.748654728415071,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Los Angeles Angels"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1545339394009141,
+      "odds": 9.898105660377356,
+      "boosted_odds": 11.677726792452827,
+      "amount": 9.419199658840807,
+      "potential_profit": 100.57564056066701,
+      "expected_profit": 7.578736314053841,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1590510490088026,
+      "odds": 16.215552,
+      "boosted_odds": 19.2586624,
+      "amount": 14.124189467093602,
+      "potential_profit": 257.888807153298,
+      "expected_profit": 29.139762989407558,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Miami Marlins"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1362378115189777,
+      "odds": 12.107263999999997,
+      "boosted_odds": 14.328716799999997,
+      "amount": 8.929151179684542,
+      "potential_profit": 119.01412733840115,
+      "expected_profit": 8.501561084182487,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Pittsburgh Pirates",
+        "Miami Marlins"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1657142889239982,
+      "odds": 11.156649056603774,
+      "boosted_odds": 13.187978867924528,
+      "amount": 12.157845788961952,
+      "potential_profit": 148.1795675553535,
+      "expected_profit": 14.412354651304458,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Pittsburgh Pirates",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1829830234851357,
+      "odds": 18.317567999999994,
+      "boosted_odds": 21.781081599999993,
+      "amount": 17.95845028311987,
+      "potential_profit": 373.196020743057,
+      "expected_profit": 53.61617747497888,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Miami Marlins",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.1865084716707063,
+      "odds": 14.007552,
+      "boosted_odds": 16.6090624,
+      "amount": 16.798981821830896,
+      "potential_profit": 262.2163555134241,
+      "expected_profit": 35.23974231725408,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "3_team_parlay",
+      "probability": 0.15856997257971991,
+      "odds": 14.335487999999998,
+      "boosted_odds": 17.002585599999996,
+      "amount": 13.248636617012851,
+      "potential_profit": 212.0124415470425,
+      "expected_profit": 22.471006370739552,
+      "adjusted_amount": 10.253796740827934
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.10172016726311432,
+      "odds": 21.91889750943396,
+      "boosted_odds": 28.19456676226415,
+      "amount": 8.586071913271729,
+      "potential_profit": 233.4945058710691,
+      "expected_profit": 16.03840495010278,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.08670495751146444,
+      "odds": 39.19959551999999,
+      "boosted_odds": 50.65947417599999,
+      "amount": 8.539225425444448,
+      "potential_profit": 424.05344449790107,
+      "expected_profit": 28.968703640030185,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.09034963441770971,
+      "odds": 30.677944319999995,
+      "boosted_odds": 39.581327615999996,
+      "amount": 8.346519673693274,
+      "potential_profit": 322.0198099841496,
+      "expected_profit": 21.5019574348134,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "Los Angeles Angels",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.0788720361272418,
+      "odds": 24.151377811320746,
+      "boosted_odds": 31.09679115471697,
+      "amount": 6.033314431796406,
+      "potential_profit": 181.58340442451632,
+      "expected_profit": 8.76439819591326,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Miami Marlins",
+        "Los Angeles Angels",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.05274780111771606,
+      "odds": 32.31621119999999,
+      "boosted_odds": 41.711074559999986,
+      "amount": 5,
+      "potential_profit": 203.55537279999993,
+      "expected_profit": 6.000837326485527,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Toronto Blue Jays",
+        "Miami Marlins",
+        "Los Angeles Angels",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.058096419866620404,
+      "odds": 25.662873600000005,
+      "boosted_odds": 33.061735680000005,
+      "amount": 5,
+      "potential_profit": 160.30867840000002,
+      "expected_profit": 4.6038423879225245,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Toronto Blue Jays",
+        "Miami Marlins",
+        "Los Angeles Angels"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.06206630468190078,
+      "odds": 22.882728959999998,
+      "boosted_odds": 29.447547647999997,
+      "amount": 5,
+      "potential_profit": 142.23773824,
+      "expected_profit": 4.138502322277793,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Kansas City Royals",
+        "Milwaukee Brewers",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.07371438933923227,
+      "odds": 30.335270399999988,
+      "boosted_odds": 39.13585151999999,
+      "amount": 6.178160841246585,
+      "potential_profit": 235.609424508458,
+      "expected_profit": 11.64506336261439,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Miami Marlins"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "4_team_parlay",
+      "probability": 0.09442030655928113,
+      "odds": 23.87522898113207,
+      "boosted_odds": 30.737797675471693,
+      "amount": 7.996020335108016,
+      "potential_profit": 237.78403493439953,
+      "expected_profit": 15.210607829595947,
+      "adjusted_amount": 6.74214584672894
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Kansas City Royals",
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.04019621506571346,
+      "odds": 58.95345002264148,
+      "boosted_odds": 82.13483003169807,
+      "amount": 5,
+      "potential_profit": 405.67415015849036,
+      "expected_profit": 11.507546461699786,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Toronto Blue Jays",
+        "Los Angeles Angels",
+        "Tampa Bay Rays",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.0342226793687159,
+      "odds": 64.42368307199999,
+      "boosted_odds": 89.79315630079998,
+      "amount": 5,
+      "potential_profit": 443.9657815039999,
+      "expected_profit": 10.364811987936346,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "Miami Marlins",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.04819084958915385,
+      "odds": 58.25555871396225,
+      "boosted_odds": 81.15778219954714,
+      "amount": 5,
+      "potential_profit": 400.7889109977357,
+      "expected_profit": 14.55531237483842,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "Miami Marlins",
+        "Los Angeles Angels",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.0345845694615651,
+      "odds": 70.30930350079998,
+      "boosted_odds": 98.03302490111997,
+      "amount": 5,
+      "potential_profit": 485.16512450559986,
+      "expected_profit": 11.952149796100624,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Kansas City Royals",
+        "Pittsburgh Pirates",
+        "Miami Marlins",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Kansas City Royals",
+          "match": "New York Yankees vs Kansas City Royals",
+          "probability": 0.4738415392863359,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.0348272914064993,
+      "odds": 57.30054955471697,
+      "boosted_odds": 79.82076937660376,
+      "amount": 5,
+      "potential_profit": 394.10384688301883,
+      "expected_profit": 8.899705976849773,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "Miami Marlins",
+        "Los Angeles Angels",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.02813854216977582,
+      "odds": 69.80301619199999,
+      "boosted_odds": 97.32422266879998,
+      "amount": 5,
+      "potential_profit": 481.62111334399987,
+      "expected_profit": 8.6928087185334,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "Miami Marlins",
+        "Los Angeles Angels"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Miami Marlins",
+          "match": "Miami Marlins vs Washington Nationals",
+          "probability": 0.4936736952921167,
+          "odds": 108.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.03614768009581945,
+      "odds": 62.241022771199994,
+      "boosted_odds": 86.73743187967999,
+      "amount": 5,
+      "potential_profit": 428.68715939839996,
+      "expected_profit": 10.676784699598018,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Baltimore Orioles",
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "Tampa Bay Rays"
+      ],
+      "picks": [
+        {
+          "team": "Baltimore Orioles",
+          "match": "Detroit Tigers vs Baltimore Orioles",
+          "probability": 0.6155836572258226,
+          "odds": 176.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.5452967246426097,
+          "odds": -106.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Tampa Bay Rays",
+          "match": "Tampa Bay Rays vs New York Mets",
+          "probability": 0.4435336880085321,
+          "odds": 140.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.04525319677339498,
+      "odds": 59.504416845283004,
+      "boosted_odds": 82.9061835833962,
+      "amount": 5,
+      "potential_profit": 409.530917916981,
+      "expected_profit": 13.758849197153184,
+      "adjusted_amount": 5.0
+    },
+    {
+      "teams": [
+        "Milwaukee Brewers",
+        "Pittsburgh Pirates",
+        "Toronto Blue Jays",
+        "Los Angeles Angels",
+        "San Francisco Giants"
+      ],
+      "picks": [
+        {
+          "team": "Milwaukee Brewers",
+          "match": "St. Louis Cardinals vs Milwaukee Brewers",
+          "probability": 0.5697777009596635,
+          "odds": 114.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Pittsburgh Pirates",
+          "match": "Pittsburgh Pirates vs Chicago Cubs",
+          "probability": 0.48434210291059543,
+          "odds": 172.0,
+          "date": "2025-06-12"
+        },
+        {
+          "team": "Toronto Blue Jays",
+          "match": "Toronto Blue Jays vs Philadelphia Phillies",
+          "probability": 0.5334543160762224,
+          "odds": 116.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "Los Angeles Angels",
+          "match": "Los Angeles Angels vs Baltimore Orioles",
+          "probability": 0.49737681646406606,
+          "odds": 138.0,
+          "date": "2025-06-13"
+        },
+        {
+          "team": "San Francisco Giants",
+          "match": "San Francisco Giants vs Los Angeles Dodgers",
+          "probability": 0.6137217217688395,
+          "odds": 144.0,
+          "date": "2025-06-13"
+        }
+      ],
+      "type": "5_team_parlay",
+      "probability": 0.04493781353537267,
+      "odds": 73.01350748159997,
+      "boosted_odds": 101.81891047423996,
+      "amount": 5,
+      "potential_profit": 504.09455237119977,
+      "expected_profit": 17.87759606633099,
+      "adjusted_amount": 5.0
+    }
+  ],
+  "total_investment": 392.81824552028064,
+  "expected_profit": 472.79049430261733,
+  "max_loss": 392.81824552028064,
+  "pick_usage": {
+    "3_team": [
+      {
+        "team": "Baltimore Orioles",
+        "match": "Detroit Tigers vs Baltimore Orioles",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Kansas City Royals",
+        "match": "New York Yankees vs Kansas City Royals",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Milwaukee Brewers",
+        "match": "St. Louis Cardinals vs Milwaukee Brewers",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Miami Marlins",
+        "match": "Miami Marlins vs Washington Nationals",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Los Angeles Angels",
+        "match": "Los Angeles Angels vs Baltimore Orioles",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Tampa Bay Rays vs New York Mets",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "San Francisco Giants",
+        "match": "San Francisco Giants vs Los Angeles Dodgers",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Toronto Blue Jays",
+        "match": "Toronto Blue Jays vs Philadelphia Phillies",
+        "date": "2025-06-13",
+        "count": 3
+      }
+    ],
+    "4_team": [
+      {
+        "team": "Kansas City Royals",
+        "match": "New York Yankees vs Kansas City Royals",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Milwaukee Brewers",
+        "match": "St. Louis Cardinals vs Milwaukee Brewers",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Toronto Blue Jays",
+        "match": "Toronto Blue Jays vs Philadelphia Phillies",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Miami Marlins",
+        "match": "Miami Marlins vs Washington Nationals",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Los Angeles Angels",
+        "match": "Los Angeles Angels vs Baltimore Orioles",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "San Francisco Giants",
+        "match": "San Francisco Giants vs Los Angeles Dodgers",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Detroit Tigers vs Baltimore Orioles",
+        "date": "2025-06-12",
+        "count": 3
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-12",
+        "count": 3
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-13",
+        "count": 3
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Tampa Bay Rays vs New York Mets",
+        "date": "2025-06-13",
+        "count": 3
+      }
+    ],
+    "5_team": [
+      {
+        "team": "Kansas City Royals",
+        "match": "New York Yankees vs Kansas City Royals",
+        "date": "2025-06-12",
+        "count": 5
+      },
+      {
+        "team": "Toronto Blue Jays",
+        "match": "Toronto Blue Jays vs Philadelphia Phillies",
+        "date": "2025-06-13",
+        "count": 5
+      },
+      {
+        "team": "Miami Marlins",
+        "match": "Miami Marlins vs Washington Nationals",
+        "date": "2025-06-13",
+        "count": 5
+      },
+      {
+        "team": "Los Angeles Angels",
+        "match": "Los Angeles Angels vs Baltimore Orioles",
+        "date": "2025-06-13",
+        "count": 5
+      },
+      {
+        "team": "Tampa Bay Rays",
+        "match": "Tampa Bay Rays vs New York Mets",
+        "date": "2025-06-13",
+        "count": 5
+      },
+      {
+        "team": "Baltimore Orioles",
+        "match": "Detroit Tigers vs Baltimore Orioles",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Milwaukee Brewers",
+        "match": "St. Louis Cardinals vs Milwaukee Brewers",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-12",
+        "count": 4
+      },
+      {
+        "team": "Pittsburgh Pirates",
+        "match": "Pittsburgh Pirates vs Chicago Cubs",
+        "date": "2025-06-13",
+        "count": 4
+      },
+      {
+        "team": "San Francisco Giants",
+        "match": "San Francisco Giants vs Los Angeles Dodgers",
+        "date": "2025-06-13",
+        "count": 4
+      }
+    ]
+  },
+  "all_single_bets": [
+    {
+      "team": "Baltimore Orioles",
+      "match": "Detroit Tigers vs Baltimore Orioles",
+      "date": "2025-06-12",
+      "probability": 0.6155836572258226,
+      "odds": 176.0,
+      "amount": 25.0,
+      "potential_profit": 43.99999999999999,
+      "expected_profit": 17.47527234858176,
+      "roi": 69.90108939432704
+    },
+    {
+      "team": "Kansas City Royals",
+      "match": "New York Yankees vs Kansas City Royals",
+      "date": "2025-06-12",
+      "probability": 0.4738415392863359,
+      "odds": 114.0,
+      "amount": 5,
+      "potential_profit": 5.699999999999998,
+      "expected_profit": 0.07010447036379319,
+      "roi": 1.4020894072758638
+    },
+    {
+      "team": "Milwaukee Brewers",
+      "match": "St. Louis Cardinals vs Milwaukee Brewers",
+      "date": "2025-06-12",
+      "probability": 0.5697777009596635,
+      "odds": 114.0,
+      "amount": 24.04871491816665,
+      "potential_profit": 27.415535006709973,
+      "expected_profit": 5.274467085643089,
+      "roi": 21.932428005367978
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Pittsburgh Pirates vs Chicago Cubs",
+      "date": "2025-06-12",
+      "probability": 0.48434210291059543,
+      "odds": 172.0,
+      "amount": 23.067624993954908,
+      "potential_profit": 39.67631498960244,
+      "expected_profit": 7.321906842577446,
+      "roi": 31.741051991681946
+    },
+    {
+      "team": "Pittsburgh Pirates",
+      "match": "Pittsburgh Pirates vs Chicago Cubs",
+      "date": "2025-06-13",
+      "probability": 0.5452967246426097,
+      "odds": -106.0,
+      "amount": 7.913906595472001,
+      "potential_profit": 7.465949618369812,
+      "expected_profit": 0.4726786234102283,
+      "roi": 5.972759694695851
+    },
+    {
+      "team": "Toronto Blue Jays",
+      "match": "Toronto Blue Jays vs Philadelphia Phillies",
+      "date": "2025-06-13",
+      "probability": 0.5334543160762224,
+      "odds": 116.0,
+      "amount": 16.4074701211897,
+      "potential_profit": 19.032665340580053,
+      "expected_profit": 2.4982231032173603,
+      "roi": 15.226132272464044
+    },
+    {
+      "team": "Miami Marlins",
+      "match": "Miami Marlins vs Washington Nationals",
+      "date": "2025-06-13",
+      "probability": 0.4936736952921167,
+      "odds": 108.0,
+      "amount": 5,
+      "potential_profit": 5.4,
+      "expected_profit": 0.13420643103801366,
+      "roi": 2.6841286207602733
+    },
+    {
+      "team": "Los Angeles Angels",
+      "match": "Los Angeles Angels vs Baltimore Orioles",
+      "date": "2025-06-13",
+      "probability": 0.49737681646406606,
+      "odds": 138.0,
+      "amount": 16.644639781202642,
+      "potential_profit": 22.969602898059645,
+      "expected_profit": 3.0585661292437685,
+      "roi": 18.375682318447716
+    },
+    {
+      "team": "Tampa Bay Rays",
+      "match": "Tampa Bay Rays vs New York Mets",
+      "date": "2025-06-13",
+      "probability": 0.4435336880085321,
+      "odds": 140.0,
+      "amount": 5.757218858971159,
+      "potential_profit": 8.060106402559622,
+      "expected_profit": 0.3712303726890435,
+      "roi": 6.448085122047697
+    },
+    {
+      "team": "San Francisco Giants",
+      "match": "San Francisco Giants vs Los Angeles Dodgers",
+      "date": "2025-06-13",
+      "probability": 0.6137217217688395,
+      "odds": 144.0,
+      "amount": 25.0,
+      "potential_profit": 36.0,
+      "expected_profit": 12.437025027899212,
+      "roi": 49.74810011159685
+    }
+  ]
+}

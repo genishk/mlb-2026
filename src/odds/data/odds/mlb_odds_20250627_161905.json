@@ -1,0 +1,842 @@
+[
+  {
+    "id": "cfb8b81b2fde1775b7b96fdc32e297f3",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T22:41:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "New York Mets",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "New York Mets",
+                "price": -144
+              },
+              {
+                "name": "Pittsburgh Pirates",
+                "price": 118
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a6398993c784caadca64489f7342c7c6",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:06:00Z",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Baltimore Orioles",
+                "price": 112
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": -136
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ee4ad26c2672cffca97a80d9d8a60111",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:06:00Z",
+    "home_team": "New York Yankees",
+    "away_team": "Oakland Athletics",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "New York Yankees",
+                "price": -261
+              },
+              {
+                "name": "Oakland Athletics",
+                "price": 208
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a811f97572ba40018be645131f6a57c8",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:11:00Z",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": -131
+              },
+              {
+                "name": "Toronto Blue Jays",
+                "price": 108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "53cb1e3d9828af4905391a59c6f7c01e",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:11:00Z",
+    "home_team": "Cincinnati Reds",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": 107
+              },
+              {
+                "name": "San Diego Padres",
+                "price": -131
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a826ebfb5b3af5f3fd64b9d4bfee3bf2",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:11:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "St. Louis Cardinals",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": 109
+              },
+              {
+                "name": "St. Louis Cardinals",
+                "price": -132
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "89aa0c0da04e3c14ad6f03308a13cc34",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:11:00Z",
+    "home_team": "Detroit Tigers",
+    "away_team": "Minnesota Twins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Detroit Tigers",
+                "price": -125
+              },
+              {
+                "name": "Minnesota Twins",
+                "price": 103
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bdf1f38327c8a5d2f9c61434b474ccf8",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:16:00Z",
+    "home_team": "Atlanta Braves",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": -175
+              },
+              {
+                "name": "Philadelphia Phillies",
+                "price": 143
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "117275ef3f6c174e257cf182f95abc80",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-27T23:40:00Z",
+    "home_team": "Chicago White Sox",
+    "away_team": "San Francisco Giants",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": 128
+              },
+              {
+                "name": "San Francisco Giants",
+                "price": -156
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9c3890180a51984aab979f22e0e7ba8d",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T00:05:00Z",
+    "home_team": "Texas Rangers",
+    "away_team": "Seattle Mariners",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Seattle Mariners",
+                "price": -120
+              },
+              {
+                "name": "Texas Rangers",
+                "price": -101
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9e545389ca8028ac891e7da277261a4e",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T00:10:00Z",
+    "home_team": "Houston Astros",
+    "away_team": "Chicago Cubs",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:17:53Z",
+            "outcomes": [
+              {
+                "name": "Chicago Cubs",
+                "price": -103
+              },
+              {
+                "name": "Houston Astros",
+                "price": -118
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7489c6f8c8551f02615758dcae1afdac",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T00:10:00Z",
+    "home_team": "Kansas City Royals",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Kansas City Royals",
+                "price": 137
+              },
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -167
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "b486653bb1b761b951af119e4ce91bac",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T00:11:00Z",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Colorado Rockies",
+                "price": 169
+              },
+              {
+                "name": "Milwaukee Brewers",
+                "price": -208
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "66b3deadcf58987b4787f5972be173e0",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T01:38:00Z",
+    "home_team": "Los Angeles Angels",
+    "away_team": "Washington Nationals",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Angels",
+                "price": -174
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 142
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6542b5319f2142ddcd2068ab10c4e5df",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T01:40:00Z",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Miami Marlins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Arizona Diamondbacks",
+                "price": -188
+              },
+              {
+                "name": "Miami Marlins",
+                "price": 153
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "265ec0347d6b8980e14f5528401aae68",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T17:06:00Z",
+    "home_team": "New York Yankees",
+    "away_team": "Oakland Athletics",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "New York Yankees",
+                "price": -247
+              },
+              {
+                "name": "Oakland Athletics",
+                "price": 198
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "81f7b3f0f5d24db9f45695430896d738",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T17:11:00Z",
+    "home_team": "Detroit Tigers",
+    "away_team": "Minnesota Twins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Detroit Tigers",
+                "price": -150
+              },
+              {
+                "name": "Minnesota Twins",
+                "price": 123
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "caf6a22d844f20e467d7fa37a22ef4b3",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:05:00Z",
+    "home_team": "Pittsburgh Pirates",
+    "away_team": "New York Mets",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "New York Mets",
+                "price": -157
+              },
+              {
+                "name": "Pittsburgh Pirates",
+                "price": 128
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0b0f214b1145b2541579fe5b1037004c",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:06:00Z",
+    "home_team": "Baltimore Orioles",
+    "away_team": "Tampa Bay Rays",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Baltimore Orioles",
+                "price": -112
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": -108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4499fee9fead35705c0079b29a558097",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Arizona Diamondbacks",
+    "away_team": "Miami Marlins",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Arizona Diamondbacks",
+                "price": -150
+              },
+              {
+                "name": "Miami Marlins",
+                "price": 123
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f0018fd38eb24ee28666e82477426987",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Boston Red Sox",
+    "away_team": "Toronto Blue Jays",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Boston Red Sox",
+                "price": 104
+              },
+              {
+                "name": "Toronto Blue Jays",
+                "price": -126
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4e38d0652ffe1d123be379737815c6c2",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Chicago White Sox",
+    "away_team": "San Francisco Giants",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Chicago White Sox",
+                "price": 138
+              },
+              {
+                "name": "San Francisco Giants",
+                "price": -169
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "a74cf77c003b3757a9c134192fc1567b",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Cincinnati Reds",
+    "away_team": "San Diego Padres",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Cincinnati Reds",
+                "price": -157
+              },
+              {
+                "name": "San Diego Padres",
+                "price": 128
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "c2aebcf293311c4da48130ee7add97db",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Cleveland Guardians",
+    "away_team": "St. Louis Cardinals",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Cleveland Guardians",
+                "price": -121
+              },
+              {
+                "name": "St. Louis Cardinals",
+                "price": -101
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "bada88f48ab868873e198c00db13b6a0",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Milwaukee Brewers",
+    "away_team": "Colorado Rockies",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Colorado Rockies",
+                "price": 183
+              },
+              {
+                "name": "Milwaukee Brewers",
+                "price": -227
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "f280ae24da1264d721861cf447647b5c",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T20:11:00Z",
+    "home_team": "Kansas City Royals",
+    "away_team": "Los Angeles Dodgers",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Kansas City Royals",
+                "price": 138
+              },
+              {
+                "name": "Los Angeles Dodgers",
+                "price": -169
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "1f9f25e572a0132808b6a1c946454710",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-28T23:16:00Z",
+    "home_team": "Atlanta Braves",
+    "away_team": "Philadelphia Phillies",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": -157
+              },
+              {
+                "name": "Philadelphia Phillies",
+                "price": 128
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "248fcdb078efded16f8751b47502fa06",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-06-29T01:39:00Z",
+    "home_team": "Los Angeles Angels",
+    "away_team": "Washington Nationals",
+    "bookmakers": [
+      {
+        "key": "draftkings",
+        "title": "DraftKings",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-06-27T20:18:45Z",
+            "outcomes": [
+              {
+                "name": "Los Angeles Angels",
+                "price": -132
+              },
+              {
+                "name": "Washington Nationals",
+                "price": 108
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

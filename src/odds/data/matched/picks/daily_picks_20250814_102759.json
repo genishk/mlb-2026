@@ -1,0 +1,108 @@
+{
+  "date": "2025-08-14",
+  "timestamp": "2025-08-14 10:27:59",
+  "configuration": {
+    "model_weights": {
+      "model6": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +150)",
+        "Strong Underdog (+150 ~ +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Seattle Mariners @ Baltimore Orioles",
+      "predicted_team": "home",
+      "selection_team_name": "Baltimore Orioles",
+      "selection_odds": 112.0,
+      "ensemble_prob": 0.6020311713218689,
+      "win_prob": 0.6020311713218689,
+      "predicted_roi": 27.63060832023622,
+      "confidence": 0.1020311713218689,
+      "odds_probability_divergence": 13.033305811432172,
+      "kelly_criterion": 24.670186000210894,
+      "game_date": "2025-08-14",
+      "start_time": "2025-08-14 13:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Chicago Cubs @ Toronto Blue Jays",
+      "predicted_team": "home",
+      "selection_team_name": "Toronto Blue Jays",
+      "selection_odds": -106.0,
+      "ensemble_prob": 0.799508273601532,
+      "win_prob": 0.799508273601532,
+      "predicted_roi": 55.376136190486406,
+      "confidence": 0.299508273601532,
+      "odds_probability_divergence": 28.494516680541548,
+      "kelly_criterion": 58.69870436191559,
+      "game_date": "2025-08-14",
+      "start_time": "2025-08-14 15:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Philadelphia Phillies @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 176.0,
+      "ensemble_prob": 0.9441652297973633,
+      "win_prob": 0.9441652297973633,
+      "predicted_roi": 160.58960342407227,
+      "confidence": 0.4441652297973633,
+      "odds_probability_divergence": 58.184638921765305,
+      "kelly_criterion": 91.2440928545865,
+      "game_date": "2025-08-14",
+      "start_time": "2025-08-14 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Detroit Tigers @ Minnesota Twins",
+      "predicted_team": "home",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": 180.0,
+      "ensemble_prob": 0.8107760548591614,
+      "win_prob": 0.8107760548591614,
+      "predicted_roi": 127.01729536056519,
+      "confidence": 0.3107760548591614,
+      "odds_probability_divergence": 45.36331977163042,
+      "kelly_criterion": 70.5651640892029,
+      "game_date": "2025-08-14",
+      "start_time": "2025-08-14 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Arizona Diamondbacks @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 146.0,
+      "ensemble_prob": 0.7401923537254333,
+      "win_prob": 0.7401923537254333,
+      "predicted_roi": 82.0873190164566,
+      "confidence": 0.24019235372543335,
+      "odds_probability_divergence": 33.368828868478296,
+      "kelly_criterion": 56.224191107162056,
+      "game_date": "2025-08-14",
+      "start_time": "2025-08-14 20:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

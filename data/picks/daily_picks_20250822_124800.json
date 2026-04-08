@@ -1,0 +1,127 @@
+{
+  "date": "2025-08-22",
+  "timestamp": "2025-08-22 12:48:00",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Colorado Rockies @ Pittsburgh Pirates",
+      "predicted_team": "away",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 160.0,
+      "ensemble_prob": 0.19891631603240967,
+      "win_prob": 0.8010836839675903,
+      "predicted_roi": 108.28175783157349,
+      "confidence": 0.30108368396759033,
+      "odds_probability_divergence": 41.646829935220566,
+      "kelly_criterion": 67.67609864473341,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "New York Mets @ Atlanta Braves",
+      "predicted_team": "home",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": -116.0,
+      "ensemble_prob": 0.63252192735672,
+      "win_prob": 0.63252192735672,
+      "predicted_roi": 17.779945094009918,
+      "confidence": 0.13252192735671997,
+      "odds_probability_divergence": 9.548489031968288,
+      "kelly_criterion": 20.62473630905152,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "St. Louis Cardinals @ Tampa Bay Rays",
+      "predicted_team": "home",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": -138.0,
+      "ensemble_prob": 0.8011096119880676,
+      "win_prob": 0.8011096119880676,
+      "predicted_roi": 38.16238235736239,
+      "confidence": 0.3011096119880676,
+      "odds_probability_divergence": 22.127767921495835,
+      "kelly_criterion": 52.66408765316011,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 19:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Cleveland Guardians @ Texas Rangers",
+      "predicted_team": "away",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": 126.0,
+      "ensemble_prob": 0.4412101209163666,
+      "win_prob": 0.5587898790836334,
+      "predicted_roi": 26.286512672901154,
+      "confidence": 0.05878987908363342,
+      "odds_probability_divergence": 11.63120029774387,
+      "kelly_criterion": 20.86231164515964,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Cincinnati Reds @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": -134.0,
+      "ensemble_prob": 0.6044513583183289,
+      "win_prob": 0.6044513583183289,
+      "predicted_roi": 5.553446154096235,
+      "confidence": 0.10445135831832886,
+      "odds_probability_divergence": 3.1801785668756244,
+      "kelly_criterion": 7.44161784648895,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Los Angeles Dodgers @ San Diego Padres",
+      "predicted_team": "home",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.6404396891593933,
+      "win_prob": 0.6404396891593933,
+      "predicted_roi": 29.36881721019745,
+      "confidence": 0.1404396891593933,
+      "odds_probability_divergence": 14.539018420889827,
+      "kelly_criterion": 28.792958049213173,
+      "game_date": "2025-08-22",
+      "start_time": "2025-08-22 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

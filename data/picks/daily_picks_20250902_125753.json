@@ -1,0 +1,129 @@
+{
+  "date": "2025-09-02",
+  "timestamp": "2025-09-02 12:57:53",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Heavy Favorite (< -200)",
+        "Favorite (-200 ~ -120)",
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +150)",
+        "Strong Underdog (+150 ~ +300)",
+        "Heavy Underdog (> +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "New York Mets @ Detroit Tigers",
+      "predicted_team": "home",
+      "selection_team_name": "Detroit Tigers",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.6132885813713074,
+      "win_prob": 0.6132885813713074,
+      "predicted_roi": 32.47033357620238,
+      "confidence": 0.11328858137130737,
+      "odds_probability_divergence": 15.032561840834441,
+      "kelly_criterion": 27.991666876036543,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Los Angeles Dodgers @ Pittsburgh Pirates",
+      "predicted_team": "home",
+      "selection_team_name": "Pittsburgh Pirates",
+      "selection_odds": 148.0,
+      "ensemble_prob": 0.6045668721199036,
+      "win_prob": 0.6045668721199036,
+      "predicted_roi": 49.932584285736084,
+      "confidence": 0.10456687211990356,
+      "odds_probability_divergence": 20.134106566829068,
+      "kelly_criterion": 33.73823262549735,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Cleveland Guardians @ Boston Red Sox",
+      "predicted_team": "away",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": 220.0,
+      "ensemble_prob": 0.32666459679603577,
+      "win_prob": 0.6733354032039642,
+      "predicted_roi": 115.46732902526858,
+      "confidence": 0.17333540320396423,
+      "odds_probability_divergence": 36.08354032039642,
+      "kelly_criterion": 52.48514955694026,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Chicago White Sox @ Minnesota Twins",
+      "predicted_team": "home",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": -146.0,
+      "ensemble_prob": 0.6386960744857788,
+      "win_prob": 0.6386960744857788,
+      "predicted_roi": 7.615913920206566,
+      "confidence": 0.1386960744857788,
+      "odds_probability_divergence": 4.520013952642921,
+      "kelly_criterion": 11.119234323501596,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Atlanta Braves @ Chicago Cubs",
+      "predicted_team": "away",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": 142.0,
+      "ensemble_prob": 0.298782080411911,
+      "win_prob": 0.701217919588089,
+      "predicted_roi": 69.69473654031754,
+      "confidence": 0.201217919588089,
+      "odds_probability_divergence": 28.79947790922212,
+      "kelly_criterion": 49.0808003805053,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "San Francisco Giants @ Colorado Rockies",
+      "predicted_team": "away",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": -240.0,
+      "ensemble_prob": 0.4219087243080139,
+      "win_prob": 0.578091275691986,
+      "predicted_roi": -18.10373594363531,
+      "confidence": 0.0780912756919861,
+      "odds_probability_divergence": -12.779107724919047,
+      "kelly_criterion": 0,
+      "game_date": "2025-09-02",
+      "start_time": "2025-09-02 20:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

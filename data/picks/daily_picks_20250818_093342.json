@@ -1,0 +1,91 @@
+{
+  "date": "2025-08-18",
+  "timestamp": "2025-08-18 09:33:42",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Very Positive A (20% ~ 40%)",
+        "Very Positive B (40% ~ 60%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "St. Louis Cardinals @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": -134.0,
+      "ensemble_prob": 0.8283689022064209,
+      "win_prob": 0.8283689022064209,
+      "predicted_roi": 44.65546501216604,
+      "confidence": 0.3283689022064209,
+      "odds_probability_divergence": 25.57193295568483,
+      "kelly_criterion": 59.8383231163025,
+      "game_date": "2025-08-18",
+      "start_time": "2025-08-18 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Baltimore Orioles @ Boston Red Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": -118.0,
+      "ensemble_prob": 0.8629371523857117,
+      "win_prob": 0.8629371523857117,
+      "predicted_roi": 59.42398238990266,
+      "confidence": 0.36293715238571167,
+      "odds_probability_divergence": 32.16527487159869,
+      "kelly_criterion": 70.12029922008513,
+      "game_date": "2025-08-18",
+      "start_time": "2025-08-18 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Los Angeles Dodgers @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 235.0,
+      "ensemble_prob": 0.5846903324127197,
+      "win_prob": 0.5846903324127197,
+      "predicted_roi": 95.87126135826111,
+      "confidence": 0.08469033241271973,
+      "odds_probability_divergence": 28.61828697261526,
+      "kelly_criterion": 40.79628142904728,
+      "game_date": "2025-08-18",
+      "start_time": "2025-08-18 20:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Cleveland Guardians @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.888231635093689,
+      "win_prob": 0.888231635093689,
+      "predicted_roi": 68.12955949987685,
+      "confidence": 0.38823163509368896,
+      "odds_probability_divergence": 35.992974830123615,
+      "kelly_criterion": 76.30510663986205,
+      "game_date": "2025-08-18",
+      "start_time": "2025-08-18 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "date": "2025-09-08",
+  "timestamp": "2025-09-08 11:56:39",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +150)",
+        "Strong Underdog (+150 ~ +300)",
+        "Heavy Underdog (> +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Kansas City Royals @ Cleveland Guardians",
+      "predicted_team": "home",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.7854259014129639,
+      "win_prob": 0.7854259014129639,
+      "predicted_roi": 48.66990276745388,
+      "confidence": 0.28542590141296387,
+      "odds_probability_divergence": 25.712401462051105,
+      "kelly_criterion": 54.51029109954833,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "New York Mets @ Philadelphia Phillies",
+      "predicted_team": "home",
+      "selection_team_name": "Philadelphia Phillies",
+      "selection_odds": 104.0,
+      "ensemble_prob": 0.5842664241790771,
+      "win_prob": 0.5842664241790771,
+      "predicted_roi": 19.19035053253174,
+      "confidence": 0.08426642417907715,
+      "odds_probability_divergence": 9.407034574770462,
+      "kelly_criterion": 18.452260127434357,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 18:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Chicago Cubs @ Atlanta Braves",
+      "predicted_team": "home",
+      "selection_team_name": "Atlanta Braves",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.7144960761070251,
+      "win_prob": 0.7144960761070251,
+      "predicted_roi": 42.89921522140503,
+      "confidence": 0.21449607610702515,
+      "odds_probability_divergence": 21.449607610702515,
+      "kelly_criterion": 42.89921522140503,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Milwaukee Brewers @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.6485691666603088,
+      "win_prob": 0.6485691666603088,
+      "predicted_roi": 29.713833332061768,
+      "confidence": 0.14856916666030884,
+      "odds_probability_divergence": 14.856916666030884,
+      "kelly_criterion": 29.713833332061768,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 20:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Cincinnati Reds @ San Diego Padres",
+      "predicted_team": "away",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 122.0,
+      "ensemble_prob": 0.33719316124916077,
+      "win_prob": 0.6628068387508392,
+      "predicted_roi": 47.14311820268631,
+      "confidence": 0.16280683875083923,
+      "odds_probability_divergence": 21.235638830038877,
+      "kelly_criterion": 38.6419001661363,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Boston Red Sox @ Oakland Athletics",
+      "predicted_team": "home",
+      "selection_team_name": "Oakland Athletics",
+      "selection_odds": 146.0,
+      "ensemble_prob": 0.6423715353012085,
+      "win_prob": 0.6423715353012085,
+      "predicted_roi": 58.02339768409729,
+      "confidence": 0.1423715353012085,
+      "odds_probability_divergence": 23.58674702605581,
+      "kelly_criterion": 39.74205320828581,
+      "game_date": "2025-09-08",
+      "start_time": "2025-09-08 22:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

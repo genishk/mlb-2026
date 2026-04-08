@@ -1,0 +1,88 @@
+{
+  "date": "2025-08-02",
+  "timestamp": "2025-08-02 09:34:00",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Pittsburgh Pirates @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 176.0,
+      "ensemble_prob": 0.6224476721850105,
+      "win_prob": 0.6224476721850105,
+      "predicted_roi": 71.7955575230629,
+      "confidence": 0.12244767218501051,
+      "odds_probability_divergence": 26.012883160530038,
+      "kelly_criterion": 40.79293041083118,
+      "game_date": "2025-08-02",
+      "start_time": "2025-08-02 15:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Houston Astros @ Boston Red Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.9150196536366008,
+      "win_prob": 0.9150196536366008,
+      "predicted_roi": 73.20014872407087,
+      "confidence": 0.41501965363660076,
+      "odds_probability_divergence": 38.671776684414795,
+      "kelly_criterion": 81.98416657095936,
+      "game_date": "2025-08-02",
+      "start_time": "2025-08-02 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "San Francisco Giants @ New York Mets",
+      "predicted_team": "away",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": 176.0,
+      "ensemble_prob": 0.22747828350223695,
+      "win_prob": 0.772521716497763,
+      "predicted_roi": 113.2159937533826,
+      "confidence": 0.272521716497763,
+      "odds_probability_divergence": 41.020287591805285,
+      "kelly_criterion": 64.32726917805829,
+      "game_date": "2025-08-02",
+      "start_time": "2025-08-02 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Chicago White Sox @ Los Angeles Angels",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 132.0,
+      "ensemble_prob": 0.03704225308240638,
+      "win_prob": 0.9629577469175936,
+      "predicted_roi": 123.40619728488171,
+      "confidence": 0.4629577469175936,
+      "odds_probability_divergence": 53.1923264158973,
+      "kelly_criterion": 93.48954339763768,
+      "game_date": "2025-08-02",
+      "start_time": "2025-08-02 22:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

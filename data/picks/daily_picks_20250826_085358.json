@@ -1,0 +1,109 @@
+{
+  "date": "2025-08-26",
+  "timestamp": "2025-08-26 08:53:58",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Positive (0% ~ 20%)",
+        "Very Positive A (20% ~ 40%)",
+        "Extremely Positive A (60% ~ 100%)",
+        "Extremely Positive B (>100%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Tampa Bay Rays @ Cleveland Guardians",
+      "predicted_team": "away",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": 102.0,
+      "ensemble_prob": 0.37851688265800476,
+      "win_prob": 0.6214831173419952,
+      "predicted_roi": 25.53958970308304,
+      "confidence": 0.12148311734199524,
+      "odds_probability_divergence": 12.64336123915002,
+      "kelly_criterion": 25.03881343439513,
+      "game_date": "2025-08-26",
+      "start_time": "2025-08-26 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Atlanta Braves @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": 104.0,
+      "ensemble_prob": 0.8249273896217346,
+      "win_prob": 0.8249273896217346,
+      "predicted_roi": 68.28518748283386,
+      "confidence": 0.3249273896217346,
+      "odds_probability_divergence": 33.47313111903621,
+      "kelly_criterion": 65.65883411810948,
+      "game_date": "2025-08-26",
+      "start_time": "2025-08-26 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Chicago Cubs @ San Francisco Giants",
+      "predicted_team": "home",
+      "selection_team_name": "San Francisco Giants",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.8333079814910889,
+      "win_prob": 0.8333079814910889,
+      "predicted_roi": 83.32775592803955,
+      "confidence": 0.33330798149108887,
+      "odds_probability_divergence": 37.87625269456343,
+      "kelly_criterion": 69.43979660669962,
+      "game_date": "2025-08-26",
+      "start_time": "2025-08-26 21:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Detroit Tigers @ Oakland Athletics",
+      "predicted_team": "home",
+      "selection_team_name": "Oakland Athletics",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.6255807280540466,
+      "win_prob": 0.6255807280540466,
+      "predicted_roi": 36.376598715782166,
+      "confidence": 0.12558072805404663,
+      "odds_probability_divergence": 16.686513172377136,
+      "kelly_criterion": 30.827626030323852,
+      "game_date": "2025-08-26",
+      "start_time": "2025-08-26 22:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Cincinnati Reds @ Los Angeles Dodgers",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Dodgers",
+      "selection_odds": -188.0,
+      "ensemble_prob": 0.6851718425750732,
+      "win_prob": 0.6851718425750732,
+      "predicted_roi": 4.962495032777177,
+      "confidence": 0.18517184257507324,
+      "odds_probability_divergence": 3.239406479729545,
+      "kelly_criterion": 9.32949066162108,
+      "game_date": "2025-08-26",
+      "start_time": "2025-08-26 22:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

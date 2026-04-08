@@ -1,0 +1,124 @@
+{
+  "date": "2025-08-06",
+  "timestamp": "2025-08-06 11:35:22",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "New York Yankees @ Texas Rangers",
+      "predicted_team": "home",
+      "selection_team_name": "Texas Rangers",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.902788800258919,
+      "win_prob": 0.902788800258919,
+      "predicted_roi": 96.80795845644435,
+      "confidence": 0.40278880025891906,
+      "odds_probability_divergence": 44.40732039286438,
+      "kelly_criterion": 82.0406427596986,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 14:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Tampa Bay Rays @ Los Angeles Angels",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Angels",
+      "selection_odds": 104.0,
+      "ensemble_prob": 0.8347513122996597,
+      "win_prob": 0.8347513122996597,
+      "predicted_roi": 70.28926770913057,
+      "confidence": 0.3347513122996597,
+      "odds_probability_divergence": 34.455523386828716,
+      "kelly_criterion": 67.58583433570247,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 16:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Houston Astros @ Miami Marlins",
+      "predicted_team": "away",
+      "selection_team_name": "Houston Astros",
+      "selection_odds": -110.0,
+      "ensemble_prob": 0.12620982223700233,
+      "win_prob": 0.8737901777629977,
+      "predicted_roi": 66.81448848202685,
+      "confidence": 0.37379017776299767,
+      "odds_probability_divergence": 34.99806539534739,
+      "kelly_criterion": 73.49593733022952,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 16:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Kansas City Royals @ Boston Red Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": -138.0,
+      "ensemble_prob": 0.9524036659608381,
+      "win_prob": 0.9524036659608381,
+      "predicted_roi": 64.2551249990431,
+      "confidence": 0.45240366596083814,
+      "odds_probability_divergence": 37.257173318772885,
+      "kelly_criterion": 88.67207249867948,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Milwaukee Brewers @ Atlanta Braves",
+      "predicted_team": "away",
+      "selection_team_name": "Milwaukee Brewers",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.027059189674759867,
+      "win_prob": 0.9729408103252402,
+      "predicted_roi": 110.15521503025187,
+      "confidence": 0.47294081032524016,
+      "odds_probability_divergence": 50.997784736227715,
+      "kelly_criterion": 94.9613922674585,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 19:15:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "San Diego Padres @ Arizona Diamondbacks",
+      "predicted_team": "home",
+      "selection_team_name": "Arizona Diamondbacks",
+      "selection_odds": 126.0,
+      "ensemble_prob": 0.7883976659510827,
+      "win_prob": 0.7883976659510827,
+      "predicted_roi": 78.1778725049447,
+      "confidence": 0.28839766595108274,
+      "odds_probability_divergence": 34.591978984488804,
+      "kelly_criterion": 62.04593055947991,
+      "game_date": "2025-08-06",
+      "start_time": "2025-08-06 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

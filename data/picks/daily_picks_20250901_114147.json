@@ -1,0 +1,53 @@
+{
+  "date": "2025-09-01",
+  "timestamp": "2025-09-01 11:41:47",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Strong Underdog (+150 ~ +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Chicago White Sox @ Minnesota Twins",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 164.0,
+      "ensemble_prob": 0.4922089499969706,
+      "win_prob": 0.5077910500030294,
+      "predicted_roi": 34.05683720079975,
+      "confidence": 0.007791050003029376,
+      "odds_probability_divergence": 12.900317121515059,
+      "kelly_criterion": 20.76636414682912,
+      "game_date": "2025-09-01",
+      "start_time": "2025-09-01 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "San Francisco Giants @ Colorado Rockies",
+      "predicted_team": "home",
+      "selection_team_name": "Colorado Rockies",
+      "selection_odds": 116.0,
+      "ensemble_prob": 0.5554655194282532,
+      "win_prob": 0.5554655194282532,
+      "predicted_roi": 19.98055219650267,
+      "confidence": 0.055465519428253174,
+      "odds_probability_divergence": 9.250255646529022,
+      "kelly_criterion": 17.224613962502325,
+      "game_date": "2025-09-01",
+      "start_time": "2025-09-01 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

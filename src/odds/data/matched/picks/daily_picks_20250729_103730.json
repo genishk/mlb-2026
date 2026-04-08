@@ -1,0 +1,125 @@
+{
+  "date": "2025-07-29",
+  "timestamp": "2025-07-29 10:37:30",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "odds_probability_divergence": [
+        "Model Slightly Optimistic (+5% ~ +10%)",
+        "Model Much More Optimistic (+10%+)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Tampa Bay Rays @ New York Yankees",
+      "predicted_team": "away",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": 164.0,
+      "ensemble_prob": 0.4899088152961161,
+      "win_prob": 0.5100911847038839,
+      "predicted_roi": 34.66407276182536,
+      "confidence": 0.010091184703883926,
+      "odds_probability_divergence": 13.130330591600515,
+      "kelly_criterion": 21.13662973282034,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 19:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Los Angeles Dodgers @ Cincinnati Reds",
+      "predicted_team": "home",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 130.0,
+      "ensemble_prob": 0.5575170872484954,
+      "win_prob": 0.5575170872484954,
+      "predicted_roi": 28.22893006715394,
+      "confidence": 0.05751708724849536,
+      "odds_probability_divergence": 12.273447855284319,
+      "kelly_criterion": 21.714561590118407,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Boston Red Sox @ Minnesota Twins",
+      "predicted_team": "home",
+      "selection_team_name": "Minnesota Twins",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.5520959198865921,
+      "win_prob": 0.5520959198865921,
+      "predicted_roi": 10.419183977318426,
+      "confidence": 0.052095919886592124,
+      "odds_probability_divergence": 5.209591988659213,
+      "kelly_criterion": 10.419183977318426,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Philadelphia Phillies @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 152.0,
+      "ensemble_prob": 0.5677677281995205,
+      "win_prob": 0.5677677281995205,
+      "predicted_roi": 43.07746750627917,
+      "confidence": 0.06776772819952048,
+      "odds_probability_divergence": 17.094233137412367,
+      "kelly_criterion": 28.340439148867873,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 19:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "New York Mets @ San Diego Padres",
+      "predicted_team": "home",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": 106.0,
+      "ensemble_prob": 0.5912814319710538,
+      "win_prob": 0.5912814319710538,
+      "predicted_roi": 21.80397498603707,
+      "confidence": 0.09128143197105376,
+      "odds_probability_divergence": 10.584453876717026,
+      "kelly_criterion": 20.569787722676487,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 21:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Seattle Mariners @ Oakland Athletics",
+      "predicted_team": "home",
+      "selection_team_name": "Oakland Athletics",
+      "selection_odds": 100.0,
+      "ensemble_prob": 0.5938864946375967,
+      "win_prob": 0.5938864946375967,
+      "predicted_roi": 18.77729892751934,
+      "confidence": 0.09388649463759668,
+      "odds_probability_divergence": 9.388649463759668,
+      "kelly_criterion": 18.777298927519336,
+      "game_date": "2025-07-29",
+      "start_time": "2025-07-29 22:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

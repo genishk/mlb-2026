@@ -1,0 +1,92 @@
+[
+  {
+    "id": "d6ef36729efa4618728382feb9d092a9",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-07-31T17:06:00Z",
+    "home_team": "New York Yankees",
+    "away_team": "Tampa Bay Rays",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-07-31T12:33:17Z",
+            "outcomes": [
+              {
+                "name": "New York Yankees",
+                "price": -112
+              },
+              {
+                "name": "Tampa Bay Rays",
+                "price": -104
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "86066964719c5c58af7907ad2005d106",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-07-31T23:11:00Z",
+    "home_team": "Cincinnati Reds",
+    "away_team": "Atlanta Braves",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-07-31T12:33:17Z",
+            "outcomes": [
+              {
+                "name": "Atlanta Braves",
+                "price": 132
+              },
+              {
+                "name": "Cincinnati Reds",
+                "price": -156
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "0d09d7a9b22df65afc0f9701cdaf52d1",
+    "sport_key": "baseball_mlb",
+    "sport_title": "MLB",
+    "commence_time": "2025-08-01T01:41:00Z",
+    "home_team": "Seattle Mariners",
+    "away_team": "Texas Rangers",
+    "bookmakers": [
+      {
+        "key": "fanduel",
+        "title": "FanDuel",
+        "markets": [
+          {
+            "key": "h2h",
+            "last_update": "2025-07-31T12:33:17Z",
+            "outcomes": [
+              {
+                "name": "Seattle Mariners",
+                "price": -162
+              },
+              {
+                "name": "Texas Rangers",
+                "price": 136
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

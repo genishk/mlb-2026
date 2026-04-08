@@ -1,0 +1,127 @@
+{
+  "date": "2025-08-17",
+  "timestamp": "2025-08-17 09:42:39",
+  "configuration": {
+    "model_weights": {
+      "model9": 1.0
+    },
+    "selected_zones": {
+      "odds": [
+        "Pick Em (-120 ~ +120)",
+        "Underdog (+120 ~ +150)",
+        "Strong Underdog (+150 ~ +300)",
+        "Heavy Underdog (> +300)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Philadelphia Phillies @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 166.0,
+      "ensemble_prob": 0.593644380569458,
+      "win_prob": 0.593644380569458,
+      "predicted_roi": 57.90940523147583,
+      "confidence": 0.09364438056945801,
+      "odds_probability_divergence": 21.77045309453979,
+      "kelly_criterion": 34.885183874383024,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 11:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Milwaukee Brewers @ Cincinnati Reds",
+      "predicted_team": "home",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": -110.0,
+      "ensemble_prob": 0.6716480851173401,
+      "win_prob": 0.6716480851173401,
+      "predicted_roi": 28.22372534058311,
+      "confidence": 0.1716480851173401,
+      "odds_probability_divergence": 14.783856130781626,
+      "kelly_criterion": 31.046097874641415,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 13:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Chicago White Sox @ Kansas City Royals",
+      "predicted_team": "away",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 138.0,
+      "ensemble_prob": 0.33003371953964233,
+      "win_prob": 0.6699662804603577,
+      "predicted_roi": 59.451974749565125,
+      "confidence": 0.16996628046035767,
+      "odds_probability_divergence": 24.97982132334669,
+      "kelly_criterion": 43.08114112287328,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Baltimore Orioles @ Houston Astros",
+      "predicted_team": "away",
+      "selection_team_name": "Baltimore Orioles",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.49067261815071106,
+      "win_prob": 0.5093273818492889,
+      "predicted_roi": 12.052024006843567,
+      "confidence": 0.00932738184928894,
+      "odds_probability_divergence": 5.478192730383441,
+      "kelly_criterion": 10.043353339036312,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Los Angeles Angels @ Oakland Athletics",
+      "predicted_team": "home",
+      "selection_team_name": "Oakland Athletics",
+      "selection_odds": -102.0,
+      "ensemble_prob": 0.8710302710533142,
+      "win_prob": 0.8710302710533142,
+      "predicted_roi": 72.49815171840143,
+      "confidence": 0.3710302710533142,
+      "odds_probability_divergence": 36.60797760038093,
+      "kelly_criterion": 73.94811475276946,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 16:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "San Diego Padres @ Los Angeles Dodgers",
+      "predicted_team": "away",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": 118.0,
+      "ensemble_prob": 0.443786084651947,
+      "win_prob": 0.556213915348053,
+      "predicted_roi": 21.25463354587555,
+      "confidence": 0.05621391534805298,
+      "odds_probability_divergence": 9.749831901777773,
+      "kelly_criterion": 18.012401310064018,
+      "game_date": "2025-08-17",
+      "start_time": "2025-08-17 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

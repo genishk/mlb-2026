@@ -1,0 +1,107 @@
+{
+  "date": "2025-07-23",
+  "timestamp": "2025-07-23 10:07:20",
+  "configuration": {
+    "model_weights": {
+      "model_svm": 1.0
+    },
+    "selected_zones": {
+      "odds_probability_divergence": [
+        "Model Slightly Optimistic (+5% ~ +10%)",
+        "Model Much More Optimistic (+10%+)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Cincinnati Reds @ Washington Nationals",
+      "predicted_team": "home",
+      "selection_team_name": "Washington Nationals",
+      "selection_odds": 108.0,
+      "ensemble_prob": 0.542590821732697,
+      "win_prob": 0.542590821732697,
+      "predicted_roi": 12.858890920400981,
+      "confidence": 0.042590821732697015,
+      "odds_probability_divergence": 6.1821590963466235,
+      "kelly_criterion": 11.906380481852757,
+      "game_date": "2025-07-23",
+      "start_time": "2025-07-23 12:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "San Diego Padres @ Miami Marlins",
+      "predicted_team": "home",
+      "selection_team_name": "Miami Marlins",
+      "selection_odds": 132.0,
+      "ensemble_prob": 0.556635643252674,
+      "win_prob": 0.556635643252674,
+      "predicted_roi": 29.139469234620364,
+      "confidence": 0.056635643252674006,
+      "odds_probability_divergence": 12.560116049405334,
+      "kelly_criterion": 22.075355480773016,
+      "game_date": "2025-07-23",
+      "start_time": "2025-07-23 12:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Detroit Tigers @ Pittsburgh Pirates",
+      "predicted_team": "home",
+      "selection_team_name": "Pittsburgh Pirates",
+      "selection_odds": 114.0,
+      "ensemble_prob": 0.5965481833254,
+      "win_prob": 0.5965481833254,
+      "predicted_roi": 27.661311231635594,
+      "confidence": 0.09654818332540005,
+      "odds_probability_divergence": 12.925846369923184,
+      "kelly_criterion": 24.264308097925973,
+      "game_date": "2025-07-23",
+      "start_time": "2025-07-23 12:35:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "Baltimore Orioles @ Cleveland Guardians",
+      "predicted_team": "home",
+      "selection_team_name": "Cleveland Guardians",
+      "selection_odds": -124.0,
+      "ensemble_prob": 0.6228623919720534,
+      "win_prob": 0.6228623919720534,
+      "predicted_roi": 12.517077259467712,
+      "confidence": 0.1228623919720534,
+      "odds_probability_divergence": 6.929096340062479,
+      "kelly_criterion": 15.521175801739965,
+      "game_date": "2025-07-23",
+      "start_time": "2025-07-23 18:40:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "New York Yankees @ Toronto Blue Jays",
+      "predicted_team": "home",
+      "selection_team_name": "Toronto Blue Jays",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.6332222112996384,
+      "win_prob": 0.6332222112996384,
+      "predicted_roi": 39.308886485920446,
+      "confidence": 0.1332222112996384,
+      "odds_probability_divergence": 17.867675675418386,
+      "kelly_criterion": 32.75740540493371,
+      "game_date": "2025-07-23",
+      "start_time": "2025-07-23 19:07:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

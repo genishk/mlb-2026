@@ -1,0 +1,142 @@
+{
+  "date": "2025-07-30",
+  "timestamp": "2025-07-30 13:24:34",
+  "configuration": {
+    "model_weights": {
+      "model7": 1.0
+    },
+    "selected_zones": {
+      "predicted_roi": [
+        "Extremely Positive (>60%)"
+      ]
+    }
+  },
+  "picks": [
+    {
+      "pick_number": 1,
+      "game_info": "Boston Red Sox @ Minnesota Twins",
+      "predicted_team": "away",
+      "selection_team_name": "Boston Red Sox",
+      "selection_odds": 104.0,
+      "ensemble_prob": 0.15056385076815024,
+      "win_prob": 0.8494361492318497,
+      "predicted_roi": 73.28497444329736,
+      "confidence": 0.34943614923184974,
+      "odds_probability_divergence": 35.92400708004772,
+      "kelly_criterion": 70.4663215800936,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 13:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 2,
+      "game_info": "Philadelphia Phillies @ Chicago White Sox",
+      "predicted_team": "home",
+      "selection_team_name": "Chicago White Sox",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.8826445784909493,
+      "win_prob": 0.8826445784909493,
+      "predicted_roi": 94.18180726800885,
+      "confidence": 0.38264457849094935,
+      "odds_probability_divergence": 42.809912394549485,
+      "kelly_criterion": 78.48483939000738,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 14:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 3,
+      "game_info": "Pittsburgh Pirates @ San Francisco Giants",
+      "predicted_team": "away",
+      "selection_team_name": "Pittsburgh Pirates",
+      "selection_odds": 176.0,
+      "ensemble_prob": 0.34690663484606477,
+      "win_prob": 0.6530933651539352,
+      "predicted_roi": 80.25376878248612,
+      "confidence": 0.15309336515393523,
+      "odds_probability_divergence": 29.07745245742251,
+      "kelly_criterion": 45.5987322627762,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 15:45:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 4,
+      "game_info": "New York Mets @ San Diego Padres",
+      "predicted_team": "home",
+      "selection_team_name": "San Diego Padres",
+      "selection_odds": -112.0,
+      "ensemble_prob": 0.9572615291660371,
+      "win_prob": 0.9572615291660371,
+      "predicted_roi": 81.19593230642846,
+      "confidence": 0.45726152916603713,
+      "odds_probability_divergence": 42.89596423735843,
+      "kelly_criterion": 90.93944418319987,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 16:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 5,
+      "game_info": "Tampa Bay Rays @ New York Yankees",
+      "predicted_team": "away",
+      "selection_team_name": "Tampa Bay Rays",
+      "selection_odds": 120.0,
+      "ensemble_prob": 0.2647498181924539,
+      "win_prob": 0.7352501818075461,
+      "predicted_roi": 61.75503999766014,
+      "confidence": 0.2352501818075461,
+      "odds_probability_divergence": 28.070472726209157,
+      "kelly_criterion": 51.46253333138344,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 19:05:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 6,
+      "game_info": "Los Angeles Dodgers @ Cincinnati Reds",
+      "predicted_team": "home",
+      "selection_team_name": "Cincinnati Reds",
+      "selection_odds": 138.0,
+      "ensemble_prob": 0.7759578864205002,
+      "win_prob": 0.7759578864205002,
+      "predicted_roi": 84.67797696807905,
+      "confidence": 0.27595788642050023,
+      "odds_probability_divergence": 35.57898191936095,
+      "kelly_criterion": 61.3608528754196,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 19:10:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    },
+    {
+      "pick_number": 7,
+      "game_info": "Texas Rangers @ Los Angeles Angels",
+      "predicted_team": "home",
+      "selection_team_name": "Los Angeles Angels",
+      "selection_odds": 106.0,
+      "ensemble_prob": 0.78654353656094,
+      "win_prob": 0.78654353656094,
+      "predicted_roi": 62.02796853155364,
+      "confidence": 0.28654353656094,
+      "odds_probability_divergence": 30.11066433570565,
+      "kelly_criterion": 58.51695144486192,
+      "game_date": "2025-07-30",
+      "start_time": "2025-07-30 21:38:00 EDT",
+      "actual_result": null,
+      "actual_roi": null,
+      "is_correct": null
+    }
+  ]
+}

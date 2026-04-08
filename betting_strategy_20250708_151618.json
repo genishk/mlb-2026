@@ -1,0 +1,347 @@
+{
+  "betting_parameters": {
+    "win_rate": 0.51,
+    "avg_odds": 120,
+    "decimal_odds": 2.2,
+    "kelly_fraction": 0.10166666666666674,
+    "target_roi": 0.15
+  },
+  "parlay_efficiency": [
+    {
+      "teams": 1,
+      "win_probability": 0.51,
+      "payout_multiplier": 2.2,
+      "expected_value": 0.6320000000000001,
+      "roi_percent": 63.20000000000001,
+      "variance": 1.4696160000000003,
+      "std_dev": 1.2122771960240777,
+      "sharpe_ratio": 0.5213329113776777
+    },
+    {
+      "teams": 2,
+      "win_probability": 0.2601,
+      "payout_multiplier": 4.840000000000001,
+      "expected_value": 0.5189840000000001,
+      "roi_percent": 51.89840000000001,
+      "variance": 4.575861644544002,
+      "std_dev": 2.1391263741406212,
+      "sharpe_ratio": 0.24261493209277935
+    },
+    {
+      "teams": 3,
+      "win_probability": 0.13265100000000002,
+      "payout_multiplier": 10.648000000000003,
+      "expected_value": 0.5451188480000007,
+      "roi_percent": 54.51188480000007,
+      "variance": 13.062488511671258,
+      "std_dev": 3.6142064843712594,
+      "sharpe_ratio": 0.150826703000294
+    },
+    {
+      "teams": 4,
+      "win_probability": 0.06765201,
+      "payout_multiplier": 23.425600000000006,
+      "expected_value": 0.6524409354560003,
+      "roi_percent": 65.24409354560004,
+      "variance": 34.61765230837115,
+      "std_dev": 5.883676767835836,
+      "sharpe_ratio": 0.1108900031733022
+    },
+    {
+      "teams": 5,
+      "win_probability": 0.0345025251,
+      "payout_multiplier": 51.53632000000002,
+      "expected_value": 0.8126356994616326,
+      "roi_percent": 81.26356994616326,
+      "variance": 88.47787311498985,
+      "std_dev": 9.406267756926221,
+      "sharpe_ratio": 0.08639300097142734
+    },
+    {
+      "teams": 6,
+      "win_probability": 0.017596287801,
+      "payout_multiplier": 113.37990400000005,
+      "expected_value": 1.0126617094347523,
+      "roi_percent": 101.26617094347523,
+      "variance": 222.22034957130015,
+      "std_dev": 14.907057039244874,
+      "sharpe_ratio": 0.06793169884362697
+    },
+    {
+      "teams": 7,
+      "win_probability": 0.00897410677851,
+      "payout_multiplier": 249.43578880000015,
+      "expected_value": 1.2474375098515802,
+      "roi_percent": 124.74375098515802,
+      "variance": 553.342246773159,
+      "std_dev": 23.523227813655996,
+      "sharpe_ratio": 0.053030031411225045
+    }
+  ],
+  "strategies_by_picks": {
+    "1_picks": {
+      "total_picks": 1,
+      "strategy": {
+        "singles": {
+          "allocation": 1.0,
+          "bet_size_percent": 5.083333333333337,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 63.20000000000001,
+        "risk_score": 1.0
+      }
+    },
+    "2_picks": {
+      "total_picks": 2,
+      "strategy": {
+        "singles": {
+          "allocation": 0.75,
+          "bet_size_percent": 4.06666666666667,
+          "num_bets": 2,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlay": {
+          "allocation": 0.25,
+          "bet_size_percent": 2.033333333333335,
+          "num_bets": 1,
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 60.37460000000001,
+        "risk_score": 2.5
+      }
+    },
+    "3_picks": {
+      "total_picks": 3,
+      "strategy": {
+        "singles": {
+          "allocation": 0.6,
+          "bet_size_percent": 3.5583333333333353,
+          "num_bets": 3,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlays": {
+          "allocation": 0.35,
+          "bet_size_percent": 2.5416666666666683,
+          "num_bets": 3,
+          "combinations": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        },
+        "3-team_parlay": {
+          "allocation": 0.05,
+          "bet_size_percent": 1.0166666666666675,
+          "num_bets": 1,
+          "expected_roi": 54.51188480000007,
+          "risk_level": "High"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 58.81003424000002,
+        "risk_score": 4.2
+      }
+    },
+    "4_picks": {
+      "total_picks": 4,
+      "strategy": {
+        "singles": {
+          "allocation": 0.5,
+          "bet_size_percent": 3.050000000000002,
+          "num_bets": 4,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlays": {
+          "allocation": 0.35,
+          "bet_size_percent": 2.033333333333335,
+          "num_bets": 6,
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        },
+        "3-team_parlays": {
+          "allocation": 0.12,
+          "bet_size_percent": 1.2200000000000009,
+          "num_bets": 4,
+          "expected_roi": 54.51188480000007,
+          "risk_level": "High"
+        },
+        "4-team_parlay": {
+          "allocation": 0.03,
+          "bet_size_percent": 0.8133333333333339,
+          "num_bets": 1,
+          "expected_roi": 65.24409354560004,
+          "risk_level": "Very High"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 58.26318898236802,
+        "risk_score": 5.8
+      }
+    },
+    "5_picks": {
+      "total_picks": 5,
+      "strategy": {
+        "singles": {
+          "allocation": 0.45,
+          "bet_size_percent": 2.5416666666666683,
+          "num_bets": 5,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlays": {
+          "allocation": 0.35,
+          "bet_size_percent": 1.525000000000001,
+          "num_bets": 10,
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        },
+        "3-team_parlays": {
+          "allocation": 0.15,
+          "bet_size_percent": 1.0166666666666675,
+          "num_bets": 10,
+          "expected_roi": 54.51188480000007,
+          "risk_level": "High"
+        },
+        "4-team_parlays": {
+          "allocation": 0.04,
+          "bet_size_percent": 0.6100000000000004,
+          "num_bets": 5,
+          "expected_roi": 65.24409354560004,
+          "risk_level": "Very High"
+        },
+        "5-team_parlay": {
+          "allocation": 0.01,
+          "bet_size_percent": 0.40666666666666695,
+          "num_bets": 1,
+          "expected_roi": 81.26356994616326,
+          "risk_level": "Extreme"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 58.20362216128565,
+        "risk_score": 7.2
+      }
+    },
+    "6_picks": {
+      "total_picks": 6,
+      "strategy": {
+        "singles": {
+          "allocation": 0.4,
+          "bet_size_percent": 2.2366666666666686,
+          "num_bets": 6,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlays": {
+          "allocation": 0.35,
+          "bet_size_percent": 1.2200000000000009,
+          "num_bets": 15,
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        },
+        "3-team_parlays": {
+          "allocation": 0.18,
+          "bet_size_percent": 0.8133333333333339,
+          "num_bets": 20,
+          "expected_roi": 54.51188480000007,
+          "risk_level": "High"
+        },
+        "4-team_parlays": {
+          "allocation": 0.05,
+          "bet_size_percent": 0.5083333333333337,
+          "num_bets": 15,
+          "expected_roi": 65.24409354560004,
+          "risk_level": "Very High"
+        },
+        "higher_parlays": {
+          "allocation": 0.02,
+          "bet_size_percent": 0.3050000000000002,
+          "num_bets": 7,
+          "expected_roi": 91.26487044481925,
+          "risk_level": "Extreme"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 58.34408135017641,
+        "risk_score": 8.5
+      }
+    },
+    "7_picks": {
+      "total_picks": 7,
+      "strategy": {
+        "singles": {
+          "allocation": 0.35,
+          "bet_size_percent": 2.033333333333335,
+          "num_bets": 7,
+          "expected_roi": 63.20000000000001,
+          "risk_level": "Low"
+        },
+        "2-team_parlays": {
+          "allocation": 0.35,
+          "bet_size_percent": 1.0166666666666675,
+          "num_bets": 21,
+          "expected_roi": 51.89840000000001,
+          "risk_level": "Medium"
+        },
+        "3-team_parlays": {
+          "allocation": 0.2,
+          "bet_size_percent": 0.6100000000000004,
+          "num_bets": 35,
+          "expected_roi": 54.51188480000007,
+          "risk_level": "High"
+        },
+        "4-team_parlays": {
+          "allocation": 0.07,
+          "bet_size_percent": 0.40666666666666695,
+          "num_bets": 35,
+          "expected_roi": 65.24409354560004,
+          "risk_level": "Very High"
+        },
+        "higher_parlays": {
+          "allocation": 0.03,
+          "bet_size_percent": 0.20333333333333348,
+          "num_bets": 29,
+          "expected_roi": 102.42449729159884,
+          "risk_level": "Extreme"
+        }
+      },
+      "summary": {
+        "total_allocation": 1.0,
+        "weighted_expected_roi": 58.826638426939994,
+        "risk_score": 9.8
+      }
+    }
+  },
+  "general_guidelines": {
+    "bankroll_management": "Never bet more than Kelly criterion suggests",
+    "risk_tolerance": "Adjust allocation percentages based on personal risk tolerance",
+    "diversification": "Higher pick counts allow for better risk diversification",
+    "parlay_warning": "Parlays have exponentially decreasing win probability"
+  }
+}
