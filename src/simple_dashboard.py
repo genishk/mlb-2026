@@ -290,7 +290,7 @@ def get_available_prediction_files_for_period(start_date_str: str, end_date_str:
     project_root = Path(__file__).parent.parent
     predictions_dir = project_root / "src" / "odds" / "data" / "matched"
     
-    prediction_files = list(predictions_dir.glob("mlb_predictions_with_odds_*.json"))
+    prediction_files = list(predictions_dir.glob("mlb_predictions_with_odds_*_active.json"))
     
     filtered_files = []
     total_games = 0
@@ -4079,28 +4079,23 @@ def create_unified_alternative_ranking(optimal_zones, cross_combinations, valida
     return alternative_strategies
 
 def find_latest_prediction_file():
-    """최신 MLB 예측 데이터 파일을 찾는 함수"""
+    """최신 MLB 예측 데이터 파일을 찾는 함수 (active 태그 파일만)"""
     import os
     
-    # 파일 패턴 정의
-    pattern = "src/odds/data/matched/mlb_predictions_with_odds_*.json"
+    pattern = "src/odds/data/matched/mlb_predictions_with_odds_*_active.json"
     
     try:
-        # 모든 매칭되는 파일 찾기
         files = glob.glob(pattern)
         
         if not files:
             return None
             
-        # 파일명에서 날짜 추출하여 최신 파일 찾기
         def extract_datetime(filename):
-            # mlb_predictions_with_odds_20250607_150950.json 패턴에서 날짜시간 추출
-            match = re.search(r'mlb_predictions_with_odds_(\d{8}_\d{6})\.json', filename)
+            match = re.search(r'mlb_predictions_with_odds_(\d{8}_\d{6})_active\.json', filename)
             if match:
                 return match.group(1)
             return "00000000_000000"
         
-        # 최신 파일 선택
         latest_file = max(files, key=extract_datetime)
         return latest_file
         

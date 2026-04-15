@@ -87,197 +87,169 @@ class MLBEnsemblePredictor:
         
         self.model_paths = {}
         self.project_root = Path(__file__).parent.parent.parent
+        self.current_tag = None
         
-    def load_latest_models(self) -> Dict[str, str]:
-        """각 모델의 가장 최근 저장 파일을 로드"""
+    def _find_tagged_file(self, models_dir: Path, pattern_base: str, model_tag: str, 
+                         ext: str = '.joblib', exclude_keywords: Optional[List[str]] = None) -> Optional[Path]:
+        """태그 기반 파일 찾기 (fallback: 타임스탬프 버전)"""
+        tagged = models_dir / f"{pattern_base}_{model_tag}{ext}"
+        if tagged.exists():
+            return tagged
+        ts_files = list(models_dir.glob(f"{pattern_base}_*{ext}"))
+        ts_files = [f for f in ts_files if 'active' not in f.name and 'shadow' not in f.name]
+        if exclude_keywords:
+            for kw in exclude_keywords:
+                ts_files = [f for f in ts_files if kw not in f.name]
+        if ts_files:
+            return max(ts_files, key=lambda x: x.stat().st_mtime)
+        return None
+        
+    def load_latest_models(self, model_tag: str = 'active') -> Dict[str, str]:
+        """각 모델의 가장 최근 저장 파일을 로드
+        
+        Args:
+            model_tag: 모델 태그 ('active', 'shadow')
+        """
         models_dir = self.project_root / "src" / "models" / "saved_models"
+        self.current_tag = model_tag
         
         if not models_dir.exists():
             raise FileNotFoundError(f"모델 디렉토리를 찾을 수 없습니다: {models_dir}")
         
         loaded_models = {}
         
+        print(f"\n=== [{model_tag.upper()}] 모델 로드 시작 ===")
+        
         # 메인 앙상블 모델들 (1~3) 로드
         for model_type in ['model1', 'model2', 'model3']:
-            model_files = list(models_dir.glob(f'mlb_betting_{model_type}_*.joblib'))
-            feature_files = list(models_dir.glob(f'mlb_features{model_type[-1]}_*.json'))
+            model_num = model_type[-1]
+            model_file = self._find_tagged_file(models_dir, f'mlb_betting_{model_type}', model_tag)
+            feature_file = self._find_tagged_file(models_dir, f'mlb_features{model_num}', model_tag, ext='.json')
             
-            if model_files and feature_files:
-                latest_model = max(model_files, key=lambda x: x.stat().st_mtime)
-                latest_features = max(feature_files, key=lambda x: x.stat().st_mtime)
-                
-                # 모델과 특성 로드
-                self.models[model_type].load_model(str(latest_model), str(latest_features))
-                loaded_models[model_type] = str(latest_model)
-                print(f"{model_type} 로드 완료: {latest_model.name}")
+            if model_file and feature_file:
+                self.models[model_type].load_model(str(model_file), str(feature_file))
+                loaded_models[model_type] = str(model_file)
+                print(f"{model_type} 로드 완료: {model_file.name}")
             else:
                 print(f"경고: {model_type}의 모델 또는 특성 파일을 찾을 수 없습니다.")
         
         # 추가 테스트 모델들 (4~9) 로드
         for model_type in ['model4', 'model5', 'model6', 'model7', 'model8', 'model9']:
-            model_files = list(models_dir.glob(f'mlb_betting_{model_type}_*.joblib'))
-            feature_files = list(models_dir.glob(f'mlb_features{model_type[-1]}_*.json'))
+            model_num = model_type[-1]
+            model_file = self._find_tagged_file(models_dir, f'mlb_betting_{model_type}', model_tag)
+            feature_file = self._find_tagged_file(models_dir, f'mlb_features{model_num}', model_tag, ext='.json')
             
-            if model_files and feature_files:
-                latest_model = max(model_files, key=lambda x: x.stat().st_mtime)
-                latest_features = max(feature_files, key=lambda x: x.stat().st_mtime)
-                
-                # 모델과 특성 로드
-                self.additional_models[model_type].load_model(str(latest_model), str(latest_features))
-                loaded_models[model_type] = str(latest_model)
-                print(f"{model_type} 로드 완료: {latest_model.name}")
+            if model_file and feature_file:
+                self.additional_models[model_type].load_model(str(model_file), str(feature_file))
+                loaded_models[model_type] = str(model_file)
+                print(f"{model_type} 로드 완료: {model_file.name}")
             else:
                 print(f"경고: {model_type}의 모델 또는 특성 파일을 찾을 수 없습니다.")
         
-        # 새로 추가한 고성능 모델들 로드
-        new_model_patterns = {
-            'model_rf': 'mlb_betting_model_rf_*.joblib',
-            'model_nn': 'mlb_betting_model_nn_*.joblib', 
-            'model_svm': 'mlb_betting_model_svm_*.joblib',
-            'model_advanced_catboost_basic': 'mlb_advanced_catboost_basic_*.joblib',
-            'model_advanced_catboost': 'mlb_advanced_catboost_*.joblib',
-            'model_advanced_lgbm_basic': 'mlb_advanced_lgbm_basic_*.joblib',
-            'model_advanced_lgbm': 'mlb_advanced_lgbm_*.joblib',
-            'model_advanced_nn': 'mlb_advanced_nn_*.joblib',
-            'model_advanced_rf': 'mlb_advanced_rf_*.joblib',
-            'model_advanced_svm': 'mlb_advanced_svm_*.joblib',
-            'model_advanced_xgboost_basic': 'mlb_advanced_xgboost_basic_*.joblib',
-            'model_advanced_xgboost': 'mlb_advanced_xgboost_*.joblib',
-            'model1_extended_lgbm': 'mlb_model1_extended_lgbm_*.joblib',
-            'model2_extended_catboost': 'mlb_model2_extended_catboost_*.joblib',
-            'model3_extended_xgboost': 'mlb_model3_extended_xgboost_*.joblib'
+        # 새로 추가한 고성능 모델들 설정
+        # load_type: 'basic' (model+features), 'scaler' (model+scaler+features), 'advanced' (model+scaler+selector+features)
+        new_model_configs = {
+            'model_rf': {
+                'model_base': 'mlb_betting_model_rf', 'feature_base': 'mlb_features_rf',
+                'scaler_base': None, 'selector_base': None, 'load_type': 'basic'
+            },
+            'model_nn': {
+                'model_base': 'mlb_betting_model_nn', 'feature_base': 'mlb_features_nn',
+                'scaler_base': 'mlb_scaler_nn', 'selector_base': None, 'load_type': 'scaler'
+            },
+            'model_svm': {
+                'model_base': 'mlb_betting_model_svm', 'feature_base': 'mlb_features_svm',
+                'scaler_base': 'mlb_scaler_svm', 'selector_base': None, 'load_type': 'scaler'
+            },
+            'model_advanced_catboost_basic': {
+                'model_base': 'mlb_advanced_catboost_basic', 'feature_base': 'mlb_advanced_catboost_basic_features',
+                'scaler_base': 'mlb_advanced_catboost_basic_scaler', 'selector_base': 'mlb_advanced_catboost_basic_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_catboost': {
+                'model_base': 'mlb_advanced_catboost', 'feature_base': 'mlb_advanced_catboost_features',
+                'scaler_base': 'mlb_advanced_catboost_scaler', 'selector_base': 'mlb_advanced_catboost_selector',
+                'load_type': 'advanced', 'exclude_keywords': ['basic']
+            },
+            'model_advanced_lgbm_basic': {
+                'model_base': 'mlb_advanced_lgbm_basic', 'feature_base': 'mlb_advanced_lgbm_basic_features',
+                'scaler_base': 'mlb_advanced_lgbm_basic_scaler', 'selector_base': 'mlb_advanced_lgbm_basic_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_lgbm': {
+                'model_base': 'mlb_advanced_lgbm', 'feature_base': 'mlb_advanced_lgbm_features',
+                'scaler_base': 'mlb_advanced_lgbm_scaler', 'selector_base': 'mlb_advanced_lgbm_selector',
+                'load_type': 'advanced', 'exclude_keywords': ['basic']
+            },
+            'model_advanced_nn': {
+                'model_base': 'mlb_advanced_nn', 'feature_base': 'mlb_advanced_nn_features',
+                'scaler_base': 'mlb_advanced_nn_scaler', 'selector_base': 'mlb_advanced_nn_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_rf': {
+                'model_base': 'mlb_advanced_rf', 'feature_base': 'mlb_advanced_rf_features',
+                'scaler_base': 'mlb_advanced_rf_scaler', 'selector_base': 'mlb_advanced_rf_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_svm': {
+                'model_base': 'mlb_advanced_svm', 'feature_base': 'mlb_advanced_svm_features',
+                'scaler_base': 'mlb_advanced_svm_scaler', 'selector_base': 'mlb_advanced_svm_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_xgboost_basic': {
+                'model_base': 'mlb_advanced_xgboost_basic', 'feature_base': 'mlb_advanced_xgboost_basic_features',
+                'scaler_base': 'mlb_advanced_xgboost_basic_scaler', 'selector_base': 'mlb_advanced_xgboost_basic_selector',
+                'load_type': 'advanced'
+            },
+            'model_advanced_xgboost': {
+                'model_base': 'mlb_advanced_xgboost', 'feature_base': 'mlb_advanced_xgboost_features',
+                'scaler_base': 'mlb_advanced_xgboost_scaler', 'selector_base': 'mlb_advanced_xgboost_selector',
+                'load_type': 'advanced', 'exclude_keywords': ['basic']
+            },
+            'model1_extended_lgbm': {
+                'model_base': 'mlb_model1_extended_lgbm', 'feature_base': 'mlb_model1_extended_lgbm_features',
+                'scaler_base': None, 'selector_base': None, 'load_type': 'basic'
+            },
+            'model2_extended_catboost': {
+                'model_base': 'mlb_model2_extended_catboost', 'feature_base': 'mlb_model2_extended_catboost_features',
+                'scaler_base': None, 'selector_base': None, 'load_type': 'basic'
+            },
+            'model3_extended_xgboost': {
+                'model_base': 'mlb_model3_extended_xgboost', 'feature_base': 'mlb_model3_extended_xgboost_features',
+                'scaler_base': None, 'selector_base': None, 'load_type': 'basic'
+            },
         }
         
-        new_feature_patterns = {
-            'model_rf': 'mlb_features_rf_*.json',
-            'model_nn': 'mlb_features_nn_*.json',
-            'model_svm': 'mlb_features_svm_*.json',
-            'model_advanced_catboost_basic': 'mlb_advanced_catboost_basic_features_*.json',
-            'model_advanced_catboost': 'mlb_advanced_catboost_features_*.json',
-            'model_advanced_lgbm_basic': 'mlb_advanced_lgbm_basic_features_*.json',
-            'model_advanced_lgbm': 'mlb_advanced_lgbm_features_*.json',
-            'model_advanced_nn': 'mlb_advanced_nn_features_*.json',
-            'model_advanced_rf': 'mlb_advanced_rf_features_*.json',
-            'model_advanced_svm': 'mlb_advanced_svm_features_*.json',
-            'model_advanced_xgboost_basic': 'mlb_advanced_xgboost_basic_features_*.json',
-            'model_advanced_xgboost': 'mlb_advanced_xgboost_features_*.json',
-            'model1_extended_lgbm': 'mlb_model1_extended_lgbm_features_*.json',
-            'model2_extended_catboost': 'mlb_model2_extended_catboost_features_*.json',
-            'model3_extended_xgboost': 'mlb_model3_extended_xgboost_features_*.json'
-        }
-        
-        new_scaler_patterns = {
-            'model_rf': None,  # Random Forest는 스케일러 없음
-            'model_nn': 'mlb_scaler_nn_*.joblib',
-            'model_svm': 'mlb_scaler_svm_*.joblib',
-            'model_advanced_catboost_basic': 'mlb_advanced_catboost_basic_scaler_*.joblib',
-            'model_advanced_catboost': 'mlb_advanced_catboost_scaler_*.joblib',
-            'model_advanced_lgbm_basic': 'mlb_advanced_lgbm_basic_scaler_*.joblib',
-            'model_advanced_lgbm': 'mlb_advanced_lgbm_scaler_*.joblib',
-            'model_advanced_nn': 'mlb_advanced_nn_scaler_*.joblib',
-            'model_advanced_rf': 'mlb_advanced_rf_scaler_*.joblib',
-            'model_advanced_svm': 'mlb_advanced_svm_scaler_*.joblib',
-            'model_advanced_xgboost_basic': 'mlb_advanced_xgboost_basic_scaler_*.joblib',
-            'model_advanced_xgboost': 'mlb_advanced_xgboost_scaler_*.joblib',
-            'model1_extended_lgbm': None,  # 확장 모델은 스케일러 없음
-            'model2_extended_catboost': None,  # 확장 모델은 스케일러 없음
-            'model3_extended_xgboost': None  # 확장 모델은 스케일러 없음
-        }
-        
-        # 고급 모델들용 특성 선택기 패턴 추가
-        new_selector_patterns = {
-            'model_advanced_catboost_basic': 'mlb_advanced_catboost_basic_selector_*.joblib',
-            'model_advanced_catboost': 'mlb_advanced_catboost_selector_*.joblib',
-            'model_advanced_lgbm_basic': 'mlb_advanced_lgbm_basic_selector_*.joblib',
-            'model_advanced_lgbm': 'mlb_advanced_lgbm_selector_*.joblib',
-            'model_advanced_nn': 'mlb_advanced_nn_selector_*.joblib',
-            'model_advanced_rf': 'mlb_advanced_rf_selector_*.joblib',
-            'model_advanced_svm': 'mlb_advanced_svm_selector_*.joblib',
-            'model_advanced_xgboost_basic': 'mlb_advanced_xgboost_basic_selector_*.joblib',
-            'model_advanced_xgboost': 'mlb_advanced_xgboost_selector_*.joblib'
-        }
-        
-        for model_type in ['model_rf', 'model_nn', 'model_svm', 'model_advanced_catboost_basic', 'model_advanced_catboost', 'model_advanced_lgbm_basic', 'model_advanced_lgbm', 'model_advanced_nn', 'model_advanced_rf', 'model_advanced_svm', 'model_advanced_xgboost_basic', 'model_advanced_xgboost', 'model1_extended_lgbm', 'model2_extended_catboost', 'model3_extended_xgboost']:
-            if model_type in ['model_advanced_catboost_basic', 'model_advanced_catboost']:
-                # 고급 CatBoost 모델들의 경우 더 정확한 필터링
-                if model_type == 'model_advanced_catboost_basic':
-                    model_files = [f for f in models_dir.glob('mlb_advanced_catboost_basic_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name]
-                else:  # model_advanced_catboost
-                    model_files = [f for f in models_dir.glob('mlb_advanced_catboost_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name 
-                                  and 'basic' not in f.name]  # basic 버전과 구분
-            elif model_type in ['model_advanced_lgbm_basic', 'model_advanced_lgbm']:
-                # 고급 LightGBM 모델들의 경우 더 정확한 필터링
-                if model_type == 'model_advanced_lgbm_basic':
-                    model_files = [f for f in models_dir.glob('mlb_advanced_lgbm_basic_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name]
-                else:  # model_advanced_lgbm
-                    model_files = [f for f in models_dir.glob('mlb_advanced_lgbm_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name 
-                                  and 'basic' not in f.name]  # basic 버전과 구분
-            elif model_type in ['model_advanced_xgboost_basic', 'model_advanced_xgboost']:
-                # 고급 XGBoost 모델들의 경우 더 정확한 필터링
-                if model_type == 'model_advanced_xgboost_basic':
-                    model_files = [f for f in models_dir.glob('mlb_advanced_xgboost_basic_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name]
-                else:  # model_advanced_xgboost
-                    model_files = [f for f in models_dir.glob('mlb_advanced_xgboost_*.joblib') 
-                                  if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name 
-                                  and 'basic' not in f.name]  # basic 버전과 구분
-            elif model_type in ['model_advanced_nn', 'model_advanced_rf', 'model_advanced_svm']:
-                # 새로운 고급 모델들의 경우 정확한 필터링
-                model_files = [f for f in models_dir.glob(new_model_patterns[model_type]) 
-                              if 'selector' not in f.name and 'scaler' not in f.name and 'features' not in f.name]
-            elif model_type in ['model1_extended_lgbm', 'model2_extended_catboost', 'model3_extended_xgboost']:
-                # 확장 모델들은 스케일러/선택기 없이 단순 로드
-                model_files = list(models_dir.glob(new_model_patterns[model_type]))
-            else:
-                model_files = list(models_dir.glob(new_model_patterns[model_type]))
+        for model_type, cfg in new_model_configs.items():
+            excl = cfg.get('exclude_keywords')
+            model_file = self._find_tagged_file(models_dir, cfg['model_base'], model_tag, exclude_keywords=excl)
+            feature_file = self._find_tagged_file(models_dir, cfg['feature_base'], model_tag, ext='.json', exclude_keywords=excl)
             
-            feature_files = list(models_dir.glob(new_feature_patterns[model_type]))
-            
-            if model_files and feature_files:
-                latest_model = max(model_files, key=lambda x: x.stat().st_mtime)
-                latest_features = max(feature_files, key=lambda x: x.stat().st_mtime)
-                
-                # 스케일러 파일 확인
-                scaler_path = None
-                if new_scaler_patterns[model_type]:
-                    scaler_files = list(models_dir.glob(new_scaler_patterns[model_type]))
-                    if scaler_files:
-                        scaler_path = str(max(scaler_files, key=lambda x: x.stat().st_mtime))
-                
-                # 특성 선택기 파일 확인 (고급 모델들만)
-                selector_path = None
-                if model_type in new_selector_patterns:
-                    selector_files = list(models_dir.glob(new_selector_patterns[model_type]))
-                    if selector_files:
-                        selector_path = str(max(selector_files, key=lambda x: x.stat().st_mtime))
-                
-                # 모델과 특성 로드
-                if model_type == 'model_rf':
-                    # Random Forest는 스케일러 없음
-                    self.new_models[model_type].load_model(str(latest_model), str(latest_features))
-                elif model_type in ['model1_extended_lgbm', 'model2_extended_catboost', 'model3_extended_xgboost']:
-                    # 확장 모델들은 단순 로드 (스케일러/선택기 없음)
-                    self.new_models[model_type].load_model(str(latest_model), str(latest_features))
-                elif model_type in ['model_advanced_catboost_basic', 'model_advanced_catboost', 'model_advanced_lgbm_basic', 'model_advanced_lgbm', 'model_advanced_nn', 'model_advanced_rf', 'model_advanced_svm', 'model_advanced_xgboost_basic', 'model_advanced_xgboost']:
-                    # 모든 고급 모델들은 4개 파일 모두 필요
-                    self.new_models[model_type].load_model(
-                        str(latest_model), 
-                        scaler_path, 
-                        selector_path, 
-                        str(latest_features)
-                    )
-                else:
-                    # Neural Network, SVM은 스케일러 포함
-                    self.new_models[model_type].load_model(str(latest_model), scaler_path, str(latest_features))
-                
-                loaded_models[model_type] = str(latest_model)
-                print(f"{model_type} 로드 완료: {latest_model.name}")
-            else:
+            if not model_file or not feature_file:
                 print(f"경고: {model_type}의 모델 또는 특성 파일을 찾을 수 없습니다.")
+                continue
+            
+            scaler_path = None
+            if cfg['scaler_base']:
+                scaler_file = self._find_tagged_file(models_dir, cfg['scaler_base'], model_tag, exclude_keywords=excl)
+                if scaler_file:
+                    scaler_path = str(scaler_file)
+            
+            selector_path = None
+            if cfg['selector_base']:
+                selector_file = self._find_tagged_file(models_dir, cfg['selector_base'], model_tag, exclude_keywords=excl)
+                if selector_file:
+                    selector_path = str(selector_file)
+            
+            if cfg['load_type'] == 'basic':
+                self.new_models[model_type].load_model(str(model_file), str(feature_file))
+            elif cfg['load_type'] == 'scaler':
+                self.new_models[model_type].load_model(str(model_file), scaler_path, str(feature_file))
+            elif cfg['load_type'] == 'advanced':
+                self.new_models[model_type].load_model(str(model_file), scaler_path, selector_path, str(feature_file))
+            
+            loaded_models[model_type] = str(model_file)
+            print(f"{model_type} 로드 완료: {model_file.name}")
         
         return loaded_models
     
@@ -451,13 +423,22 @@ class MLBEnsemblePredictor:
         
         return predictions_df
     
-    def save_predictions(self, predictions: pd.DataFrame) -> str:
-        """예측 결과 저장"""
+    def save_predictions(self, predictions: pd.DataFrame, model_tag: Optional[str] = None) -> str:
+        """예측 결과 저장
+        
+        Args:
+            predictions: 예측 결과 DataFrame
+            model_tag: 모델 태그 (None이면 self.current_tag 사용)
+        """
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        tag = model_tag or self.current_tag
         pred_dir = self.project_root / "src" / "predictions"
         pred_dir.mkdir(exist_ok=True, parents=True)
         
-        output_path = pred_dir / f"mlb_ensemble_predictions_{timestamp}.json"
+        if tag:
+            output_path = pred_dir / f"mlb_ensemble_predictions_{timestamp}_{tag}.json"
+        else:
+            output_path = pred_dir / f"mlb_ensemble_predictions_{timestamp}.json"
         
         # 예측 결과를 딕셔너리 리스트로 변환
         predictions_list = []

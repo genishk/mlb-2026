@@ -32,11 +32,11 @@ class SimpleModelAnalyzer:
         self.logger = logging.getLogger(__name__)
     
     def get_available_dates(self) -> List[str]:
-        """사용 가능한 날짜 목록 반환"""
+        """사용 가능한 날짜 목록 반환 (active 태그 파일만)"""
         if self.data_prefix == "None":
-            pattern = "mlb_predictions_with_odds_*.json"
+            pattern = "mlb_predictions_with_odds_*_active.json"
         else:
-            pattern = f"{self.data_prefix}mlb_predictions_with_odds_*.json"
+            pattern = f"{self.data_prefix}mlb_predictions_with_odds_*_active.json"
             
         prediction_files = list(self.predictions_dir.glob(pattern))
         dates = []
@@ -71,11 +71,11 @@ class SimpleModelAnalyzer:
         """데이터 로드 및 날짜 필터링"""
         self.logger.info("📂 데이터 로딩 시작...")
         
-        # 예측 파일들 로드
+        # 예측 파일들 로드 (active 태그 파일만)
         if self.data_prefix == "None":
-            pattern = "mlb_predictions_with_odds_*.json"
+            pattern = "mlb_predictions_with_odds_*_active.json"
         else:
-            pattern = f"{self.data_prefix}mlb_predictions_with_odds_*.json"
+            pattern = f"{self.data_prefix}mlb_predictions_with_odds_*_active.json"
         prediction_files = list(self.predictions_dir.glob(pattern))
         
         # 레코드 파일 로드

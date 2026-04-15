@@ -166,15 +166,14 @@ class TelegramAnalyticsHub:
         }
     
     def get_available_prefixes(self):
-        """사용 가능한 구분자들을 탐지"""
+        """사용 가능한 구분자들을 탐지 (active 태그 파일만)"""
         try:
-            all_files = list(self.predictions_dir.glob("*mlb_predictions_with_odds_*.json"))
+            all_files = list(self.predictions_dir.glob("*mlb_predictions_with_odds_*_active.json"))
             prefixes = set()
             
             for file_path in all_files:
                 filename = file_path.name
                 if filename.startswith("mlb_predictions_with_odds_"):
-                    # 구분자 없는 파일
                     prefixes.add("None")
                 else:
                     # 구분자 있는 파일 - 첫 번째 _까지가 구분자
@@ -196,12 +195,12 @@ class TelegramAnalyticsHub:
             return ["None"]
     
     def get_available_dates_for_prefix(self, prefix):
-        """특정 구분자에 대한 사용 가능한 날짜들을 반환"""
+        """특정 구분자에 대한 사용 가능한 날짜들을 반환 (active 태그 파일만)"""
         try:
             if prefix == "None":
-                pattern = "mlb_predictions_with_odds_*.json"
+                pattern = "mlb_predictions_with_odds_*_active.json"
             else:
-                pattern = f"{prefix}mlb_predictions_with_odds_*.json"
+                pattern = f"{prefix}mlb_predictions_with_odds_*_active.json"
             
             files = list(self.predictions_dir.glob(pattern))
             dates = []
@@ -233,8 +232,8 @@ class TelegramAnalyticsHub:
             return []
     
     def find_latest_prediction_file(self):
-        """최신 예측 파일 찾기 (Simple Dashboard와 동일 로직)"""
-        pattern = str(self.predictions_dir / "mlb_predictions_with_odds_*.json")
+        """최신 예측 파일 찾기 (active 태그 파일만)"""
+        pattern = str(self.predictions_dir / "mlb_predictions_with_odds_*_active.json")
         
         try:
             files = glob.glob(pattern)
@@ -242,8 +241,7 @@ class TelegramAnalyticsHub:
                 return None
                 
             def extract_datetime(filename):
-                # mlb_predictions_with_odds_20250607_150950.json 패턴에서 날짜시간 추출
-                match = re.search(r'mlb_predictions_with_odds_(\d{8}_\d{6})\.json', filename)
+                match = re.search(r'mlb_predictions_with_odds_(\d{8}_\d{6})_active\.json', filename)
                 if match:
                     return match.group(1)
                 return "00000000_000000"

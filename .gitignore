@@ -198,3 +198,29 @@ Auto-Bet/
 
 # Large data files (exceed GitHub 100MB limit)
 data/match_data/mlb_historical_data_*.json
+
+# Large data directories not needed for dashboard
+data/training/
+data/prediction/
+data/match_data/
+src/predictions/
+src/odds/data/odds/
+
+# Model binary files (not needed for dashboard deployment)
+*.joblib
+src/models/saved_models/
+src/models/totals_models/
+
+# Feature JSON files in model dirs
+src/models/saved_models/*.json
+src/models/totals_models/*.json
+
+# Catboost training artifacts
+catboost_info/
+
+# Model plots
+src/models/plots/
+
+# Copy/backup files
+*copy*.py
+*copy *.py

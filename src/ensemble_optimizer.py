@@ -33,8 +33,8 @@ class StableEnsembleOptimizer:
     def load_historical_performance_data(self, start_date: str = None, end_date: str = None, days_back: int = 60) -> Dict:
         """히스토리컬 성과 데이터 로드 및 전처리 (날짜 범위 지원)"""
         
-        # 예측 파일들 로드
-        prediction_files = list(self.predictions_dir.glob("mlb_predictions_with_odds_*.json"))
+        # 예측 파일들 로드 (active 태그 파일만)
+        prediction_files = list(self.predictions_dir.glob("mlb_predictions_with_odds_*_active.json"))
         if not prediction_files:
             raise ValueError("예측 파일을 찾을 수 없습니다")
         

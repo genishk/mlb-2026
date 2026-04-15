@@ -130,7 +130,7 @@ TEAM_FULLNAME = {v: k for k, v in TEAM_ABBREV.items()}
 def load_predictions_with_odds():
     """Load the latest predictions with odds file"""
     data_dir = Path(__file__).parent / "odds" / "data" / "matched"
-    pred_files = list(data_dir.glob("mlb_predictions_with_odds_*.json"))
+    pred_files = list(data_dir.glob("mlb_predictions_with_odds_*_active.json"))
     if not pred_files:
         st.error("No predictions with odds file found")
         st.stop()

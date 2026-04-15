@@ -3,6 +3,7 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 import os
+import argparse
 
 class OddsMatcher:
     def __init__(self):
@@ -27,6 +28,7 @@ class OddsMatcher:
             'New York Mets': 'NYM',
             'New York Yankees': 'NYY',
             'Oakland Athletics': 'OAK',
+            'Athletics': 'OAK',
             'Philadelphia Phillies': 'PHI',
             'Pittsburgh Pirates': 'PIT',
             'San Diego Padres': 'SD',
@@ -140,7 +142,7 @@ class OddsMatcher:
         
         return matched_predictions
     
-    def save_matched_predictions(self, matched_predictions, output_dir=None):
+    def save_matched_predictions(self, matched_predictions, output_dir=None, model_tag=None):
         """매칭된 예측 결과 저장"""
         if output_dir is None:
             output_dir = Path(__file__).parent / 'data' / 'matched'
@@ -150,7 +152,10 @@ class OddsMatcher:
         os.makedirs(output_dir, exist_ok=True)
         
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        filename = output_dir / f'mlb_predictions_with_odds_{timestamp}.json'
+        if model_tag:
+            filename = output_dir / f'mlb_predictions_with_odds_{timestamp}_{model_tag}.json'
+        else:
+            filename = output_dir / f'mlb_predictions_with_odds_{timestamp}.json'
         
         with open(filename, 'w') as f:
             json.dump(matched_predictions, f, indent=2)
@@ -158,35 +163,59 @@ class OddsMatcher:
         print(f"\nMatched predictions saved to: {filename}")
         return filename
 
-def main():
-    """테스트 실행"""
-    # 가장 최신 파일 찾기
+def run_for_tag(model_tag=None):
+    """특정 태그의 예측 파일을 오즈와 매칭"""
     pred_dir = Path(__file__).parent.parent / 'predictions'
     odds_dir = Path(__file__).parent / 'data' / 'odds'
     
-    prediction_files = list(pred_dir.glob('mlb_ensemble_predictions_*.json'))
+    if model_tag:
+        prediction_files = list(pred_dir.glob(f'mlb_ensemble_predictions_*_{model_tag}.json'))
+        if not prediction_files:
+            prediction_files = list(pred_dir.glob('mlb_ensemble_predictions_*.json'))
+            prediction_files = [f for f in prediction_files if 'active' not in f.name and 'shadow' not in f.name]
+        print(f"\n=== [{model_tag.upper()}] 오즈 매칭 ===")
+    else:
+        prediction_files = list(pred_dir.glob('mlb_ensemble_predictions_*.json'))
+    
     odds_files = list(odds_dir.glob('processed_mlb_odds_*.json'))
     
     if not prediction_files or not odds_files:
-        print("No prediction or odds files found")
+        print(f"No prediction or odds files found (tag={model_tag})")
         return
-        
+    
     latest_prediction = max(prediction_files, key=lambda x: x.stat().st_mtime)
     latest_odds = max(odds_files, key=lambda x: x.stat().st_mtime)
     
-    print(f"\nUsing prediction file: {latest_prediction}")
-    print(f"Using odds file: {latest_odds}")
+    print(f"Using prediction file: {latest_prediction.name}")
+    print(f"Using odds file: {latest_odds.name}")
     
-    # odds 매칭
     matcher = OddsMatcher()
     matched_predictions = matcher.match_odds(latest_prediction, latest_odds)
+    output_file = matcher.save_matched_predictions(matched_predictions, model_tag=model_tag)
     
-    # 결과 저장
-    matcher.save_matched_predictions(matched_predictions)
+    if matched_predictions:
+        print("\nSample matched prediction:")
+        print(json.dumps(matched_predictions[0], indent=2))
     
-    # 샘플 출력
-    print("\nSample matched prediction:")
-    print(json.dumps(matched_predictions[0], indent=2))
+    return output_file
+
+
+def main():
+    """오즈 매칭 실행"""
+    parser = argparse.ArgumentParser(description='MLB 예측-오즈 매칭')
+    parser.add_argument('--model-tag', type=str, default=None,
+                       choices=['active', 'shadow', 'both'],
+                       help='모델 태그 (active, shadow, both)')
+    args = parser.parse_args()
+    
+    if args.model_tag == 'both':
+        for tag in ['active', 'shadow']:
+            try:
+                run_for_tag(tag)
+            except Exception as e:
+                print(f"\n[{tag.upper()}] 오즈 매칭 오류: {e}")
+    else:
+        run_for_tag(args.model_tag)
 
 if __name__ == "__main__":
     main() 
