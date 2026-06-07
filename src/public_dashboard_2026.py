@@ -25,6 +25,7 @@ import plotly.graph_objects as go
 PROJECT_ROOT = Path(__file__).parent.parent
 MATCHED_DIR = PROJECT_ROOT / 'src' / 'odds' / 'data' / 'matched'
 BACKUP_DATA_DIR = PROJECT_ROOT / 'src' / 'models' / 'backup_data'
+TOTALS_BACKUP_DATA_DIR = PROJECT_ROOT / 'src' / 'models' / 'totals_backup_data'
 RECORDS_DIR = PROJECT_ROOT / 'data' / 'records'
 
 logging.basicConfig(level=logging.INFO)
@@ -232,11 +233,12 @@ def _collect_active_files(pattern_prefix: str) -> list:
     for f in MATCHED_DIR.glob(f'{pattern_prefix}_*_active.json'):
         files.append(f)
 
-    if BACKUP_DATA_DIR.exists():
-        for sub in BACKUP_DATA_DIR.iterdir():
-            if sub.is_dir():
-                for f in sub.glob(f'{pattern_prefix}_*_active.json'):
-                    files.append(f)
+    for backup_dir in [BACKUP_DATA_DIR, TOTALS_BACKUP_DATA_DIR]:
+        if backup_dir.exists():
+            for sub in backup_dir.iterdir():
+                if sub.is_dir():
+                    for f in sub.glob(f'{pattern_prefix}_*_active.json'):
+                        files.append(f)
 
     return files
 
@@ -544,6 +546,144 @@ def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
     return seg
 
 
+def _totals_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
+    mb = betting[betting['model'] == model].copy()
+    if mb.empty:
+        return {}
+
+    consensus_map = {}
+    for (d, ht, at), grp in betting.groupby(['date', 'home_team', 'away_team']):
+        over_n = (grp['direction'] == 'OVER').sum()
+        total_n = len(grp)
+        if total_n > 0:
+            consensus_map[(d, ht, at)] = {
+                'over_pct': over_n / total_n * 100,
+                'under_pct': (total_n - over_n) / total_n * 100,
+            }
+
+    mb['consensus'] = mb.apply(
+        lambda r: consensus_map.get(
+            (r['date'], r['home_team'], r['away_team']),
+            {'over_pct': 50, 'under_pct': 50}
+        )['over_pct' if r['direction'] == 'OVER' else 'under_pct'],
+        axis=1)
+
+    def _calc(sub):
+        n = len(sub)
+        if n == 0:
+            return {'Bets': 0, 'Wins': 0, 'WR (%)': 0, 'ROI (%)': 0, 'Profit ($)': 0}
+        w = int(sub['won'].sum())
+        p = sub['actual_profit'].sum()
+        return {
+            'Bets': n, 'Wins': w,
+            'WR (%)': round(w / n * 100, 1),
+            'ROI (%)': round(p / (n * 100) * 100, 2),
+            'Profit ($)': round(p, 1),
+        }
+
+    def _bucket(series, edges, labels):
+        out = {}
+        for lbl, lo, hi in zip(labels, edges[:-1], edges[1:]):
+            mask = (series >= lo) & (series < hi)
+            out[lbl] = _calc(mb[mask])
+        return out
+
+    seg = {}
+
+    seg['Margin from Line'] = _bucket(
+        mb['margin_abs'],
+        [0, 0.5, 1.0, 2.0, 3.0, 9999],
+        ['0 - 0.5', '0.5 - 1.0', '1.0 - 2.0', '2.0 - 3.0', '3.0+'])
+
+    seg['Odds'] = _bucket(
+        mb['bet_odds'],
+        [-9999, -130, -115, -105, 100, 9999],
+        ['Heavy Juice (< -130)', 'Moderate Juice (-130 ~ -115)',
+         'Standard (-115 ~ -105)', 'Light Juice (-105 ~ +100)',
+         'Plus Odds (+100+)'])
+
+    seg['Model Consensus'] = _bucket(
+        mb['consensus'],
+        [0, 60, 75, 90, 101],
+        ['Low (< 60%)', 'Moderate (60% - 75%)',
+         'High (75% - 90%)', 'Very High (90%+)'])
+
+    seg['Line Level'] = _bucket(
+        mb['total_line'],
+        [0, 7.0, 8.0, 9.0, 10.0, 99],
+        ['Low (≤ 7.0)', 'Medium-Low (7.0 - 8.0)',
+         'Medium (8.0 - 9.0)', 'Medium-High (9.0 - 10.0)',
+         'High (10.0+)'])
+
+    seg['Direction'] = {}
+    for d in ['OVER', 'UNDER']:
+        seg['Direction'][d] = _calc(mb[mb['direction'] == d])
+
+    return seg
+
+
+# ═══════════════════════════════════════════════════════════════════════
+# SEGMENT RANKINGS
+# ═══════════════════════════════════════════════════════════════════════
+
+def _ml_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> pd.DataFrame:
+    models = sorted(betting['model'].unique())
+    rows = []
+    for model in models:
+        model_total = len(betting[betting['model'] == model])
+        min_bets = int(model_total * threshold_pct)
+        seg = _ml_segment_analysis(betting, model)
+        if not seg:
+            continue
+        for dim_name, buckets in seg.items():
+            for seg_label, stats in buckets.items():
+                if stats['Bets'] >= min_bets:
+                    rows.append({
+                        'Model': model.upper(),
+                        'Dimension': dim_name,
+                        'Segment': seg_label,
+                        'Bets': stats['Bets'],
+                        'WR (%)': stats['WR (%)'],
+                        'ROI (%)': stats['ROI (%)'],
+                        'Profit ($)': stats['Profit ($)'],
+                    })
+    if not rows:
+        return pd.DataFrame()
+    df = pd.DataFrame(rows).sort_values('ROI (%)', ascending=False).reset_index(drop=True)
+    df.index = df.index + 1
+    df.index.name = 'Rank'
+    return df
+
+
+def _totals_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> pd.DataFrame:
+    models = sorted(betting['model'].unique())
+    rows = []
+    for model in models:
+        model_total = len(betting[betting['model'] == model])
+        min_bets = int(model_total * threshold_pct)
+        seg = _totals_segment_analysis(betting, model)
+        if not seg:
+            continue
+        for dim_name, buckets in seg.items():
+            for seg_label, stats in buckets.items():
+                if stats['Bets'] >= min_bets:
+                    rows.append({
+                        'Model': model.upper(),
+                        'Dimension': dim_name,
+                        'Segment': seg_label,
+                        'Bets': stats['Bets'],
+                        'WR (%)': stats['WR (%)'],
+                        'ROI (%)': stats['ROI (%)'],
+                        'Profit ($)': stats['Profit ($)'],
+                    })
+    if not rows:
+        return pd.DataFrame()
+    df = pd.DataFrame(rows).sort_values('ROI (%)', ascending=False).reset_index(drop=True)
+    df.index = df.index + 1
+    df.index.name = 'Rank'
+    return df
+
+
 # ═══════════════════════════════════════════════════════════════════════
 # CACHED DATA LOAD
 # ═══════════════════════════════════════════════════════════════════════
@@ -624,8 +764,9 @@ def main():
     ml_summary = _summarise(ml_betting) if not ml_betting.empty else pd.DataFrame()
     tot_summary = _summarise(tot_betting) if not tot_betting.empty else pd.DataFrame()
 
-    if not ml_summary.empty:
-        best_roi = ml_summary.iloc[0]['ROI (%)']
+    if not ml_betting.empty:
+        seg_rank_header = _ml_segment_rankings(ml_betting, 0.2)
+        best_roi = seg_rank_header.iloc[0]['ROI (%)'] if not seg_rank_header.empty else 0
         date_range = f"{ml_betting['date'].min().strftime('%b %d')} — {ml_betting['date'].max().strftime('%b %d, %Y')}"
     else:
         best_roi = 0
@@ -636,26 +777,28 @@ def main():
     <div class="metric-grid">
         <div class="m-card"><div class="value">{total_ml_games + total_tot_games}</div><div class="label">Games Tracked</div></div>
         <div class="m-card"><div class="value">{ml_models + tot_models}</div><div class="label">AI Models</div></div>
-        <div class="m-card"><div class="value {roi_cls}">{best_roi:+.1f}%</div><div class="label">Best ML ROI</div></div>
+        <div class="m-card"><div class="value {roi_cls}">{best_roi:+.1f}%</div><div class="label">Best Segment ROI</div></div>
         <div class="m-card"><div class="value" style="font-size:1.1rem">{date_range}</div><div class="label">Period</div></div>
     </div>
     """, unsafe_allow_html=True)
 
-    # ── Top 3 Podium ──
-    if len(ml_summary) >= 3:
-        medals = [("🥇", "gold"), ("🥈", "silver"), ("🥉", "bronze")]
-        podium_html = '<div class="podium-grid">'
-        for i, (medal, cls) in enumerate(medals):
-            r = ml_summary.iloc[i]
-            podium_html += f"""
-            <div class="podium-card {cls}">
-                <div class="podium-rank">{medal}</div>
-                <div class="podium-name">{r['Model']}</div>
-                <div class="podium-roi">{r['ROI (%)']:+.1f}%</div>
-                <div class="podium-stat">{r['Win Rate (%)']:.1f}% WR · {r['Bets']} bets · ${r['Profit ($)']:+,.0f}</div>
-            </div>"""
-        podium_html += '</div>'
-        st.markdown(podium_html, unsafe_allow_html=True)
+    # ── Top 3 Podium (Segment Rankings) ──
+    if not ml_betting.empty:
+        if len(seg_rank_header) >= 3:
+            medals = [("🥇", "gold"), ("🥈", "silver"), ("🥉", "bronze")]
+            podium_html = '<div class="podium-grid">'
+            for i, (medal, cls) in enumerate(medals):
+                r = seg_rank_header.iloc[i]
+                podium_html += f"""
+                <div class="podium-card {cls}">
+                    <div class="podium-rank">{medal}</div>
+                    <div class="podium-name">{r['Model']}</div>
+                    <div class="podium-roi">{r['ROI (%)']:+.2f}%</div>
+                    <div class="podium-stat">{r['Dimension']} · {r['Segment']}</div>
+                    <div class="podium-stat">{r['WR (%)']:.1f}% WR · {r['Bets']} bets · ${r['Profit ($)']:+,.0f}</div>
+                </div>"""
+            podium_html += '</div>'
+            st.markdown(podium_html, unsafe_allow_html=True)
 
     # # ── Highlight strip (disabled — too long on mobile) ──
     # if not ml_betting.empty:
@@ -681,11 +824,12 @@ def main():
     """, unsafe_allow_html=True)
 
     # ── tabs ──
-    tab_ml, tab_tot, tab_daily, tab_seg, tab_about = st.tabs([
+    tab_ml, tab_tot, tab_daily, tab_seg, tab_rank, tab_about = st.tabs([
         "📊 Moneyline Rankings",
         "⚾ Totals Rankings",
         "📅 Daily Trend",
         "🔬 Segment Analysis",
+        "🏆 Segment Rankings",
         "ℹ️ About & Disclaimer",
     ])
 
@@ -854,20 +998,83 @@ def main():
     # TAB: Segment Analysis
     # ──────────────────────────────────────────────────────────────────
     with tab_seg:
-        st.markdown('<div class="section-title">Segment Analysis (Moneyline)</div>',
-                    unsafe_allow_html=True)
+        seg_ml_tab, seg_tot_tab = st.tabs(["📊 Moneyline", "⚾ Totals"])
 
-        if ml_betting.empty:
-            st.info("No moneyline data yet.")
-        else:
-            models = sorted(ml_betting['model'].unique())
-            sel = st.selectbox("Model", [m.upper() for m in models],
-                               key='seg_model')
-            seg = _ml_segment_analysis(ml_betting, sel.lower())
-            if seg:
-                _render_segment_tables(seg)
+        with seg_ml_tab:
+            st.markdown('<div class="section-title">Segment Analysis (Moneyline)</div>',
+                        unsafe_allow_html=True)
+            if ml_betting.empty:
+                st.info("No moneyline data yet.")
             else:
-                st.warning("No segment data for this model.")
+                seg_ml_filtered = _date_filter(ml_betting, 'seg_ml')
+                models = sorted(seg_ml_filtered['model'].unique())
+                sel = st.selectbox("Model", [m.upper() for m in models],
+                                   key='seg_model')
+                seg = _ml_segment_analysis(seg_ml_filtered, sel.lower())
+                if seg:
+                    _render_segment_tables(seg)
+                else:
+                    st.warning("No segment data for this model.")
+
+        with seg_tot_tab:
+            st.markdown('<div class="section-title">Segment Analysis (Totals)</div>',
+                        unsafe_allow_html=True)
+            if tot_betting.empty:
+                st.info("No totals data yet.")
+            else:
+                seg_tot_filtered = _date_filter(tot_betting, 'seg_tot')
+                tot_models = sorted(seg_tot_filtered['model'].unique())
+                sel_t = st.selectbox("Model", [m.upper() for m in tot_models],
+                                     key='seg_tot_model')
+                seg_t = _totals_segment_analysis(seg_tot_filtered, sel_t.lower())
+                if seg_t:
+                    _render_segment_tables(seg_t)
+                else:
+                    st.warning("No segment data for this model.")
+
+    # ──────────────────────────────────────────────────────────────────
+    # TAB: Segment Rankings
+    # ──────────────────────────────────────────────────────────────────
+    with tab_rank:
+        rank_ml_tab, rank_tot_tab = st.tabs(["📊 Moneyline", "⚾ Totals"])
+
+        with rank_ml_tab:
+            st.markdown('<div class="section-title">Segment Rankings (Moneyline)</div>',
+                        unsafe_allow_html=True)
+            if ml_betting.empty:
+                st.info("No moneyline data yet.")
+            else:
+                threshold_ml = st.slider(
+                    "Min sample size (% of model total bets)", 10, 40, 20,
+                    key='rank_ml_thresh') / 100
+                rank_df_ml = _ml_segment_rankings(ml_betting, threshold_ml)
+                if rank_df_ml.empty:
+                    st.warning("No segments meet the sample size threshold.")
+                else:
+                    st.caption(f"Showing {len(rank_df_ml)} segments that meet the threshold")
+                    styled_ml = rank_df_ml.style.map(_roi_color, subset=['ROI (%)']).format({
+                        'WR (%)': '{:.1f}%', 'ROI (%)': '{:.2f}%', 'Profit ($)': '${:,.1f}',
+                    })
+                    st.dataframe(styled_ml, use_container_width=True)
+
+        with rank_tot_tab:
+            st.markdown('<div class="section-title">Segment Rankings (Totals)</div>',
+                        unsafe_allow_html=True)
+            if tot_betting.empty:
+                st.info("No totals data yet.")
+            else:
+                threshold_tot = st.slider(
+                    "Min sample size (% of model total bets)", 10, 40, 20,
+                    key='rank_tot_thresh') / 100
+                rank_df_tot = _totals_segment_rankings(tot_betting, threshold_tot)
+                if rank_df_tot.empty:
+                    st.warning("No segments meet the sample size threshold.")
+                else:
+                    st.caption(f"Showing {len(rank_df_tot)} segments that meet the threshold")
+                    styled_tot = rank_df_tot.style.map(_roi_color, subset=['ROI (%)']).format({
+                        'WR (%)': '{:.1f}%', 'ROI (%)': '{:.2f}%', 'Profit ($)': '${:,.1f}',
+                    })
+                    st.dataframe(styled_tot, use_container_width=True)
 
     # ──────────────────────────────────────────────────────────────────
     # TAB: About & Disclaimer

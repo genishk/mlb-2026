@@ -155,26 +155,37 @@ class MLBBettingPipeline:
             if extra_args:
                 cmd.extend(extra_args)
             
-            result = subprocess.run(
-                cmd,
-                capture_output=True,
-                text=True,
-                check=True,
-                env=env,
-                cwd=str(self.project_root)
-            )
-            
-            if result.stdout:
-                self.logger.info(f"Output: {result.stdout}")
-            if result.stderr:
-                self.logger.warning(f"Stderr: {result.stderr}")
+            stream_scripts = {'mlb_match_analyzer.py'}
+            if script_name in stream_scripts:
+                process = subprocess.Popen(
+                    cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                    text=True, env=env, cwd=str(self.project_root), bufsize=1)
+                output_lines = []
+                for line in process.stdout:
+                    line = line.rstrip()
+                    print(f"  {line}")
+                    output_lines.append(line)
+                process.wait()
+                if output_lines:
+                    self.logger.info(f"Output: {''.join(output_lines[-20:])}")
+                if process.returncode != 0:
+                    raise subprocess.CalledProcessError(process.returncode, cmd)
+            else:
+                result = subprocess.run(
+                    cmd, capture_output=True, text=True, check=True,
+                    env=env, cwd=str(self.project_root))
+                if result.stdout:
+                    self.logger.info(f"Output: {result.stdout}")
+                if result.stderr:
+                    self.logger.warning(f"Stderr: {result.stderr}")
             
             self.logger.info(f"Completed: {description}")
             return True
             
         except subprocess.CalledProcessError as e:
             self.logger.error(f"Error in {description}: {str(e)}")
-            self.logger.error(f"Stderr: {e.stderr}")
+            if hasattr(e, 'stderr') and e.stderr:
+                self.logger.error(f"Stderr: {e.stderr}")
             return False
         
         except Exception as e:

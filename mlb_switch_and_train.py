@@ -435,7 +435,7 @@ class MLBModelManager:
     # ─── CLEANUP ───
 
     def clean_shadow_models(self):
-        """Delete all shadow model files from saved_models (active untouched)."""
+        """Delete all shadow model files from saved_models AND shadow analysis files (active untouched)."""
         deleted = 0
         for cfg in MODEL_CONFIGS:
             for art in cfg['artifacts']:
@@ -444,8 +444,15 @@ class MLBModelManager:
                     path.unlink()
                     self.logger.info(f"Deleted: {path.name}")
                     deleted += 1
-        self.logger.info(f"Cleaned {deleted} shadow files from {self.model_dir}")
-        return deleted
+        self.logger.info(f"Cleaned {deleted} shadow model files from {self.model_dir}")
+
+        analysis_deleted = 0
+        for f in self.matched_dir.glob('mlb_predictions_with_odds_*_shadow.json'):
+            f.unlink()
+            self.logger.info(f"Deleted analysis: {f.name}")
+            analysis_deleted += 1
+        self.logger.info(f"Cleaned {analysis_deleted} shadow analysis files from matched/")
+        return deleted + analysis_deleted
 
     def cleanup_old_backups(self, keep_count: int = 5):
         if not self.backup_dir.exists():
