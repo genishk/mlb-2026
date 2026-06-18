@@ -296,6 +296,56 @@ def _load_predictions(pattern_prefix: str, exclude_today: bool = True) -> pd.Dat
     return df
 
 
+def _load_shadow_predictions(pattern_prefix: str) -> pd.DataFrame:
+    """Load shadow predictions from matched dir only (no backups).
+    Uses all available shadow files; if >7 unique dates, keep most recent 7."""
+    files = list(MATCHED_DIR.glob(f'{pattern_prefix}_*_shadow.json'))
+    if not files:
+        return pd.DataFrame()
+
+    today = datetime.now().strftime('%Y%m%d')
+    today_fmt = f"{today[:4]}-{today[4:6]}-{today[6:8]}"
+
+    files_by_date: dict[str, Path] = {}
+    for f in files:
+        fd = _extract_file_date(f.name)
+        if not fd or fd == today:
+            continue
+        if fd not in files_by_date or f.stat().st_mtime > files_by_date[fd].stat().st_mtime:
+            files_by_date[fd] = f
+
+    if len(files_by_date) > 7:
+        recent_dates = sorted(files_by_date.keys(), reverse=True)[:7]
+        files_by_date = {d: files_by_date[d] for d in recent_dates}
+
+    covered_dates = {f"{d[:4]}-{d[4:6]}-{d[6:8]}" for d in files_by_date}
+
+    all_preds: list[dict] = []
+    for fd, fpath in sorted(files_by_date.items()):
+        fd_fmt = f"{fd[:4]}-{fd[4:6]}-{fd[6:8]}"
+        try:
+            with open(fpath, 'r', encoding='utf-8') as fh:
+                data = json.load(fh)
+            for rec in data:
+                rd = rec.get('date', '')
+                if rd == today_fmt:
+                    continue
+                if rd == fd_fmt:
+                    all_preds.append(rec)
+                elif rd not in covered_dates:
+                    all_preds.append(rec)
+        except Exception as e:
+            logger.error(f"Failed to load shadow {fpath.name}: {e}")
+
+    if not all_preds:
+        return pd.DataFrame()
+
+    df = pd.DataFrame(all_preds)
+    df['date'] = pd.to_datetime(df['date'])
+    df = df.drop_duplicates(subset=['date', 'home_team', 'away_team'], keep='last')
+    return df
+
+
 def _load_game_results() -> pd.DataFrame:
     record_files = sorted(RECORDS_DIR.glob('mlb_historical_records_*.json'))
     if not record_files:
@@ -470,6 +520,7 @@ def _daily_breakdown(betting: pd.DataFrame, model: str) -> pd.DataFrame:
 # ═══════════════════════════════════════════════════════════════════════
 
 def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
+    """Moneyline segment analysis — boundaries match mlb_model_performance_dashboard exactly."""
     mb = betting[betting['model'] == model].copy()
     if mb.empty:
         return {}
@@ -503,63 +554,101 @@ def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
             'Profit ($)': round(p, 1),
         }
 
-    def _bucket(series, edges, labels):
-        out = {}
-        for lbl, lo, hi in zip(labels, edges[:-1], edges[1:]):
-            mask = (series >= lo) & (series < hi)
-            out[lbl] = _calc(mb[mask])
-        return out
+    def _classify(series, classify_fn):
+        groups: dict[str, list] = {}
+        for idx, val in series.items():
+            lbl = classify_fn(val)
+            if lbl:
+                groups.setdefault(lbl, []).append(idx)
+        return {lbl: _calc(mb.loc[idxs]) for lbl, idxs in groups.items()}
 
     seg = {}
 
-    seg['Predicted ROI'] = _bucket(
-        mb['predicted_roi'],
-        [-999, -20, 0, 20, 40, 60, 100, 9999],
-        ['< -20%', '-20% ~ 0%', '0% ~ 20%', '20% ~ 40%',
-         '40% ~ 60%', '60% ~ 100%', '> 100%'])
+    def _pred_roi(v):
+        if v < -20:   return 'Very Negative (<-20%)'
+        if v < 0:     return 'Negative (-20% ~ 0%)'
+        if v < 20:    return 'Positive (0% ~ 20%)'
+        if v < 40:    return 'Very Positive A (20% ~ 40%)'
+        if v < 60:    return 'Very Positive B (40% ~ 60%)'
+        if v < 100:   return 'Extremely Positive A (60% ~ 100%)'
+        return 'Extremely Positive B (>100%)'
+    seg['Predicted ROI'] = _classify(mb['predicted_roi'], _pred_roi)
 
-    seg['Odds'] = _bucket(
-        mb['bet_odds'],
-        [-9999, -200, -120, 120, 150, 300, 9999],
-        ['Heavy Fav (< -200)', 'Fav (-200 ~ -120)', "Pick'em (-120 ~ +120)",
-         'Dog (+120 ~ +150)', 'Strong Dog (+150 ~ +300)', 'Heavy Dog (> +300)'])
+    def _odds(o):
+        if o < -200:      return 'Heavy Favorite (< -200)'
+        if o < -120:      return 'Favorite (-200 ~ -120)'
+        if o <= 120:      return "Pick'em (-120 ~ +120)"
+        if o <= 150:      return 'Underdog (+120 ~ +150)'
+        if o <= 300:      return 'Strong Underdog (+150 ~ +300)'
+        return 'Heavy Underdog (> +300)'
+    seg['Odds'] = _classify(mb['bet_odds'], _odds)
 
-    seg['Confidence'] = _bucket(
-        mb['confidence'],
-        [0, 0.05, 0.15, 0.25, 1],
-        ['Low (0 ~ 0.05)', 'Medium (0.05 ~ 0.15)',
-         'High (0.15 ~ 0.25)', 'Very High (> 0.25)'])
+    def _conf(c):
+        if c < 0.05:  return 'Low (0 ~ 0.05)'
+        if c < 0.15:  return 'Medium (0.05 ~ 0.15)'
+        if c < 0.25:  return 'High (0.15 ~ 0.25)'
+        return 'Very High (> 0.25)'
+    seg['Confidence'] = _classify(mb['confidence'], _conf)
 
-    seg['Market Divergence'] = _bucket(
-        mb['divergence'],
-        [-999, -10, -5, 5, 10, 999],
-        ['Much Pessimistic (< -10%)', 'Slightly Pessimistic (-10% ~ -5%)',
-         'Market Aligned (-5% ~ +5%)', 'Slightly Optimistic (+5% ~ +10%)',
-         'Much Optimistic (> +10%)'])
+    def _div(d):
+        if d < -10:   return 'Much Pessimistic (< -10%)'
+        if d < -5:    return 'Slightly Pessimistic (-10% ~ -5%)'
+        if d < 5:     return 'Market Aligned (-5% ~ +5%)'
+        if d < 10:    return 'Slightly Optimistic (+5% ~ +10%)'
+        return 'Much Optimistic (> +10%)'
+    seg['Market Divergence'] = _classify(mb['divergence'], _div)
 
-    seg['Kelly Criterion'] = _bucket(
-        mb['kelly'],
-        [-0.01, 0, 5, 15, 25, 60, 9999],
-        ['No Bet (<=0%)', 'Low (0% ~ 5%)', 'Medium (5% ~ 15%)',
-         'High (15% ~ 25%)', 'V.High (25% ~ 60%)', 'Extreme (> 60%)'])
+    def _kel(k):
+        if k <= 0:    return 'No Bet (<=0%)'
+        if k <= 5:    return 'Low (0% ~ 5%)'
+        if k <= 15:   return 'Medium (5% ~ 15%)'
+        if k <= 25:   return 'High (15% ~ 25%)'
+        if k <= 60:   return 'V.High (25% ~ 60%)'
+        return 'Extreme (> 60%)'
+    seg['Kelly Criterion'] = _classify(mb['kelly'], _kel)
 
     return seg
 
 
-def _totals_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
+def _totals_segment_analysis(betting: pd.DataFrame, model: str,
+                             matched_raw: pd.DataFrame = None) -> dict:
+    """Totals segment analysis — boundaries match mlb_model_performance_dashboard exactly."""
     mb = betting[betting['model'] == model].copy()
     if mb.empty:
         return {}
 
+    excluded_cols = {'predicted_total', 'ensemble_total', 'total_line', 'actual_total'}
+
     consensus_map = {}
-    for (d, ht, at), grp in betting.groupby(['date', 'home_team', 'away_team']):
-        over_n = (grp['direction'] == 'OVER').sum()
-        total_n = len(grp)
-        if total_n > 0:
-            consensus_map[(d, ht, at)] = {
-                'over_pct': over_n / total_n * 100,
-                'under_pct': (total_n - over_n) / total_n * 100,
-            }
+    if matched_raw is not None and not matched_raw.empty:
+        tcols = [c for c in matched_raw.columns
+                 if c.endswith('_total') and c not in excluded_cols]
+        for _, row in matched_raw.iterrows():
+            tl = row.get('total_line')
+            if pd.isna(tl):
+                continue
+            over_count = 0
+            total_count = 0
+            for col in tcols:
+                if not pd.isna(row.get(col)):
+                    total_count += 1
+                    if row[col] > tl:
+                        over_count += 1
+            if total_count > 0:
+                key = (row['date'], row['home_team'], row['away_team'])
+                consensus_map[key] = {
+                    'over_pct': over_count / total_count * 100,
+                    'under_pct': (total_count - over_count) / total_count * 100,
+                }
+    else:
+        for (d, ht, at), grp in betting.groupby(['date', 'home_team', 'away_team']):
+            over_n = (grp['direction'] == 'OVER').sum()
+            total_n = len(grp)
+            if total_n > 0:
+                consensus_map[(d, ht, at)] = {
+                    'over_pct': over_n / total_n * 100,
+                    'under_pct': (total_n - over_n) / total_n * 100,
+                }
 
     mb['consensus'] = mb.apply(
         lambda r: consensus_map.get(
@@ -581,39 +670,46 @@ def _totals_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
             'Profit ($)': round(p, 1),
         }
 
-    def _bucket(series, edges, labels):
-        out = {}
-        for lbl, lo, hi in zip(labels, edges[:-1], edges[1:]):
-            mask = (series >= lo) & (series < hi)
-            out[lbl] = _calc(mb[mask])
-        return out
+    def _classify(series, classify_fn):
+        groups: dict[str, list] = {}
+        for idx, val in series.items():
+            lbl = classify_fn(val)
+            if lbl:
+                groups.setdefault(lbl, []).append(idx)
+        return {lbl: _calc(mb.loc[idxs]) for lbl, idxs in groups.items()}
 
     seg = {}
 
-    seg['Margin from Line'] = _bucket(
-        mb['margin_abs'],
-        [0, 0.5, 1.0, 2.0, 3.0, 9999],
-        ['0 - 0.5', '0.5 - 1.0', '1.0 - 2.0', '2.0 - 3.0', '3.0+'])
+    def _margin(m):
+        if m < 0.5:  return '0 - 0.5'
+        if m < 1.0:  return '0.5 - 1.0'
+        if m < 2.0:  return '1.0 - 2.0'
+        if m < 3.0:  return '2.0 - 3.0'
+        return '3.0+'
+    seg['Margin from Line'] = _classify(mb['margin_abs'], _margin)
 
-    seg['Odds'] = _bucket(
-        mb['bet_odds'],
-        [-9999, -130, -115, -105, 100, 9999],
-        ['Heavy Juice (< -130)', 'Moderate Juice (-130 ~ -115)',
-         'Standard (-115 ~ -105)', 'Light Juice (-105 ~ +100)',
-         'Plus Odds (+100+)'])
+    def _odds(o):
+        if o < -130:      return 'Heavy Juice (< -130)'
+        if o < -115:      return 'Moderate Juice (-130 ~ -115)'
+        if o < -105:      return 'Standard (-115 ~ -105)'
+        if o <= 100:      return 'Light Juice (-105 ~ +100)'
+        return 'Plus Odds (+100+)'
+    seg['Odds'] = _classify(mb['bet_odds'], _odds)
 
-    seg['Model Consensus'] = _bucket(
-        mb['consensus'],
-        [0, 60, 75, 90, 101],
-        ['Low (< 60%)', 'Moderate (60% - 75%)',
-         'High (75% - 90%)', 'Very High (90%+)'])
+    def _cons(c):
+        if c < 60:  return 'Low (< 60%)'
+        if c < 75:  return 'Moderate (60% - 75%)'
+        if c < 90:  return 'High (75% - 90%)'
+        return 'Very High (90%+)'
+    seg['Model Consensus'] = _classify(mb['consensus'], _cons)
 
-    seg['Line Level'] = _bucket(
-        mb['total_line'],
-        [0, 7.0, 8.0, 9.0, 10.0, 99],
-        ['Low (≤ 7.0)', 'Medium-Low (7.0 - 8.0)',
-         'Medium (8.0 - 9.0)', 'Medium-High (9.0 - 10.0)',
-         'High (10.0+)'])
+    def _line(tl):
+        if tl <= 7.0:  return 'Low (≤ 7.0)'
+        if tl <= 8.0:  return 'Medium-Low (7.0 - 8.0)'
+        if tl <= 9.0:  return 'Medium (8.0 - 9.0)'
+        if tl <= 10.0: return 'Medium-High (9.0 - 10.0)'
+        return 'High (10.0+)'
+    seg['Line Level'] = _classify(mb['total_line'], _line)
 
     seg['Direction'] = {}
     for d in ['OVER', 'UNDER']:
@@ -655,13 +751,14 @@ def _ml_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> p
     return df
 
 
-def _totals_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> pd.DataFrame:
+def _totals_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2,
+                             matched_raw: pd.DataFrame = None) -> pd.DataFrame:
     models = sorted(betting['model'].unique())
     rows = []
     for model in models:
         model_total = len(betting[betting['model'] == model])
         min_bets = int(model_total * threshold_pct)
-        seg = _totals_segment_analysis(betting, model)
+        seg = _totals_segment_analysis(betting, model, matched_raw=matched_raw)
         if not seg:
             continue
         for dim_name, buckets in seg.items():
@@ -697,7 +794,20 @@ def load_all():
     tot_matched = _match_totals(tot_preds, results)
     ml_betting = _calc_ml_roi(ml_matched) if not ml_matched.empty else pd.DataFrame()
     tot_betting = _calc_totals_roi(tot_matched) if not tot_matched.empty else pd.DataFrame()
-    return ml_betting, tot_betting
+    return ml_betting, tot_betting, tot_matched
+
+
+@st.cache_data(ttl=300)
+def load_shadow():
+    """Load shadow model data separately (used only for Segment Rankings)."""
+    results = _load_game_results()
+    ml_shadow = _load_shadow_predictions('mlb_predictions_with_odds')
+    tot_shadow = _load_shadow_predictions('mlb_totals_predictions_with_odds')
+    ml_s_matched = _match_ml(ml_shadow, results)
+    tot_s_matched = _match_totals(tot_shadow, results)
+    ml_s_betting = _calc_ml_roi(ml_s_matched) if not ml_s_matched.empty else pd.DataFrame()
+    tot_s_betting = _calc_totals_roi(tot_s_matched) if not tot_s_matched.empty else pd.DataFrame()
+    return ml_s_betting, tot_s_betting
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -754,7 +864,7 @@ def main():
     st.markdown("# ⚾ MLB Analytics Pro")
     st.markdown("**2026 Season** — Real-time transparent performance tracking of ML prediction models.")
 
-    ml_betting, tot_betting = load_all()
+    ml_betting, tot_betting, tot_matched_raw = load_all()
 
     total_ml_games = len(ml_betting) // max(ml_betting['model'].nunique(), 1) if not ml_betting.empty else 0
     total_tot_games = len(tot_betting) // max(tot_betting['model'].nunique(), 1) if not tot_betting.empty else 0
@@ -1026,7 +1136,8 @@ def main():
                 tot_models = sorted(seg_tot_filtered['model'].unique())
                 sel_t = st.selectbox("Model", [m.upper() for m in tot_models],
                                      key='seg_tot_model')
-                seg_t = _totals_segment_analysis(seg_tot_filtered, sel_t.lower())
+                seg_t = _totals_segment_analysis(seg_tot_filtered, sel_t.lower(),
+                                                 matched_raw=tot_matched_raw)
                 if seg_t:
                     _render_segment_tables(seg_t)
                 else:
@@ -1038,24 +1149,144 @@ def main():
     with tab_rank:
         rank_ml_tab, rank_tot_tab = st.tabs(["📊 Moneyline", "⚾ Totals"])
 
+        def _render_ranked_table(betting_df, ranking_fn, prefix, shadow_betting_df=None,
+                                 shadow_ranking_fn=None, matched_raw=None):
+            """Render segment ranking table with All-Time + Recent + Shadow ROI."""
+            c1, c2 = st.columns(2)
+            with c1:
+                threshold = st.slider(
+                    "Min sample size (% of model total bets)", 10, 40, 20,
+                    key=f'rank_{prefix}_thresh') / 100
+            with c2:
+                recent_days = st.selectbox(
+                    "Recent period", [7, 14, 21, 30], index=0,
+                    format_func=lambda d: f"Last {d} days",
+                    key=f'rank_{prefix}_recent')
+
+            extra = {'matched_raw': matched_raw} if matched_raw is not None else {}
+            rank_all = ranking_fn(betting_df, threshold, **extra)
+            if rank_all.empty:
+                st.warning("No segments meet the sample size threshold.")
+                return
+
+            cutoff = pd.Timestamp.now() - pd.Timedelta(days=recent_days)
+            recent_df = betting_df[betting_df['date'] >= cutoff]
+
+            if not recent_df.empty:
+                rank_recent = ranking_fn(recent_df, 0.0, **extra)
+            else:
+                rank_recent = pd.DataFrame()
+
+            merged = rank_all.copy()
+            merged = merged.rename(columns={
+                'ROI (%)': 'All-Time ROI (%)',
+                'WR (%)': 'All-Time WR (%)',
+            })
+
+            if not rank_recent.empty:
+                recent_lookup = rank_recent.set_index(['Model', 'Dimension', 'Segment'])
+                r_roi, r_wr, r_bets = [], [], []
+                for _, row in merged.iterrows():
+                    key = (row['Model'], row['Dimension'], row['Segment'])
+                    if key in recent_lookup.index:
+                        rr = recent_lookup.loc[key]
+                        r_roi.append(rr['ROI (%)'])
+                        r_wr.append(rr['WR (%)'])
+                        r_bets.append(int(rr['Bets']))
+                    else:
+                        r_roi.append(np.nan)
+                        r_wr.append(np.nan)
+                        r_bets.append(0)
+                merged[f'Recent {recent_days}d ROI (%)'] = r_roi
+                merged[f'Recent {recent_days}d WR (%)'] = r_wr
+                merged[f'Recent {recent_days}d Bets'] = r_bets
+            else:
+                merged[f'Recent {recent_days}d ROI (%)'] = np.nan
+                merged[f'Recent {recent_days}d WR (%)'] = np.nan
+                merged[f'Recent {recent_days}d Bets'] = 0
+
+            def _trend(row):
+                alltime = row['All-Time ROI (%)']
+                recent = row[f'Recent {recent_days}d ROI (%)']
+                if pd.isna(recent):
+                    return '—'
+                diff = recent - alltime
+                if diff > 2:
+                    return '🔺'
+                if diff < -2:
+                    return '🔻'
+                return '➡️'
+
+            merged['Trend'] = merged.apply(_trend, axis=1)
+
+            s_fn = shadow_ranking_fn or ranking_fn
+            has_shadow = shadow_betting_df is not None and not shadow_betting_df.empty
+            if has_shadow:
+                shadow_rank = s_fn(shadow_betting_df, 0.0)
+                if not shadow_rank.empty:
+                    shadow_lookup = shadow_rank.set_index(['Model', 'Dimension', 'Segment'])
+                    s_roi, s_wr, s_bets = [], [], []
+                    for _, row in merged.iterrows():
+                        key = (row['Model'], row['Dimension'], row['Segment'])
+                        if key in shadow_lookup.index:
+                            sr = shadow_lookup.loc[key]
+                            s_roi.append(sr['ROI (%)'])
+                            s_wr.append(sr['WR (%)'])
+                            s_bets.append(int(sr['Bets']))
+                        else:
+                            s_roi.append(np.nan)
+                            s_wr.append(np.nan)
+                            s_bets.append(0)
+                    merged['Shadow Bets'] = s_bets
+                    merged['Shadow WR (%)'] = s_wr
+                    merged['Shadow ROI (%)'] = s_roi
+                    shadow_days = shadow_betting_df['date'].nunique()
+                else:
+                    has_shadow = False
+
+            if not has_shadow:
+                merged['Shadow Bets'] = 0
+                merged['Shadow WR (%)'] = np.nan
+                merged['Shadow ROI (%)'] = np.nan
+                shadow_days = 0
+
+            merged = merged.sort_values('All-Time ROI (%)', ascending=False).reset_index(drop=True)
+            merged.index = merged.index + 1
+            merged.index.name = 'Rank'
+
+            col_order = ['Model', 'Dimension', 'Segment', 'Bets',
+                         'All-Time WR (%)', 'All-Time ROI (%)', 'Profit ($)',
+                         f'Recent {recent_days}d Bets', f'Recent {recent_days}d WR (%)',
+                         f'Recent {recent_days}d ROI (%)', 'Trend',
+                         'Shadow Bets', 'Shadow WR (%)', 'Shadow ROI (%)']
+            merged = merged[col_order]
+
+            shadow_label = f" · Shadow: {shadow_days}d data" if shadow_days > 0 else " · Shadow: no data"
+            st.caption(f"Showing {len(merged)} segments · Trend: 🔺 improving (>+2%) · 🔻 declining (>-2%) · ➡️ stable{shadow_label}")
+
+            roi_cols = ['All-Time ROI (%)', f'Recent {recent_days}d ROI (%)', 'Shadow ROI (%)']
+            fmt = {
+                'All-Time WR (%)': '{:.1f}%', 'All-Time ROI (%)': '{:.2f}%',
+                'Profit ($)': '${:,.1f}',
+                f'Recent {recent_days}d WR (%)': '{:.1f}%',
+                f'Recent {recent_days}d ROI (%)': '{:.2f}%',
+                'Shadow WR (%)': '{:.1f}%',
+                'Shadow ROI (%)': '{:.2f}%',
+            }
+            styled = merged.style.map(_roi_color, subset=roi_cols).format(
+                fmt, na_rep='—')
+            st.dataframe(styled, use_container_width=True)
+
+        ml_shadow_betting, tot_shadow_betting = load_shadow()
+
         with rank_ml_tab:
             st.markdown('<div class="section-title">Segment Rankings (Moneyline)</div>',
                         unsafe_allow_html=True)
             if ml_betting.empty:
                 st.info("No moneyline data yet.")
             else:
-                threshold_ml = st.slider(
-                    "Min sample size (% of model total bets)", 10, 40, 20,
-                    key='rank_ml_thresh') / 100
-                rank_df_ml = _ml_segment_rankings(ml_betting, threshold_ml)
-                if rank_df_ml.empty:
-                    st.warning("No segments meet the sample size threshold.")
-                else:
-                    st.caption(f"Showing {len(rank_df_ml)} segments that meet the threshold")
-                    styled_ml = rank_df_ml.style.map(_roi_color, subset=['ROI (%)']).format({
-                        'WR (%)': '{:.1f}%', 'ROI (%)': '{:.2f}%', 'Profit ($)': '${:,.1f}',
-                    })
-                    st.dataframe(styled_ml, use_container_width=True)
+                _render_ranked_table(ml_betting, _ml_segment_rankings, 'ml',
+                                     shadow_betting_df=ml_shadow_betting)
 
         with rank_tot_tab:
             st.markdown('<div class="section-title">Segment Rankings (Totals)</div>',
@@ -1063,18 +1294,10 @@ def main():
             if tot_betting.empty:
                 st.info("No totals data yet.")
             else:
-                threshold_tot = st.slider(
-                    "Min sample size (% of model total bets)", 10, 40, 20,
-                    key='rank_tot_thresh') / 100
-                rank_df_tot = _totals_segment_rankings(tot_betting, threshold_tot)
-                if rank_df_tot.empty:
-                    st.warning("No segments meet the sample size threshold.")
-                else:
-                    st.caption(f"Showing {len(rank_df_tot)} segments that meet the threshold")
-                    styled_tot = rank_df_tot.style.map(_roi_color, subset=['ROI (%)']).format({
-                        'WR (%)': '{:.1f}%', 'ROI (%)': '{:.2f}%', 'Profit ($)': '${:,.1f}',
-                    })
-                    st.dataframe(styled_tot, use_container_width=True)
+                _render_ranked_table(tot_betting, _totals_segment_rankings, 'tot',
+                                     shadow_betting_df=tot_shadow_betting,
+                                     shadow_ranking_fn=_totals_segment_rankings,
+                                     matched_raw=tot_matched_raw)
 
     # ──────────────────────────────────────────────────────────────────
     # TAB: About & Disclaimer
