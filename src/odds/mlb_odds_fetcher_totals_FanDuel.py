@@ -203,7 +203,9 @@ class MLBTotalsOddsFetcher:
 
 def main():
     """테스트 실행"""
-    api_key = "3e76069f78f461b5348b7dfdf1ff5535"
+    # api_key = "3e76069f78f461b5348b7dfdf1ff5535"
+    api_key = "c382213ce79692333d484d0db8ade99e"
+    
     
     fetcher = MLBTotalsOddsFetcher(api_key)
     odds = fetcher.get_odds()

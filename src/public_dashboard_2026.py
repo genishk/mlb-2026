@@ -296,9 +296,10 @@ def _load_predictions(pattern_prefix: str, exclude_today: bool = True) -> pd.Dat
     return df
 
 
-def _load_shadow_predictions(pattern_prefix: str) -> pd.DataFrame:
+def _load_shadow_predictions(pattern_prefix: str, max_days: int = 7) -> pd.DataFrame:
     """Load shadow predictions from matched dir only (no backups).
-    Uses all available shadow files; if >7 unique dates, keep most recent 7."""
+    If max_days > 0 and more unique dates exist, keep most recent max_days.
+    If max_days <= 0, use ALL available shadow files."""
     files = list(MATCHED_DIR.glob(f'{pattern_prefix}_*_shadow.json'))
     if not files:
         return pd.DataFrame()
@@ -314,8 +315,8 @@ def _load_shadow_predictions(pattern_prefix: str) -> pd.DataFrame:
         if fd not in files_by_date or f.stat().st_mtime > files_by_date[fd].stat().st_mtime:
             files_by_date[fd] = f
 
-    if len(files_by_date) > 7:
-        recent_dates = sorted(files_by_date.keys(), reverse=True)[:7]
+    if max_days > 0 and len(files_by_date) > max_days:
+        recent_dates = sorted(files_by_date.keys(), reverse=True)[:max_days]
         files_by_date = {d: files_by_date[d] for d in recent_dates}
 
     covered_dates = {f"{d[:4]}-{d[4:6]}-{d[6:8]}" for d in files_by_date}
@@ -525,9 +526,11 @@ def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
     if mb.empty:
         return {}
 
+    mb['decimal_odds'] = mb['bet_odds'].apply(
+        lambda o: (o / 100) + 1 if o > 0 else (100 / abs(o)) + 1)
+    mb['predicted_roi'] = (mb['bet_probability'] * mb['decimal_odds'] - 1) * 100
     mb['implied_prob'] = mb['bet_odds'].apply(
         lambda o: 100 / (o + 100) if o > 0 else (-o) / (-o + 100))
-    mb['predicted_roi'] = (mb['bet_probability'] - mb['implied_prob']) * 100
     mb['confidence'] = (mb['bet_probability'] - 0.5).abs()
     mb['divergence'] = (mb['bet_probability'] - mb['implied_prob']) * 100
 
@@ -799,15 +802,25 @@ def load_all():
 
 @st.cache_data(ttl=300)
 def load_shadow():
-    """Load shadow model data separately (used only for Segment Rankings)."""
+    """Load shadow model data separately (used only for Segment Rankings).
+    Returns (recent_7d_ml, recent_7d_tot, alltime_ml, alltime_tot)."""
     results = _load_game_results()
-    ml_shadow = _load_shadow_predictions('mlb_predictions_with_odds')
-    tot_shadow = _load_shadow_predictions('mlb_totals_predictions_with_odds')
-    ml_s_matched = _match_ml(ml_shadow, results)
-    tot_s_matched = _match_totals(tot_shadow, results)
-    ml_s_betting = _calc_ml_roi(ml_s_matched) if not ml_s_matched.empty else pd.DataFrame()
-    tot_s_betting = _calc_totals_roi(tot_s_matched) if not tot_s_matched.empty else pd.DataFrame()
-    return ml_s_betting, tot_s_betting
+
+    ml_shadow_7d = _load_shadow_predictions('mlb_predictions_with_odds', max_days=7)
+    tot_shadow_7d = _load_shadow_predictions('mlb_totals_predictions_with_odds', max_days=7)
+    ml_s7_matched = _match_ml(ml_shadow_7d, results)
+    tot_s7_matched = _match_totals(tot_shadow_7d, results)
+    ml_s7_betting = _calc_ml_roi(ml_s7_matched) if not ml_s7_matched.empty else pd.DataFrame()
+    tot_s7_betting = _calc_totals_roi(tot_s7_matched) if not tot_s7_matched.empty else pd.DataFrame()
+
+    ml_shadow_all = _load_shadow_predictions('mlb_predictions_with_odds', max_days=0)
+    tot_shadow_all = _load_shadow_predictions('mlb_totals_predictions_with_odds', max_days=0)
+    ml_sa_matched = _match_ml(ml_shadow_all, results)
+    tot_sa_matched = _match_totals(tot_shadow_all, results)
+    ml_sa_betting = _calc_ml_roi(ml_sa_matched) if not ml_sa_matched.empty else pd.DataFrame()
+    tot_sa_betting = _calc_totals_roi(tot_sa_matched) if not tot_sa_matched.empty else pd.DataFrame()
+
+    return ml_s7_betting, tot_s7_betting, ml_sa_betting, tot_sa_betting
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1150,7 +1163,8 @@ def main():
         rank_ml_tab, rank_tot_tab = st.tabs(["📊 Moneyline", "⚾ Totals"])
 
         def _render_ranked_table(betting_df, ranking_fn, prefix, shadow_betting_df=None,
-                                 shadow_ranking_fn=None, matched_raw=None):
+                                 shadow_ranking_fn=None, matched_raw=None,
+                                 shadow_alltime_df=None):
             """Render segment ranking table with All-Time + Recent + Shadow ROI."""
             c1, c2 = st.columns(2)
             with c1:
@@ -1250,6 +1264,33 @@ def main():
                 merged['Shadow ROI (%)'] = np.nan
                 shadow_days = 0
 
+            s_all_fn = shadow_ranking_fn or ranking_fn
+            has_shadow_all = shadow_alltime_df is not None and not shadow_alltime_df.empty
+            if has_shadow_all:
+                shadow_all_rank = s_all_fn(shadow_alltime_df, 0.0)
+                if not shadow_all_rank.empty:
+                    sa_lookup = shadow_all_rank.set_index(['Model', 'Dimension', 'Segment'])
+                    sa_bets, sa_roi = [], []
+                    for _, row in merged.iterrows():
+                        key = (row['Model'], row['Dimension'], row['Segment'])
+                        if key in sa_lookup.index:
+                            sar = sa_lookup.loc[key]
+                            sa_bets.append(int(sar['Bets']))
+                            sa_roi.append(sar['ROI (%)'])
+                        else:
+                            sa_bets.append(0)
+                            sa_roi.append(np.nan)
+                    merged['Shadow All Bets'] = sa_bets
+                    merged['Shadow All ROI (%)'] = sa_roi
+                    shadow_all_days = shadow_alltime_df['date'].nunique()
+                else:
+                    has_shadow_all = False
+
+            if not has_shadow_all:
+                merged['Shadow All Bets'] = 0
+                merged['Shadow All ROI (%)'] = np.nan
+                shadow_all_days = 0
+
             merged = merged.sort_values('All-Time ROI (%)', ascending=False).reset_index(drop=True)
             merged.index = merged.index + 1
             merged.index.name = 'Rank'
@@ -1258,13 +1299,15 @@ def main():
                          'All-Time WR (%)', 'All-Time ROI (%)', 'Profit ($)',
                          f'Recent {recent_days}d Bets', f'Recent {recent_days}d WR (%)',
                          f'Recent {recent_days}d ROI (%)', 'Trend',
-                         'Shadow Bets', 'Shadow WR (%)', 'Shadow ROI (%)']
+                         'Shadow Bets', 'Shadow WR (%)', 'Shadow ROI (%)',
+                         'Shadow All Bets', 'Shadow All ROI (%)']
             merged = merged[col_order]
 
             shadow_label = f" · Shadow: {shadow_days}d data" if shadow_days > 0 else " · Shadow: no data"
-            st.caption(f"Showing {len(merged)} segments · Trend: 🔺 improving (>+2%) · 🔻 declining (>-2%) · ➡️ stable{shadow_label}")
+            shadow_all_label = f" · Shadow All: {shadow_all_days}d data" if shadow_all_days > 0 else ""
+            st.caption(f"Showing {len(merged)} segments · Trend: 🔺 improving (>+2%) · 🔻 declining (>-2%) · ➡️ stable{shadow_label}{shadow_all_label}")
 
-            roi_cols = ['All-Time ROI (%)', f'Recent {recent_days}d ROI (%)', 'Shadow ROI (%)']
+            roi_cols = ['All-Time ROI (%)', f'Recent {recent_days}d ROI (%)', 'Shadow ROI (%)', 'Shadow All ROI (%)']
             fmt = {
                 'All-Time WR (%)': '{:.1f}%', 'All-Time ROI (%)': '{:.2f}%',
                 'Profit ($)': '${:,.1f}',
@@ -1272,12 +1315,13 @@ def main():
                 f'Recent {recent_days}d ROI (%)': '{:.2f}%',
                 'Shadow WR (%)': '{:.1f}%',
                 'Shadow ROI (%)': '{:.2f}%',
+                'Shadow All ROI (%)': '{:.2f}%',
             }
             styled = merged.style.map(_roi_color, subset=roi_cols).format(
                 fmt, na_rep='—')
             st.dataframe(styled, use_container_width=True)
 
-        ml_shadow_betting, tot_shadow_betting = load_shadow()
+        ml_shadow_betting, tot_shadow_betting, ml_shadow_all_betting, tot_shadow_all_betting = load_shadow()
 
         with rank_ml_tab:
             st.markdown('<div class="section-title">Segment Rankings (Moneyline)</div>',
@@ -1286,7 +1330,8 @@ def main():
                 st.info("No moneyline data yet.")
             else:
                 _render_ranked_table(ml_betting, _ml_segment_rankings, 'ml',
-                                     shadow_betting_df=ml_shadow_betting)
+                                     shadow_betting_df=ml_shadow_betting,
+                                     shadow_alltime_df=ml_shadow_all_betting)
 
         with rank_tot_tab:
             st.markdown('<div class="section-title">Segment Rankings (Totals)</div>',
@@ -1297,7 +1342,8 @@ def main():
                 _render_ranked_table(tot_betting, _totals_segment_rankings, 'tot',
                                      shadow_betting_df=tot_shadow_betting,
                                      shadow_ranking_fn=_totals_segment_rankings,
-                                     matched_raw=tot_matched_raw)
+                                     matched_raw=tot_matched_raw,
+                                     shadow_alltime_df=tot_shadow_all_betting)
 
     # ──────────────────────────────────────────────────────────────────
     # TAB: About & Disclaimer
