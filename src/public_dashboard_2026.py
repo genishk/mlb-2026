@@ -520,6 +520,7 @@ def _daily_breakdown(betting: pd.DataFrame, model: str) -> pd.DataFrame:
 # SEGMENT ANALYSIS (moneyline — same boundaries as internal dashboard)
 # ═══════════════════════════════════════════════════════════════════════
 
+@st.cache_data(ttl=300, show_spinner=False)
 def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
     """Moneyline segment analysis — boundaries match mlb_model_performance_dashboard exactly."""
     mb = betting[betting['model'] == model].copy()
@@ -613,6 +614,7 @@ def _ml_segment_analysis(betting: pd.DataFrame, model: str) -> dict:
     return seg
 
 
+@st.cache_data(ttl=300, show_spinner=False)
 def _totals_segment_analysis(betting: pd.DataFrame, model: str,
                              matched_raw: pd.DataFrame = None) -> dict:
     """Totals segment analysis — boundaries match mlb_model_performance_dashboard exactly."""
@@ -725,6 +727,7 @@ def _totals_segment_analysis(betting: pd.DataFrame, model: str,
 # SEGMENT RANKINGS
 # ═══════════════════════════════════════════════════════════════════════
 
+@st.cache_data(ttl=300, show_spinner=False)
 def _ml_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> pd.DataFrame:
     models = sorted(betting['model'].unique())
     rows = []
@@ -754,6 +757,7 @@ def _ml_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2) -> p
     return df
 
 
+@st.cache_data(ttl=300, show_spinner=False)
 def _totals_segment_rankings(betting: pd.DataFrame, threshold_pct: float = 0.2,
                              matched_raw: pd.DataFrame = None) -> pd.DataFrame:
     models = sorted(betting['model'].unique())
@@ -820,7 +824,8 @@ def load_shadow():
     ml_sa_betting = _calc_ml_roi(ml_sa_matched) if not ml_sa_matched.empty else pd.DataFrame()
     tot_sa_betting = _calc_totals_roi(tot_sa_matched) if not tot_sa_matched.empty else pd.DataFrame()
 
-    return ml_s7_betting, tot_s7_betting, ml_sa_betting, tot_sa_betting
+    return (ml_s7_betting, tot_s7_betting, tot_s7_matched,
+            ml_sa_betting, tot_sa_betting, tot_sa_matched)
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -1164,12 +1169,13 @@ def main():
 
         def _render_ranked_table(betting_df, ranking_fn, prefix, shadow_betting_df=None,
                                  shadow_ranking_fn=None, matched_raw=None,
-                                 shadow_alltime_df=None):
+                                 shadow_alltime_df=None,
+                                 shadow_matched_raw=None, shadow_alltime_matched_raw=None):
             """Render segment ranking table with All-Time + Recent + Shadow ROI."""
             c1, c2 = st.columns(2)
             with c1:
                 threshold = st.slider(
-                    "Min sample size (% of model total bets)", 10, 40, 20,
+                    "Min sample size (% of model total bets)", 10, 40, 14,
                     key=f'rank_{prefix}_thresh') / 100
             with c2:
                 recent_days = st.selectbox(
@@ -1178,7 +1184,18 @@ def main():
                     key=f'rank_{prefix}_recent')
 
             extra = {'matched_raw': matched_raw} if matched_raw is not None else {}
-            rank_all = ranking_fn(betting_df, threshold, **extra)
+            # The heavy ranking computation is threshold-independent, so compute
+            # the full ranking once (cached) and apply the sample-size threshold
+            # as a cheap post-filter. This makes moving the slider instant while
+            # producing identical rows to ranking_fn(betting_df, threshold).
+            rank_all_full = ranking_fn(betting_df, 0.0, **extra)
+            if rank_all_full.empty:
+                st.warning("No segments meet the sample size threshold.")
+                return
+            _model_totals = betting_df.groupby('model').size()
+            _min_bets = (rank_all_full['Model'].str.lower().map(_model_totals)
+                         .fillna(0) * threshold).astype(int)
+            rank_all = rank_all_full[rank_all_full['Bets'] >= _min_bets].copy()
             if rank_all.empty:
                 st.warning("No segments meet the sample size threshold.")
                 return
@@ -1236,7 +1253,8 @@ def main():
             s_fn = shadow_ranking_fn or ranking_fn
             has_shadow = shadow_betting_df is not None and not shadow_betting_df.empty
             if has_shadow:
-                shadow_rank = s_fn(shadow_betting_df, 0.0)
+                s_extra = {'matched_raw': shadow_matched_raw} if shadow_matched_raw is not None else {}
+                shadow_rank = s_fn(shadow_betting_df, 0.0, **s_extra)
                 if not shadow_rank.empty:
                     shadow_lookup = shadow_rank.set_index(['Model', 'Dimension', 'Segment'])
                     s_roi, s_wr, s_bets = [], [], []
@@ -1267,7 +1285,8 @@ def main():
             s_all_fn = shadow_ranking_fn or ranking_fn
             has_shadow_all = shadow_alltime_df is not None and not shadow_alltime_df.empty
             if has_shadow_all:
-                shadow_all_rank = s_all_fn(shadow_alltime_df, 0.0)
+                sa_extra = {'matched_raw': shadow_alltime_matched_raw} if shadow_alltime_matched_raw is not None else {}
+                shadow_all_rank = s_all_fn(shadow_alltime_df, 0.0, **sa_extra)
                 if not shadow_all_rank.empty:
                     sa_lookup = shadow_all_rank.set_index(['Model', 'Dimension', 'Segment'])
                     sa_bets, sa_roi = [], []
@@ -1321,7 +1340,8 @@ def main():
                 fmt, na_rep='—')
             st.dataframe(styled, use_container_width=True)
 
-        ml_shadow_betting, tot_shadow_betting, ml_shadow_all_betting, tot_shadow_all_betting = load_shadow()
+        (ml_shadow_betting, tot_shadow_betting, tot_shadow_7d_matched,
+         ml_shadow_all_betting, tot_shadow_all_betting, tot_shadow_all_matched) = load_shadow()
 
         with rank_ml_tab:
             st.markdown('<div class="section-title">Segment Rankings (Moneyline)</div>',
@@ -1343,7 +1363,9 @@ def main():
                                      shadow_betting_df=tot_shadow_betting,
                                      shadow_ranking_fn=_totals_segment_rankings,
                                      matched_raw=tot_matched_raw,
-                                     shadow_alltime_df=tot_shadow_all_betting)
+                                     shadow_alltime_df=tot_shadow_all_betting,
+                                     shadow_matched_raw=tot_shadow_7d_matched,
+                                     shadow_alltime_matched_raw=tot_shadow_all_matched)
 
     # ──────────────────────────────────────────────────────────────────
     # TAB: About & Disclaimer

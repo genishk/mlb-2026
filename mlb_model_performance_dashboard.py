@@ -1682,12 +1682,39 @@ def _render_segment_table(seg_data: dict, segment_type: str):
 def render_segment_analysis_tab(analyzer, betting_results: pd.DataFrame,
                                  model_list: list, key_prefix: str,
                                  tag_label: str = 'Active'):
-    """Full segment analysis UI: model selector + 5 sub-tabs."""
+    """Full segment analysis UI: date range + model selector + 5 sub-tabs.
+
+    Date filtering happens inside this fragment so changing the date range
+    only reruns this fragment instead of the whole app.
+    """
     st.header(f"\U0001F52C Segment Analysis ({tag_label})")
     st.markdown(
         "Detailed analysis of model performance across different prediction "
         "confidence levels, odds ranges, and market scenarios."
     )
+
+    seg_min = betting_results['date'].min().date()
+    seg_max = betting_results['date'].max().date()
+    st.markdown("##### \U0001F4C5 Date Range")
+    c1, c2 = st.columns(2)
+    with c1:
+        seg_start = st.date_input("Start", value=seg_min,
+            min_value=seg_min, max_value=seg_max,
+            key=f'{key_prefix}_seg_date_start')
+    with c2:
+        seg_end = st.date_input("End", value=seg_max,
+            min_value=seg_min, max_value=seg_max,
+            key=f'{key_prefix}_seg_date_end')
+
+    date_mask = (
+        (betting_results['date'].dt.date >= seg_start)
+        & (betting_results['date'].dt.date <= seg_end)
+    )
+    seg_filtered = betting_results[date_mask].copy()
+
+    if seg_filtered.empty:
+        st.warning("No data in the selected date range.")
+        return
 
     selected = st.selectbox(
         "\U0001F3AF Select model for segment analysis:",
@@ -1698,7 +1725,7 @@ def render_segment_analysis_tab(analyzer, betting_results: pd.DataFrame,
     if not selected:
         return
 
-    seg = analyzer.segment_analysis(betting_results, selected)
+    seg = analyzer.segment_analysis(seg_filtered, selected)
 
     if not seg:
         st.warning(f"No segment data for {selected}.")
@@ -3225,27 +3252,9 @@ def main():
     # =====================================================================
     with tab8:
         if not active_betting.empty:
-            seg_a_min = active_betting['date'].min().date()
-            seg_a_max = active_betting['date'].max().date()
-            st.markdown("##### \U0001F4C5 Date Range")
-            c1, c2 = st.columns(2)
-            with c1:
-                seg_a_start = st.date_input("Start", value=seg_a_min,
-                    min_value=seg_a_min, max_value=seg_a_max, key='seg_a_start')
-            with c2:
-                seg_a_end = st.date_input("End", value=seg_a_max,
-                    min_value=seg_a_min, max_value=seg_a_max, key='seg_a_end')
-            seg_a_mask = (
-                (active_betting['date'].dt.date >= seg_a_start)
-                & (active_betting['date'].dt.date <= seg_a_end)
-            )
-            seg_a_filtered = active_betting[seg_a_mask].copy()
-            if seg_a_filtered.empty:
-                st.warning("No data in the selected date range.")
-            else:
-                render_segment_analysis_tab(
-                    analyzer, seg_a_filtered, models,
-                    key_prefix='active', tag_label='Active')
+            render_segment_analysis_tab(
+                analyzer, active_betting, models,
+                key_prefix='active', tag_label='Active')
         else:
             st.warning("No Active betting data available.")
 
@@ -3270,29 +3279,9 @@ def main():
             st.header("\U0001F52C Segment Analysis (Shadow)")
             st.warning("No Shadow betting data available.")
         else:
-            seg_s_min = shadow_betting['date'].min().date()
-            seg_s_max = shadow_betting['date'].max().date()
-            st.markdown("##### \U0001F4C5 Date Range")
-            c1, c2 = st.columns(2)
-            with c1:
-                seg_s_start = st.date_input("Start", value=seg_s_min,
-                    min_value=seg_s_min, max_value=seg_s_max, key='seg_s_start')
-            with c2:
-                seg_s_end = st.date_input("End", value=seg_s_max,
-                    min_value=seg_s_min, max_value=seg_s_max, key='seg_s_end')
-            seg_s_mask = (
-                (shadow_betting['date'].dt.date >= seg_s_start)
-                & (shadow_betting['date'].dt.date <= seg_s_end)
-            )
-            shadow_filtered_t9 = shadow_betting[seg_s_mask].copy()
-
-            if shadow_filtered_t9.empty:
-                st.header("\U0001F52C Segment Analysis (Shadow)")
-                st.warning("No Shadow data in the selected date range.")
-            else:
-                render_segment_analysis_tab(
-                    analyzer, shadow_filtered_t9, shadow_models,
-                    key_prefix='shadow', tag_label='Shadow')
+            render_segment_analysis_tab(
+                analyzer, shadow_betting, shadow_models,
+                key_prefix='shadow', tag_label='Shadow')
 
 
     # =====================================================================
